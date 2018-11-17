@@ -1,0 +1,13 @@
+Developers will work in their corresponding branch
+and push back to their own branch. Will then merge 
+into the master branch when at a good point. 
+
+To access Olson's branch/folder
+git checkout thao
+
+To access Erik's branch/folder
+git checkout e
+
+To access Mahamed's branch/folder
+git checkout m
+
