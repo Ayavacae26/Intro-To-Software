@@ -10,4 +10,3 @@ git checkout e
 
 To access Mahamed's branch/folder
 git checkout m
-
