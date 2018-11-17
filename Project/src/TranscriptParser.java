@@ -6,6 +6,25 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+//import javax.xml.soap.Node;
+//import javax.xml.xpath.XPath;
+//import javax.xml.xpath.XPathConstants;
+//import javax.xml.xpath.XPathExpressionException;
+//import javax.xml.xpath.XPathFactory;
+//
+//
+//import org.xml.sax.InputSource;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
 import java.io.*;
 import java.util.*;
 import java.lang.*;
@@ -35,28 +54,48 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 
 	public static void main(String[] args) throws IOException {
-		GUI window = new GUI();
-		window.setVisible(true);
-
-		//REMOVE COMMENT IF WANT TO RUN FROM COMMAND LINE
-//		File transcript = new File(args[0]);
-//		File degree = new File(args[1]);
-
-//		readFile(transcript, "transcript.txt");
-//		readFile(degree, "degree.txt");
-
+//		GUI window = new GUI();
+//		window.setVisible(true);
 		
-		
-//		Path firstFile = Paths.get("degree.txt");
-//		Path secondFile = Paths.get("transcript.txt");
+//		XPath xpath = XPathFactory.newInstance().newXPath();
+//		String expression = "/Majors/*";
+//		InputSource inputSource = new InputSource("completedmajors.xml");
+//		try {
+//			Node nodes = (Node) xpath.evaluate(expression, inputSource, XPathConstants.STRING);
+//		} catch (XPathExpressionException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
-//		List<String> firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-//		List<String> secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-//		System.out.println("classes you still need: " + diffFiles(firstFileContent, secondFileContent));
-//		System.out.println("these are extra classes you took: " + diffFiles(secondFileContent,firstFileContent));
-//		System.out.println("classes that counted for your major: " + sameFiles(firstFileContent, secondFileContent));
+        try {
 
-}
+        XPathFactory xPathFactory = XPathFactory.newInstance();
+        XPath xPath = xPathFactory.newXPath();
+
+        InputSource doc = new InputSource(new InputStreamReader(new FileInputStream(new File("test.xml"))));
+
+        String expression = "/MajorName[@id='American Indian Studies BA'";
+        XPathExpression xPathExpression = xPath.compile(expression);
+
+        NodeList elem1List = (NodeList) xPathExpression.evaluate(doc, XPathConstants.NODESET);
+        xPathExpression = xPath.compile("@type");
+
+        for (int i = 0; i < elem1List.getLength(); i++)
+        {
+            System.out.println(xPathExpression.evaluate(elem1List.item(i), XPathConstants.STRING)); 
+        }
+
+
+        }
+        catch (XPathExpressionException e)
+        {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 	
 	public static void compareTranscriptAndDegree()
 	{
@@ -157,10 +196,7 @@ public class TranscriptParser {
 
 	// function that prints out the differences in the 2 files
 	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-//		List<String> firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-//		List<String> secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-		
+	{		
 		List<String> diff = new ArrayList<String>();
 		for(String line : firstFileContent) {
 			if (!secondFileContent.contains(line)) {
