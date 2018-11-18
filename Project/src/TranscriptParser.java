@@ -36,7 +36,7 @@ import java.util.*;
 import java.lang.*;
 
 /**
- * @author Erik Ayavaca-Tirado
+ * @author Erik, Olson, and Mahamed
  *  Program is going to be comparing the 2 files transcript and course list and spitiing out the difference between them.
  *  Orginal implentation ideas:
  *  // posibly use the hasmap
@@ -58,33 +58,11 @@ public class TranscriptParser {
 			+ " POL ART HIS ECO PHI BUS FIN BIO HPE EDC EED CHM SPE SWK"
 			+ " ENV PHY HON KEY MIS MKT HUM RLN THR MUS SPA MUE ACC SCI"
 			+ " NUR NMS FLM THP URB YST REL AUG";
+	//Erik added more abbreviations into this list
 
 	public static void main(String[] args) throws IOException {
 //		GUI window = new GUI();
 //		window.setVisible(true);
-		
-//		XPath xpath = XPathFactory.newInstance().newXPath();
-//		String expression = "/Majors/*";
-//		InputSource inputSource = new InputSource("completedmajors.xml");
-//		try {
-//			Node nodes = (Node) xpath.evaluate(expression, inputSource, XPathConstants.STRING);
-//		} catch (XPathExpressionException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-
-//		private File file;
-//		 
-//	    public TranscriptParser(File file) {
-//	        this.file = file;
-//	        FileInputStream fileIS = new FileInputStream(this.getFile());
-//	        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
-//	        DocumentBuilder builder = builderFactory.newDocumentBuilder();
-//	        Document xmlDocument = builder.parse(fileIS);
-//	        XPath xPath = XPathFactory.newInstance().newXPath();
-//	        String expression = "/Tutorials/Tutorial";
-//	        nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-//	    }
 		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = null;
@@ -103,20 +81,18 @@ public class TranscriptParser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-//		Element rootElement = document.getDocumentElement();
-//		NodeList test = rootElement.getElementsByTagName("*");
 		
 		Node test1 = document.getFirstChild();
 		NodeList test2 = document.getElementsByTagName("AmericanIndianStudiesBA");
 		
-//		System.out.println("rootelement = "+rootElement);
-//		System.out.println("rootelement get first tag name = "+test.item(1).getTextContent());
-//		System.out.println("rootelement get second tag name = "+test.item(2).getTextContent());
-//		System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
-		//getNodeValue() vs getContentText
-		
 		System.out.println(test1.getChildNodes());
-		System.out.println("test \n"+test2.item(0).getTextContent());
+//		System.out.println("test \n"+test2.item(0).getTextContent());
+		
+		//grab 'someof' from xml database
+		System.out.println("Required: \n"+test2.item(0).getTextContent());
+//		System.out.println(test2.item(0).hasChildNodes());
+		
+		//getNodeValue() vs getContentText()
 
 		
 		/* Testing with a schema. Was informed from information on the net
