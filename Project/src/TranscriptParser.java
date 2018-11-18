@@ -105,16 +105,21 @@ public class TranscriptParser {
 		Element rootElement = document.getDocumentElement();
 		NodeList test = rootElement.getElementsByTagName("*");
 		
-		System.out.println(rootElement);
-		System.out.println(test.item(1));
-		System.out.println(test.item(2));
+		NodeList test1 = document.getElementsByTagName("*");
+		
+		System.out.println("rootelement = "+rootElement);
+		System.out.println("rootelement get first tag name = "+test.item(1));
+		System.out.println("rootelement get second tag name = "+test.item(2));
 //		System.out.println(test.item(3));
-		System.out.println(rootElement.getTextContent());
-		System.out.println(rootElement.hasAttribute("American Indian Studies BA"));	//getNodeValue() vs getContentText
-		System.out.println(rootElement.getTagName());
-		System.out.println(rootElement.getAttribute("Majors"));
-		System.out.println(rootElement.getAttributeNode("Majors"));
+		System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
+		System.out.println(rootElement.hasAttribute("id"));	//getNodeValue() vs getContentText
+		System.out.println("rootElement getTag = "+rootElement.getTagName());
+		System.out.println("rootElement get attribute = "+rootElement.getAttribute("Major Name"));
+		System.out.println("rootElement get attributenode = "+rootElement.getAttributeNode("Major Name"));
 		System.out.println(test.item(2).getTextContent());
+		System.out.println(rootElement.getElementsByTagName("Major Name"));
+		System.out.println(rootElement.getAttributeNode("Majors"));
+		System.out.println(test1.item(2));
     }
 	
 	
