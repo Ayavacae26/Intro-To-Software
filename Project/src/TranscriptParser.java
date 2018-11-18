@@ -60,7 +60,11 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 	//Erik added more abbreviations into this list
 
-	public static void main(String[] args) throws IOException {
+	  /*  comment out due to running  the extraction xml
+
+
+	  public static void main(String[] args) throws IOException {
+
 //		GUI window = new GUI();
 //		window.setVisible(true);
 		
@@ -79,7 +83,7 @@ public class TranscriptParser {
 			document = builder.parse(new File("test.xml"));
 		} catch (SAXException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace();CompletedMajors2.xml
 		}
 		
 		Node test1 = document.getFirstChild();
@@ -163,7 +167,7 @@ public class TranscriptParser {
 //				System.out.println(rootElement.getElementsByTagName("book"));
 //				System.out.println(rootElement.getAttributeNode("Majors"));
 		
-    }
+   // }
 	
 	
 	
@@ -288,6 +292,8 @@ public class TranscriptParser {
 		}
 		return same;
 	}
+
+
 
 }
 
