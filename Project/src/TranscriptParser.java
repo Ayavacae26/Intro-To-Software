@@ -16,14 +16,19 @@ import java.util.List;
 //
 //import org.xml.sax.InputSource;
 
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
-
+ 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 import java.io.*;
 import java.util.*;
@@ -67,35 +72,53 @@ public class TranscriptParser {
 //			e.printStackTrace();
 //		}
 
-        try {
-
-        XPathFactory xPathFactory = XPathFactory.newInstance();
-        XPath xPath = xPathFactory.newXPath();
-
-        InputSource doc = new InputSource(new InputStreamReader(new FileInputStream(new File("test.xml"))));
-
-        String expression = "/MajorName[@id='American Indian Studies BA'";
-        XPathExpression xPathExpression = xPath.compile(expression);
-
-        NodeList elem1List = (NodeList) xPathExpression.evaluate(doc, XPathConstants.NODESET);
-        xPathExpression = xPath.compile("@type");
-
-        for (int i = 0; i < elem1List.getLength(); i++)
-        {
-            System.out.println(xPathExpression.evaluate(elem1List.item(i), XPathConstants.STRING)); 
-        }
-
-
-        }
-        catch (XPathExpressionException e)
-        {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
+//		private File file;
+//		 
+//	    public TranscriptParser(File file) {
+//	        this.file = file;
+//	        FileInputStream fileIS = new FileInputStream(this.getFile());
+//	        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+//	        DocumentBuilder builder = builderFactory.newDocumentBuilder();
+//	        Document xmlDocument = builder.parse(fileIS);
+//	        XPath xPath = XPathFactory.newInstance().newXPath();
+//	        String expression = "/Tutorials/Tutorial";
+//	        nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+//	    }
+		
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = null;
+		Document document = null;
+		
+		try {
+			builder = factory.newDocumentBuilder();
+		} catch (ParserConfigurationException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		try {
+			document = builder.parse(new File("test.xml"));
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Element rootElement = document.getDocumentElement();
+		NodeList test = rootElement.getElementsByTagName("*");
+		
+		System.out.println(rootElement);
+		System.out.println(test.item(1));
+		System.out.println(test.item(2));
+//		System.out.println(test.item(3));
+		System.out.println(rootElement.getTextContent());
+		System.out.println(rootElement.hasAttribute("American Indian Studies BA"));	//getNodeValue() vs getContentText
+		System.out.println(rootElement.getTagName());
+		System.out.println(rootElement.getAttribute("Majors"));
+		System.out.println(rootElement.getAttributeNode("Majors"));
+		System.out.println(test.item(2).getTextContent());
     }
+	
+	
+	
 	
 	public static void compareTranscriptAndDegree()
 	{
