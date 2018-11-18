@@ -6,6 +6,30 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+//import javax.xml.soap.Node;
+//import javax.xml.xpath.XPath;
+//import javax.xml.xpath.XPathConstants;
+//import javax.xml.xpath.XPathExpressionException;
+//import javax.xml.xpath.XPathFactory;
+//
+//
+//import org.xml.sax.InputSource;
+
+import javax.xml.namespace.NamespaceContext;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+ 
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 import java.io.*;
 import java.util.*;
 import java.lang.*;
@@ -35,28 +59,66 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 
 	public static void main(String[] args) throws IOException {
-		GUI window = new GUI();
-		window.setVisible(true);
-
-		//REMOVE COMMENT IF WANT TO RUN FROM COMMAND LINE
-//		File transcript = new File(args[0]);
-//		File degree = new File(args[1]);
-
-//		readFile(transcript, "transcript.txt");
-//		readFile(degree, "degree.txt");
-
+//		GUI window = new GUI();
+//		window.setVisible(true);
 		
+//		XPath xpath = XPathFactory.newInstance().newXPath();
+//		String expression = "/Majors/*";
+//		InputSource inputSource = new InputSource("completedmajors.xml");
+//		try {
+//			Node nodes = (Node) xpath.evaluate(expression, inputSource, XPathConstants.STRING);
+//		} catch (XPathExpressionException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+
+//		private File file;
+//		 
+//	    public TranscriptParser(File file) {
+//	        this.file = file;
+//	        FileInputStream fileIS = new FileInputStream(this.getFile());
+//	        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
+//	        DocumentBuilder builder = builderFactory.newDocumentBuilder();
+//	        Document xmlDocument = builder.parse(fileIS);
+//	        XPath xPath = XPathFactory.newInstance().newXPath();
+//	        String expression = "/Tutorials/Tutorial";
+//	        nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
+//	    }
 		
-//		Path firstFile = Paths.get("degree.txt");
-//		Path secondFile = Paths.get("transcript.txt");
-
-//		List<String> firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-//		List<String> secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-//		System.out.println("classes you still need: " + diffFiles(firstFileContent, secondFileContent));
-//		System.out.println("these are extra classes you took: " + diffFiles(secondFileContent,firstFileContent));
-//		System.out.println("classes that counted for your major: " + sameFiles(firstFileContent, secondFileContent));
-
-}
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder builder = null;
+		Document document = null;
+		
+		try {
+			builder = factory.newDocumentBuilder();
+		} catch (ParserConfigurationException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		try {
+			document = builder.parse(new File("test.xml"));
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Element rootElement = document.getDocumentElement();
+		NodeList test = rootElement.getElementsByTagName("*");
+		
+		System.out.println(rootElement);
+		System.out.println(test.item(1));
+		System.out.println(test.item(2));
+//		System.out.println(test.item(3));
+		System.out.println(rootElement.getTextContent());
+		System.out.println(rootElement.hasAttribute("American Indian Studies BA"));	//getNodeValue() vs getContentText
+		System.out.println(rootElement.getTagName());
+		System.out.println(rootElement.getAttribute("Majors"));
+		System.out.println(rootElement.getAttributeNode("Majors"));
+		System.out.println(test.item(2).getTextContent());
+    }
+	
+	
+	
 	
 	public static void compareTranscriptAndDegree()
 	{
@@ -157,10 +219,7 @@ public class TranscriptParser {
 
 	// function that prints out the differences in the 2 files
 	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-//		List<String> firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-//		List<String> secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-		
+	{		
 		List<String> diff = new ArrayList<String>();
 		for(String line : firstFileContent) {
 			if (!secondFileContent.contains(line)) {
