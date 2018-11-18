@@ -27,6 +27,7 @@ import javax.xml.xpath.XPathFactory;
  
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -102,19 +103,20 @@ public class TranscriptParser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Element rootElement = document.getDocumentElement();
-		NodeList test = rootElement.getElementsByTagName("*");
+//		Element rootElement = document.getDocumentElement();
+//		NodeList test = rootElement.getElementsByTagName("*");
 		
+		Node test1 = document.getFirstChild();
+		NodeList test2 = document.getElementsByTagName("AmericanIndianStudiesBA");
 		
-		System.out.println("rootelement = "+rootElement);
-		System.out.println("rootelement get first tag name = "+test.item(1));
-		System.out.println("rootelement get second tag name = "+test.item(2));
-//		System.out.println(test.item(3));
-		System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
-		System.out.println(rootElement.hasAttribute("id"));	//getNodeValue() vs getContentText
-		System.out.println("rootElement getTag = "+rootElement.getTagName());
-		System.out.println(test.item(2).getTextContent());
-		System.out.println(rootElement.getElementsByTagName("Major Name"));
+//		System.out.println("rootelement = "+rootElement);
+//		System.out.println("rootelement get first tag name = "+test.item(1).getTextContent());
+//		System.out.println("rootelement get second tag name = "+test.item(2).getTextContent());
+//		System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
+		//getNodeValue() vs getContentText
+		
+		System.out.println(test1.getChildNodes());
+		System.out.println("test \n"+test2.item(0).getTextContent());
 
 		
 		/* Testing with a schema. Was informed from information on the net
