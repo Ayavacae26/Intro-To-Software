@@ -1,0 +1,3632 @@
+<?xml version="1.0" encoding="UTF-8"?><Majors>
+    
+    <MajorName id = "American Indian Studies BA">
+        <Required>
+        AIS10
+        AIS205
+        HIS236
+        RLN370
+        </Required>
+        <Required1>
+        AIS264
+        ENL255
+        AIS264
+        ENL255
+        </Required1>
+        <Required>
+        4 electives, 3 upper divison
+        </Required>
+        <CourseNumbers>AIS208</CourseNumbers>
+        <CourseNumbers>AIS233</CourseNumbers>
+        <CourseNumbers>AIS264</CourseNumbers>
+        <CourseNumbers>AIS299</CourseNumbers>
+        <CourseNumbers>AIS305</CourseNumbers>
+        <CourseNumbers>AIS320</CourseNumbers>
+        <CourseNumbers>AIS332</CourseNumbers>
+        <CourseNumbers>AIS364</CourseNumbers>
+        <CourseNumbers>AIS396</CourseNumbers>
+        <CourseNumbers>AIS399</CourseNumbers>
+        <CourseNumbers>AIS405</CourseNumbers>
+        <CourseNumbers>AIS408</CourseNumbers>
+        <CourseNumbers>AIS490</CourseNumbers>
+        <CourseNumbers>AIS495</CourseNumbers>
+        <CourseNumbers>AIS498</CourseNumbers>
+        <CourseNumbers>AIS499</CourseNumbers>
+        <CourseNumbers>ART290</CourseNumbers>
+        <CourseNumbers>DAK111</CourseNumbers>
+        <CourseNumbers>DAK112</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL355</CourseNumbers>
+        <CourseNumbers>OJB111</CourseNumbers>
+        <CourseNumbers>OJB112</CourseNumbers>
+        <Required> 1  </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Art History BA">
+        <Required> All of</Required>
+        <CourseNumbers>ART240</CourseNumbers>
+        <CourseNumbers>ART388</CourseNumbers>
+        <CourseNumbers>ART305</CourseNumbers>
+        <CourseNumbers>ART405</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>ART102</CourseNumbers>
+        <CourseNumbers>ART107</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART118</CourseNumbers>
+        <CourseNumbers>ART221</CourseNumbers>
+        <Required>6 of</Required>
+        <CourseNumbers>ART231</CourseNumbers>
+        <CourseNumbers>ART243</CourseNumbers>
+        <CourseNumbers>ART244</CourseNumbers>
+        <CourseNumbers>ART249/349</CourseNumbers>
+        <CourseNumbers>ART290/390</CourseNumbers>
+        <CourseNumbers>ART352</CourseNumbers>
+        <CourseNumbers>ART382</CourseNumbers>
+        <CourseNumbers>ART385</CourseNumbers>
+        <CourseNumbers>ART386</CourseNumbers>
+        <CourseNumbers>ART387</CourseNumbers>
+        <CourseNumbers>ART389</CourseNumbers>
+        <CourseNumbers>ART499</CourseNumbers>
+        <CourseNumbers>AIS495</CourseNumbers>
+        <CourseNumbers>AIS498</CourseNumbers>
+        <CourseNumbers>AIS499</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Art Education BA">
+        <Required> All of</Required>
+        <CourseNumbers>ART102</CourseNumbers>
+        <CourseNumbers>ART107</CourseNumbers>
+        <CourseNumbers>ART240</CourseNumbers>
+        <CourseNumbers>ART280</CourseNumbers>
+        <CourseNumbers>ART305</CourseNumbers>
+        <CourseNumbers>ART405</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>ART118</CourseNumbers>
+        <CourseNumbers>ART1257</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART221</CourseNumbers>
+        <CourseNumbers>ART250</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART132</CourseNumbers>
+        <CourseNumbers>ART223</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART202</CourseNumbers>
+        <Required>2 2nd level studio art classses</Required>
+        <CourseNumbers>       </CourseNumbers>
+        <CourseNumbers>        </CourseNumbers>
+        <Required>2 of</Required>
+        <CourseNumbers>ART349</CourseNumbers>
+        <CourseNumbers>ART352</CourseNumbers>
+        <CourseNumbers>ART382</CourseNumbers>
+        <CourseNumbers>ART385</CourseNumbers>
+        <CourseNumbers>ART386</CourseNumbers>
+        <CourseNumbers>ART387</CourseNumbers>
+        <CourseNumbers>ART388</CourseNumbers>
+        <CourseNumbers>ART389</CourseNumbers>
+        <CourseNumbers>ART390</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Graphic Design BA">
+        <Required> All of</Required>
+        <CourseNumbers>ART107</CourseNumbers>
+        <CourseNumbers>ART124</CourseNumbers>
+        <CourseNumbers>ART125</CourseNumbers>
+        <CourseNumbers>ART126</CourseNumbers>
+        <CourseNumbers>ART127</CourseNumbers>
+        <CourseNumbers>ART133</CourseNumbers>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART226</CourseNumbers>
+        <CourseNumbers>ART240</CourseNumbers>
+        <CourseNumbers>ART305</CourseNumbers>
+        <CourseNumbers>ART315</CourseNumbers>
+        <CourseNumbers>ART324</CourseNumbers>
+        <CourseNumbers>ART326</CourseNumbers>
+        <CourseNumbers>ART405</CourseNumbers>
+        <CourseNumbers>ART424</CourseNumbers>
+        <CourseNumbers>ART425</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>ART105</CourseNumbers>
+        <CourseNumbers>ART221</CourseNumbers>
+        <CourseNumbers>ART250</CourseNumbers>
+        <CourseNumbers>ART280</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART349</CourseNumbers>
+        <CourseNumbers>ART352</CourseNumbers>
+        <CourseNumbers>ART385</CourseNumbers>
+        <CourseNumbers>ART386</CourseNumbers>
+        <CourseNumbers>ART387</CourseNumbers>
+        <CourseNumbers>ART388</CourseNumbers>
+        <CourseNumbers>ART389</CourseNumbers>
+        <CourseNumbers>ART390</CourseNumbers>
+        <Required>4 credits of electives not listed already</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Studio Art BA">
+        <Required> All of</Required>
+        <CourseNumbers>ART102</CourseNumbers>
+        <CourseNumbers>ART107</CourseNumbers>
+        <CourseNumbers>ART240</CourseNumbers>
+        <CourseNumbers>ART305</CourseNumbers>
+        <CourseNumbers>ART405</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>ART118</CourseNumbers>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART223</CourseNumbers>
+        <CourseNumbers>ART257</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ART211</CourseNumbers>
+        <CourseNumbers>ART250</CourseNumbers>
+        <CourseNumbers>ART280</CourseNumbers>
+        <Required> 5 studio art electives</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>2 art history electives</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Biology BA">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO253</CourseNumbers>
+        <CourseNumbers>BIO255</CourseNumbers>
+        <Required> 5 upper divison electives,one of BIO361, BIO440, or BIO481</Required>
+        <CourseNumbers>BIO351</CourseNumbers>
+        <CourseNumbers>BIO353</CourseNumbers>
+        <CourseNumbers>BIO361</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <CourseNumbers>BIO440</CourseNumbers>
+        <CourseNumbers>BIO471</CourseNumbers>
+        <CourseNumbers>BIO473</CourseNumbers>
+        <CourseNumbers>BIO474</CourseNumbers>
+        <CourseNumbers>BIO475</CourseNumbers>
+        <CourseNumbers>BIO476</CourseNumbers>
+        <CourseNumbers>BIO481</CourseNumbers>
+        <CourseNumbers>BIO485</CourseNumbers>
+        <CourseNumbers>BIO486</CourseNumbers>
+        <CourseNumbers>BIO495</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>1 KeyStone </Required>
+        <CourseNumbers>BIO490</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <CourseNumbers>HON490</CourseNumbers>
+        <Required> Supporting classes</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>PHY107 and PHY108</CourseNumbers>
+        <CourseNumbers>PHY121 and PHY122</CourseNumbers>
+        <Required>1 math/stats</Required>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY215</CourseNumbers>
+        <Required> ETS major Field Test</Required>
+        <CourseNumbers>  </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Biology BS">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO253</CourseNumbers>
+        <CourseNumbers>BIO255</CourseNumbers>
+        <Required> 5 upper divison electives,one of BIO361, BIO440, or BIO481</Required>
+        <CourseNumbers>BIO351</CourseNumbers>
+        <CourseNumbers>BIO353</CourseNumbers>
+        <CourseNumbers>BIO361</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <CourseNumbers>BIO440</CourseNumbers>
+        <CourseNumbers>BIO471</CourseNumbers>
+        <CourseNumbers>BIO473</CourseNumbers>
+        <CourseNumbers>BIO474</CourseNumbers>
+        <CourseNumbers>BIO475</CourseNumbers>
+        <CourseNumbers>BIO476</CourseNumbers>
+        <CourseNumbers>BIO481</CourseNumbers>
+        <CourseNumbers>BIO485</CourseNumbers>
+        <CourseNumbers>BIO486</CourseNumbers>
+        <CourseNumbers>BIO495</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>1 KeyStone </Required>
+        <CourseNumbers>BIO490</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <CourseNumbers>HON490</CourseNumbers>
+        <Required> Supporting classes</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>CHM251</CourseNumbers>
+        <CourseNumbers>CHM251L</CourseNumbers>
+        <CourseNumbers>CHM252</CourseNumbers>
+        <CourseNumbers>CHM252L</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>PHY107 and PHY108</CourseNumbers>
+        <CourseNumbers>PHY121 and PHY122</CourseNumbers>
+        <Required> ETS major Field Test</Required>
+        <CourseNumbers>  </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Biopsychology BS">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO253</CourseNumbers>
+        <CourseNumbers>BIO475</CourseNumbers>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY315</CourseNumbers>
+        <CourseNumbers>PSY355</CourseNumbers>
+        <Required> 2 physchology electives</Required>
+        <CourseNumbers>PHY253</CourseNumbers>
+        <CourseNumbers>PHY262</CourseNumbers>
+        <CourseNumbers>PHY299</CourseNumbers>
+        <CourseNumbers>PHY325</CourseNumbers>
+        <CourseNumbers>PSY360</CourseNumbers>
+        <CourseNumbers>PSY354</CourseNumbers>
+        <CourseNumbers>PSY391</CourseNumbers>
+        <CourseNumbers>PSY410</CourseNumbers>
+        <CourseNumbers>PSY491</CourseNumbers>
+        <CourseNumbers>PSYC322</CourseNumbers>
+        <CourseNumbers>PSYC407</CourseNumbers>
+        <CourseNumbers>PSYC378</CourseNumbers>
+        <CourseNumbers>PSYC486</CourseNumbers>
+        <Required> 2 biology electives</Required>
+        <CourseNumbers>BIO255</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <CourseNumbers>BIO471</CourseNumbers>
+        <CourseNumbers>BIO473</CourseNumbers>
+        <CourseNumbers>BIO474</CourseNumbers>
+        <CourseNumbers>BIO495</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <CourseNumbers>BIOL356</CourseNumbers>
+        <Required>1 KeyStone </Required>
+        <CourseNumbers>BIO490</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <CourseNumbers>HON490</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Life Sciences BA">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO253</CourseNumbers>
+        <CourseNumbers>BIO255</CourseNumbers>
+        <Required> 5 upper divison electives,one of BIO361, BIO440, or BIO481</Required>
+        <CourseNumbers>BIO351</CourseNumbers>
+        <CourseNumbers>BIO353</CourseNumbers>
+        <CourseNumbers>BIO361</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <CourseNumbers>BIO440</CourseNumbers>
+        <CourseNumbers>BIO471</CourseNumbers>
+        <CourseNumbers>BIO473</CourseNumbers>
+        <CourseNumbers>BIO474</CourseNumbers>
+        <CourseNumbers>BIO475</CourseNumbers>
+        <CourseNumbers>BIO476</CourseNumbers>
+        <CourseNumbers>BIO481</CourseNumbers>
+        <CourseNumbers>BIO486</CourseNumbers>
+        <CourseNumbers>BIO495</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>1 KeyStone </Required>
+        <CourseNumbers>BIO490</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <CourseNumbers>HON490</CourseNumbers>
+        <Required> Supporting classes</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>PHY107 and PHY108</CourseNumbers>
+        <CourseNumbers>PHY121 and PHY122</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PHY101</CourseNumbers>
+        <CourseNumbers>SCI106</CourseNumbers>
+        <CourseNumbers>  </CourseNumbers>
+        <Required>1 math/stats</Required>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY215</CourseNumbers>
+        <Required> ETS major Field Test</Required>
+        <CourseNumbers>  </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Accounting BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>ACC322</CourseNumbers>
+        <CourseNumbers>ACC323</CourseNumbers>
+        <CourseNumbers>ACC324</CourseNumbers>
+        <CourseNumbers>ACC326</CourseNumbers>
+        <CourseNumbers>ACC423</CourseNumbers>
+        <CourseNumbers>ACC425</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MAT110</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT173</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Finance BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>ACC322</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO115</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>FIN433</CourseNumbers>
+        <CourseNumbers>FIN438</CourseNumbers>
+        <CourseNumbers>FIN460</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MAT110</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT173</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "International Business BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>BUS365</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO115</CourseNumbers>
+        <CourseNumbers>ECO360 or ECO370 or FIN460</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MIS260 or MIS379</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <CourseNumbers>MKT466</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>FRE211</CourseNumbers>
+        <CourseNumbers>GER211</CourseNumbers>
+        <CourseNumbers>SPA211</CourseNumbers>
+        <CourseNumbers>     TRANSFER</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MAT110</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT173</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Mangement BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS340</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>BUS440</CourseNumbers>
+        <CourseNumbers>BUS465</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MIS276</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MIS376</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MAT110</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT173</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Marketing BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MIS264 or MIS379</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <CourseNumbers>MKT352</CourseNumbers>
+        <CourseNumbers>MKT450</CourseNumbers>
+        <CourseNumbers>MKT466</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MKT350</CourseNumbers>
+        <CourseNumbers>MKT354</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MKT355</CourseNumbers>
+        <CourseNumbers>MKT357</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MAT110</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT173</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Management Information Systems BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS301</CourseNumbers>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>CSC160</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MIS270</CourseNumbers>
+        <CourseNumbers>MIS375</CourseNumbers>
+        <CourseNumbers>MIS376</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <CourseNumbers>MIS476</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MIS264</CourseNumbers>
+        <CourseNumbers>MIS3794</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CSC170</CourseNumbers>
+        <CourseNumbers>CSC240</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM112</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL291</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Business Administration:Music Business BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <CourseNumbers>MUS205</CourseNumbers>
+        <CourseNumbers>MUS335</CourseNumbers>
+        <CourseNumbers>MUS336</CourseNumbers>
+        <CourseNumbers>MUS162</CourseNumbers>
+        <CourseNumbers>MUS408</CourseNumbers>
+        <CourseNumbers>   4 business electives in place of MUS162 and MUS408</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>BUS399</CourseNumbers>
+        <CourseNumbers>MUS399</CourseNumbers>
+        <Required>12 SEMESTER CREDITS</Required>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MUS114</CourseNumbers>
+        <CourseNumbers>MUS130</CourseNumbers>
+        <CourseNumbers>MUS220</CourseNumbers>
+        <CourseNumbers>MUS241</CourseNumbers>
+        <CourseNumbers>MUE   Large ensamble particpation</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>MIS264</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Cross-Cultural Studies BA">
+        <Required> All of</Required>
+        <CourseNumbers>CSS100</CourseNumbers>
+        <CourseNumbers>CSS399</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required>Complete a minor in French, German, or Spanish; or complete a 212-level course in two different languages (or 211 for Norwegian)</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>     </CourseNumbers>
+        <Required>Complete three (3) upper division electives in related areas, chosen in consultation with an LCS faculty advisor </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>Complete a semester of study abroad or two short-term international study experiences</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>    Approved QR from a second major</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Chemistry(ACS certified) BS">
+        <Required> All of</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>CHM251</CourseNumbers>
+        <CourseNumbers>CHM251L</CourseNumbers>
+        <CourseNumbers>CHM252</CourseNumbers>
+        <CourseNumbers>CHM252L</CourseNumbers>
+        <CourseNumbers>CHM280</CourseNumbers>
+        <CourseNumbers>CHM280L</CourseNumbers>
+        <CourseNumbers>CHM362</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <CourseNumbers>CHM430</CourseNumbers>
+        <CourseNumbers>CHM440</CourseNumbers>
+        <CourseNumbers>CHM450</CourseNumbers>
+        <CourseNumbers>CHM464</CourseNumbers>
+        <CourseNumbers>CHM481</CourseNumbers>
+        <CourseNumbers>CHM482</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CHM370</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <Required> 4 credits </Required>
+        <CourseNumbers>CHM494</CourseNumbers>
+        <CourseNumbers>CHM495</CourseNumbers>
+        <CourseNumbers>CHM498</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>4 SEMESTERS OF CHM491</Required>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <Required>SUPPORTING COURSES</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Chemistry BA">
+        <Required> All of</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>CHM251</CourseNumbers>
+        <CourseNumbers>CHM251L</CourseNumbers>
+        <CourseNumbers>CHM252</CourseNumbers>
+        <CourseNumbers>CHM252L</CourseNumbers>
+        <CourseNumbers>CHM280</CourseNumbers>
+        <CourseNumbers>CHM280L</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CHM362</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CHM370</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>CHM430</CourseNumbers>
+        <CourseNumbers>CHM440</CourseNumbers>
+        <CourseNumbers>CHM450</CourseNumbers>
+        <Required> 4 credits </Required>
+        <CourseNumbers>CHM362</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <CourseNumbers>CHM464</CourseNumbers>
+        <CourseNumbers>CHM481</CourseNumbers>
+        <CourseNumbers>CHM482</CourseNumbers>
+        <CourseNumbers>CHM494</CourseNumbers>
+        <CourseNumbers>CHM495</CourseNumbers>
+        <CourseNumbers>CHM498</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>4 SEMESTERS OF CHM491</Required>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <Required>SUPPORTING COURSES</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Chemistry(NON-ACS certified) BS">
+        <Required> All of</Required>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>CHM251</CourseNumbers>
+        <CourseNumbers>CHM251L</CourseNumbers>
+        <CourseNumbers>CHM252</CourseNumbers>
+        <CourseNumbers>CHM252L</CourseNumbers>
+        <CourseNumbers>CHM280</CourseNumbers>
+        <CourseNumbers>CHM280L</CourseNumbers>
+        <CourseNumbers>SCI490</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CHM362</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>CHM370</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <Required>2 of</Required>
+        <CourseNumbers>CHM430</CourseNumbers>
+        <CourseNumbers>CHM440</CourseNumbers>
+        <CourseNumbers>CHM450</CourseNumbers>
+        <Required> 12 credits of elctives</Required>
+        <CourseNumbers>CHM362</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <CourseNumbers>CHM464</CourseNumbers>
+        <CourseNumbers>CHM481</CourseNumbers>
+        <CourseNumbers>CHM482</CourseNumbers>
+        <CourseNumbers>CHM494</CourseNumbers>
+        <CourseNumbers>CHM495</CourseNumbers>
+        <CourseNumbers>CHM498</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <Required>4 SEMESTERS OF CHM491</Required>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <CourseNumbers>CHM491</CourseNumbers>
+        <Required>SUPPORTING COURSES</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Communications Studies BA">
+        <Required> All of</Required>
+        <CourseNumbers>COM111 OR COM112 OR COM115</CourseNumbers>
+        <CourseNumbers>COM120</CourseNumbers>
+        <CourseNumbers>COM280</CourseNumbers>
+        <CourseNumbers>COM281</CourseNumbers>
+        <CourseNumbers>COM329</CourseNumbers>
+        <CourseNumbers>COM351</CourseNumbers>
+        <CourseNumbers>COM352</CourseNumbers>
+        <CourseNumbers>COM490</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM254</CourseNumbers>
+        <CourseNumbers>COM355</CourseNumbers>
+        <Required>3 Electives, ATLEAST 1 COM</Required>
+        <CourseNumbers>COM243</CourseNumbers>
+        <CourseNumbers>COM247</CourseNumbers>
+        <CourseNumbers>COM260</CourseNumbers>
+        <CourseNumbers>COM299</CourseNumbers>
+        <CourseNumbers>COM321</CourseNumbers>
+        <CourseNumbers>COM345</CourseNumbers>
+        <CourseNumbers>COM399</CourseNumbers>
+        <CourseNumbers>COM405</CourseNumbers>
+        <CourseNumbers>COM415</CourseNumbers>
+        <CourseNumbers>COM480</CourseNumbers>
+        <CourseNumbers>COM495</CourseNumbers>
+        <CourseNumbers>COM499</CourseNumbers>
+        <CourseNumbers>ART132</CourseNumbers>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART215</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>ENL227</CourseNumbers>
+        <CourseNumbers>ENL228</CourseNumbers>
+        <CourseNumbers>FLM399</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Computational Economics BA">
+        <Required> All of</Required>
+        <CourseNumbers>CSC160</CourseNumbers>
+        <CourseNumbers>CSC170</CourseNumbers>
+        <CourseNumbers>CSC210</CourseNumbers>
+        <CourseNumbers>CSC345</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <Required>1 COMPSCI Electives</Required>
+        <CourseNumbers>CSC240</CourseNumbers>
+        <CourseNumbers>CSC330</CourseNumbers>
+        <CourseNumbers>CSC352</CourseNumbers>
+        <Required>1 inpendent study</Required>
+        <CourseNumbers>CSC499</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Computational Philosophy BA">
+        <Required> All of</Required>
+        <CourseNumbers>CSC160</CourseNumbers>
+        <CourseNumbers>CSC170</CourseNumbers>
+        <CourseNumbers>CSC210</CourseNumbers>
+        <CourseNumbers>CSC320</CourseNumbers>
+        <CourseNumbers>CSC373</CourseNumbers>
+        <CourseNumbers>CSC385</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>PHI241</CourseNumbers>
+        <CourseNumbers>PHI242</CourseNumbers>
+        <CourseNumbers>PHI343</CourseNumbers>
+        <CourseNumbers>PHI344</CourseNumbers>
+        <CourseNumbers>PHI365</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>CSC395</CourseNumbers>
+        <CourseNumbers>PHI410</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>PHI315</CourseNumbers>
+        <CourseNumbers>PHI350</CourseNumbers>
+        <CourseNumbers>PHI370</CourseNumbers>
+        <CourseNumbers>PHI380</CourseNumbers>
+        <CourseNumbers>PHI499</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Computer Science BA">
+        <Required> All of</Required>
+        <CourseNumbers>CSC160</CourseNumbers>
+        <CourseNumbers>CSC170</CourseNumbers>
+        <CourseNumbers>CSC210</CourseNumbers>
+        <CourseNumbers>CSC240</CourseNumbers>
+        <CourseNumbers>CSC320</CourseNumbers>
+        <CourseNumbers>CSC345</CourseNumbers>
+        <CourseNumbers>CSC385</CourseNumbers>
+        <CourseNumbers>CSC450</CourseNumbers>
+        <CourseNumbers>CSC451</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT171</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <Required>2 Electives, 1 upper division</Required>
+        <CourseNumbers>CSC250</CourseNumbers>
+        <CourseNumbers>CSC272</CourseNumbers>
+        <CourseNumbers>CSC310</CourseNumbers>
+        <CourseNumbers>CSC352</CourseNumbers>
+        <CourseNumbers>CSC353</CourseNumbers>
+        <CourseNumbers>CSC373</CourseNumbers>
+        <CourseNumbers>CSC395</CourseNumbers>
+        <CourseNumbers>CSC399</CourseNumbers>
+        <CourseNumbers>CSC431</CourseNumbers>
+        <CourseNumbers>CSC457</CourseNumbers>
+        <CourseNumbers>CSC495</CourseNumbers>
+        <CourseNumbers>CSC499</CourseNumbers>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>MAT201</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Computer Science BS">
+        <Required> All of</Required>
+        <CourseNumbers>CSC160</CourseNumbers>
+        <CourseNumbers>CSC170</CourseNumbers>
+        <CourseNumbers>CSC210</CourseNumbers>
+        <CourseNumbers>CSC240</CourseNumbers>
+        <CourseNumbers>CSC320</CourseNumbers>
+        <CourseNumbers>CSC345</CourseNumbers>
+        <CourseNumbers>CSC385</CourseNumbers>
+        <CourseNumbers>CSC450</CourseNumbers>
+        <CourseNumbers>CSC451</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <Required>2 Math Electives</Required>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>MAT246</CourseNumbers>
+        <CourseNumbers>MAT304</CourseNumbers>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MAT363</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <Required>3 Electives, Two upper division</Required>
+        <CourseNumbers>CSC250</CourseNumbers>
+        <CourseNumbers>CSC272</CourseNumbers>
+        <CourseNumbers>CSC310</CourseNumbers>
+        <CourseNumbers>CSC352</CourseNumbers>
+        <CourseNumbers>CSC353</CourseNumbers>
+        <CourseNumbers>CSC373</CourseNumbers>
+        <CourseNumbers>CSC395</CourseNumbers>
+        <CourseNumbers>CSC399</CourseNumbers>
+        <CourseNumbers>CSC431</CourseNumbers>
+        <CourseNumbers>CSC457</CourseNumbers>
+        <CourseNumbers>CSC495</CourseNumbers>
+        <CourseNumbers>CSC499</CourseNumbers>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MIS475</CourseNumbers>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>MAT201</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Applied Economics BA">
+        <Required> All of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO350</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>ENL223</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO399</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>PHI120</CourseNumbers>
+        <CourseNumbers>PHI125</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Combined major in Business/Economics BA">
+        <Required> All of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ACC222</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>MKT252</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>FIN331</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO350</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <CourseNumbers>ECO399</CourseNumbers>
+        <CourseNumbers>ECO416</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>ECO495</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+        <Required>1  upper divion from ACC,BUS,FIN,MIS,or MKT</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Economics BA">
+        <Required> All of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <Required>3 OF</Required>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO350</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <CourseNumbers>ECO399</CourseNumbers>
+        <CourseNumbers>ECO416</CourseNumbers>
+        <CourseNumbers>ECO495</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+        <Required>1  of </Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Mathematical Economics BS">
+        <Required> All of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>ECO416</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>MAT246</CourseNumbers>
+        <CourseNumbers>MAT373</CourseNumbers>
+        <CourseNumbers>MAT374</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO350</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <CourseNumbers>ECO399</CourseNumbers>
+        <CourseNumbers>ECO495</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+        <Required>1  of </Required>
+        <CourseNumbers>MAT324</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <CourseNumbers>MAT377</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Elementary Education BS">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>EDD312</CourseNumbers>
+        <CourseNumbers>EDD325</CourseNumbers>
+        <CourseNumbers>EDD326</CourseNumbers>
+        <CourseNumbers>EDD336</CourseNumbers>
+        <CourseNumbers>EED341</CourseNumbers>
+        <CourseNumbers>EED342</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>EED370</CourseNumbers>
+        <CourseNumbers>EED380</CourseNumbers>
+        <CourseNumbers>EED386</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL11</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>MAT137</CourseNumbers>
+        <CourseNumbers>MAT138</CourseNumbers>
+        <Required>PHY 203 OR BOTH EDD200 AND EDD203</Required>
+        <CourseNumbers>PHY203</CourseNumbers>
+        <CourseNumbers>EDD200 AND EDD203</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>BIO102</CourseNumbers>
+        <CourseNumbers>ENV120</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Elementary Education with communication Arts Endorsenments BS">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>EDD312</CourseNumbers>
+        <CourseNumbers>EDD325</CourseNumbers>
+        <CourseNumbers>EDD326</CourseNumbers>
+        <CourseNumbers>EDD336</CourseNumbers>
+        <CourseNumbers>EED341</CourseNumbers>
+        <CourseNumbers>EED342</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>EED370</CourseNumbers>
+        <CourseNumbers>EED380</CourseNumbers>
+        <CourseNumbers>EED386</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL11</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>MAT137</CourseNumbers>
+        <CourseNumbers>MAT138</CourseNumbers>
+        <Required>PHY 203 OR BOTH EDD200 AND EDD203</Required>
+        <CourseNumbers>PHY203</CourseNumbers>
+        <CourseNumbers>EDD200 AND EDD203</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>BIO102</CourseNumbers>
+        <CourseNumbers>ENV120</CourseNumbers>
+        <Required> All of</Required>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>ENL220</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL300</CourseNumbers>
+        <CourseNumbers>EDD350</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>COM254</CourseNumbers>
+        <CourseNumbers>COM329</CourseNumbers>
+        <CourseNumbers>COM351</CourseNumbers>
+        <CourseNumbers>COM355</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Elementary Education with General Science Endorsenments BS">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>EDD312</CourseNumbers>
+        <CourseNumbers>EDD325</CourseNumbers>
+        <CourseNumbers>EDD326</CourseNumbers>
+        <CourseNumbers>EDD336</CourseNumbers>
+        <CourseNumbers>EED341</CourseNumbers>
+        <CourseNumbers>EED342</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>EED370</CourseNumbers>
+        <CourseNumbers>EED380</CourseNumbers>
+        <CourseNumbers>EED386</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL11</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>MAT137</CourseNumbers>
+        <CourseNumbers>MAT138</CourseNumbers>
+        <Required> All of(general science)</Required>
+        <CourseNumbers>BIO102</CourseNumbers>
+        <CourseNumbers>BIO121</CourseNumbers>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>PHY116</CourseNumbers>
+        <CourseNumbers>SCI106</CourseNumbers>
+        <CourseNumbers>ESE300</CourseNumbers>
+        <CourseNumbers>ESE341</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Elementary Education with Mathematics Endorsenments BS">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>EDD312</CourseNumbers>
+        <CourseNumbers>EDD325</CourseNumbers>
+        <CourseNumbers>EDD326</CourseNumbers>
+        <CourseNumbers>EDD336</CourseNumbers>
+        <CourseNumbers>EED341</CourseNumbers>
+        <CourseNumbers>EED342</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>EED370</CourseNumbers>
+        <CourseNumbers>EED380</CourseNumbers>
+        <CourseNumbers>EED386</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL11</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <Required>PHY 203 OR BOTH EDD200 AND EDD203</Required>
+        <CourseNumbers>PHY203</CourseNumbers>
+        <CourseNumbers>EDD200 AND EDD203</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>BIO102</CourseNumbers>
+        <CourseNumbers>ENV120</CourseNumbers>
+        <Required> All of(Mathematics)</Required>
+        <CourseNumbers>ESE300</CourseNumbers>
+        <CourseNumbers>ESE331</CourseNumbers>
+        <CourseNumbers>MAT114</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT252</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <CourseNumbers>MAT287</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Elementary Education with Social Studies Endorsenments BS">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EDD311</CourseNumbers>
+        <CourseNumbers>EDD312</CourseNumbers>
+        <CourseNumbers>EDD325</CourseNumbers>
+        <CourseNumbers>EDD326</CourseNumbers>
+        <CourseNumbers>EDD336</CourseNumbers>
+        <CourseNumbers>EED341</CourseNumbers>
+        <CourseNumbers>EED342</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>EED370</CourseNumbers>
+        <CourseNumbers>EED380</CourseNumbers>
+        <CourseNumbers>EED386</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL111</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>MAT137</CourseNumbers>
+        <CourseNumbers>MAT138</CourseNumbers>
+        <Required>PHY 203 OR BOTH EDD200 AND EDD203</Required>
+        <CourseNumbers>PHY203</CourseNumbers>
+        <CourseNumbers>EDD200 AND EDD203</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>BIO102</CourseNumbers>
+        <CourseNumbers>ENV120</CourseNumbers>
+        <Required> All of(Social Studies)</Required>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ESE220</CourseNumbers>
+        <CourseNumbers>ESE300</CourseNumbers>
+        <CourseNumbers>ESE311</CourseNumbers>
+        <CourseNumbers>POL121</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>HIS120</CourseNumbers>
+        <CourseNumbers>HIS121</CourseNumbers>
+        <CourseNumbers>HIS122</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>ANT141</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS104</CourseNumbers>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>SOC121</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Communication Arts/Literature BA">
+        <Required> All of</Required>
+        <CourseNumbers>ENL220</CourseNumbers>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL365</CourseNumbers>
+        <CourseNumbers>ENL380</CourseNumbers>
+        <CourseNumbers>ENL396</CourseNumbers>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM254</CourseNumbers>
+        <CourseNumbers>COM351</CourseNumbers>
+        <CourseNumbers>ESE350</CourseNumbers>
+        <CourseNumbers>ESE351</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>COM120</CourseNumbers>
+        <CourseNumbers>COM243</CourseNumbers>
+        <CourseNumbers>POL342</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL332</CourseNumbers>
+        <CourseNumbers>ENL333</CourseNumbers>
+        <CourseNumbers>ENL334</CourseNumbers>
+        <CourseNumbers>ENL336</CourseNumbers>
+        <CourseNumbers>ENL337</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL339</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL350</CourseNumbers>
+        <CourseNumbers>ENL351</CourseNumbers>
+        <CourseNumbers>ENL352</CourseNumbers>
+        <CourseNumbers>ENL353</CourseNumbers>
+        <CourseNumbers>ENL354</CourseNumbers>
+        <CourseNumbers>ENL355</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL360</CourseNumbers>
+        <CourseNumbers>ENL361</CourseNumbers>
+        <CourseNumbers>ENL362</CourseNumbers>
+        <CourseNumbers>ENL367</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <CourseNumbers>ENL371</CourseNumbers>
+        <CourseNumbers>ENL385</CourseNumbers>
+        <CourseNumbers>ENL394</CourseNumbers>
+        <CourseNumbers>ENL410</CourseNumbers>
+        <CourseNumbers>ENL430</CourseNumbers>
+        <Required> expermintal component</Required>
+        <CourseNumbers>     </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "English:Creative Writing BA">
+        <Required> All of</Required>
+        <CourseNumbers>ENL226</CourseNumbers>
+        <CourseNumbers>ENL420</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL220</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <Required>2 of ENL320 and 321 or ENL322 and 323</Required>
+        <CourseNumbers>ENL320</CourseNumbers>
+        <CourseNumbers>ENL321</CourseNumbers>
+        <CourseNumbers>ENL322</CourseNumbers>
+        <CourseNumbers>ENL323</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL227</CourseNumbers>
+        <CourseNumbers>ENL228</CourseNumbers>
+        <CourseNumbers>ENL229</CourseNumbers>
+        <CourseNumbers>ENL320</CourseNumbers>
+        <CourseNumbers>ENL322</CourseNumbers>
+        <CourseNumbers>ENL324</CourseNumbers>
+        <CourseNumbers>ENL325</CourseNumbers>
+        <CourseNumbers>ENL396</CourseNumbers>
+        <CourseNumbers>ENL397</CourseNumbers>
+        <CourseNumbers>ENL399</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART215</CourseNumbers>
+        <Required> 300- lit,launage or theory elective</Required>
+        <CourseNumbers>     </CourseNumbers>
+        <Required>2 other lit,launage or theory electivet</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "English literature,language and theory BA">
+        <Required> All of</Required>
+        <CourseNumbers>ENL220</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>ENL240</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL242</CourseNumbers>
+        <CourseNumbers>ENL250</CourseNumbers>
+        <CourseNumbers>ENL251</CourseNumbers>
+        <CourseNumbers>ENL255</CourseNumbers>
+        <CourseNumbers>ENL260</CourseNumbers>
+        <CourseNumbers>ENL270</CourseNumbers>
+        <CourseNumbers>ENL280</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <Required>1 of </Required>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL332</CourseNumbers>
+        <CourseNumbers>ENL333</CourseNumbers>
+        <CourseNumbers>ENL334</CourseNumbers>
+        <CourseNumbers>ENL336</CourseNumbers>
+        <CourseNumbers>ENL337</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL339</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL350</CourseNumbers>
+        <CourseNumbers>ENL351</CourseNumbers>
+        <CourseNumbers>ENL352</CourseNumbers>
+        <CourseNumbers>ENL353</CourseNumbers>
+        <CourseNumbers>ENL354</CourseNumbers>
+        <CourseNumbers>ENL355</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENL360</CourseNumbers>
+        <CourseNumbers>ENL361</CourseNumbers>
+        <CourseNumbers>ENL362</CourseNumbers>
+        <CourseNumbers>ENL365</CourseNumbers>
+        <CourseNumbers>ENL367</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>ENL410</CourseNumbers>
+        <CourseNumbers>ENL430</CourseNumbers>
+        <Required>2 other 300- 400 course</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Environmental Studies BA">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO481</CourseNumbers>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ENV100</CourseNumbers>
+        <CourseNumbers>ENV120</CourseNumbers>
+        <CourseNumbers>ENV Internship</CourseNumbers>
+        <CourseNumbers>HIS316</CourseNumbers>
+        <CourseNumbers>HSWK210</CourseNumbers>
+        <Required>1 of </Required>
+        <CourseNumbers>ENV100</CourseNumbers>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL/WST341</CourseNumbers>
+        <CourseNumbers>SOC381</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>COM260</CourseNumbers>
+        <CourseNumbers>REL/WST313</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENV490</CourseNumbers>
+        <CourseNumbers>ENV492</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Environmental Studies: HECUA TRACK BA">
+        <Required> All of</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>BIO481</CourseNumbers>
+        <CourseNumbers>CHM115</CourseNumbers>
+        <CourseNumbers>CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116</CourseNumbers>
+        <CourseNumbers>CHM116L</CourseNumbers>
+        <CourseNumbers>ENV100</CourseNumbers>
+        <CourseNumbers>HIS316</CourseNumbers>
+        <CourseNumbers>INS345</CourseNumbers>
+        <CourseNumbers>INS346</CourseNumbers>
+        <CourseNumbers>INS399</CourseNumbers>
+        <CourseNumbers>INS399</CourseNumbers>
+        <CourseNumbers>SWK210</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>COM260</CourseNumbers>
+        <CourseNumbers>REL/WST313</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ENV490</CourseNumbers>
+        <CourseNumbers>ENV492</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Secondary Education Licensure Courses">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EDC490</CourseNumbers>
+        <CourseNumbers>ESE300</CourseNumbers>
+        <CourseNumbers>ESE325</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC481 or EDC483</CourseNumbers>
+        <CourseNumbers>EDC489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL111</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <Required>1 OR 2 DEPENDIGN</Required>
+        <CourseNumbers>ESE310</CourseNumbers>
+        <CourseNumbers>ESE330</CourseNumbers>
+        <CourseNumbers>ESE340</CourseNumbers>
+        <CourseNumbers>ESE350</CourseNumbers>
+        <CourseNumbers>ESE351</CourseNumbers>
+        <CourseNumbers>ESE360</CourseNumbers>
+        <CourseNumbers>ESE370</CourseNumbers>
+        <CourseNumbers>HPE365</CourseNumbers>
+        <CourseNumbers>ESE368</CourseNumbers>
+        <CourseNumbers>ESE390</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "K-12 English as a Second Language BA">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EED325</CourseNumbers>
+        <CourseNumbers>EED326</CourseNumbers>
+        <CourseNumbers>ESE325</CourseNumbers>
+        <CourseNumbers>ESL310</CourseNumbers>
+        <CourseNumbers>ESL320</CourseNumbers>
+        <CourseNumbers>ESL330</CourseNumbers>
+        <CourseNumbers>ESL340</CourseNumbers>
+        <CourseNumbers>ESL410</CourseNumbers>
+        <CourseNumbers>ESL420</CourseNumbers>
+        <CourseNumbers>ESL490</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching</Required>
+        <CourseNumbers>EDC483 </CourseNumbers>
+        <CourseNumbers>ESL489</CourseNumbers>
+        <Required>Supporting courses</Required>
+        <CourseNumbers>ENL111</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers> language 2 yrs highschool or 1 yr in college</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Film:production track BA">
+        <Required> All of</Required>
+        <CourseNumbers>FLM180</CourseNumbers>
+        <CourseNumbers>FLM216</CourseNumbers>
+        <CourseNumbers>FLM260</CourseNumbers>
+        <CourseNumbers>FLM420</CourseNumbers>
+        <CourseNumbers>FLM490</CourseNumbers>
+        <CourseNumbers>COM247</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL371</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <CourseNumbers>FLM372</CourseNumbers>
+        <Required> 3 of</Required>
+        <CourseNumbers>ART132</CourseNumbers>
+        <CourseNumbers>ART215</CourseNumbers>
+        <CourseNumbers>ART315</CourseNumbers>
+        <CourseNumbers>ART340</CourseNumbers>
+        <CourseNumbers>COM243</CourseNumbers>
+        <CourseNumbers>ENL228</CourseNumbers>
+        <CourseNumbers>ENL229</CourseNumbers>
+        <CourseNumbers>FLM124</CourseNumbers>
+        <CourseNumbers>FLM24O</CourseNumbers>
+        <CourseNumbers>FLM312</CourseNumbers>
+        <CourseNumbers>FLM348</CourseNumbers>
+        <CourseNumbers>FLM399</CourseNumbers>
+        <CourseNumbers>FLM495</CourseNumbers>
+        <CourseNumbers>FLM499</CourseNumbers>
+        <CourseNumbers>MUS130</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>THR328</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Film:Theory and culture track BA">
+        <Required> All of</Required>
+        <CourseNumbers>FLM180</CourseNumbers>
+        <CourseNumbers>FLM216</CourseNumbers>
+        <CourseNumbers>FLM260</CourseNumbers>
+        <CourseNumbers>FLM420</CourseNumbers>
+        <CourseNumbers>FLM490</CourseNumbers>
+        <CourseNumbers>COM247</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL371</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <Required> 3 of</Required>
+        <CourseNumbers>AIS264</CourseNumbers>
+        <CourseNumbers>AIS364</CourseNumbers>
+        <CourseNumbers>AIS208/408</CourseNumbers>
+        <CourseNumbers>ART240</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL228</CourseNumbers>
+        <CourseNumbers>ENL229</CourseNumbers>
+        <CourseNumbers>ENL340</CourseNumbers>
+        <CourseNumbers>FLM124</CourseNumbers>
+        <CourseNumbers>FLM399</CourseNumbers>
+        <CourseNumbers>FLM495</CourseNumbers>
+        <CourseNumbers>FLM499</CourseNumbers>
+        <CourseNumbers>PHI120</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>RLN319</CourseNumbers>
+        <CourseNumbers>SPA248</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "FRENCH BA">
+        <Required> All of</Required>
+        <CourseNumbers>CCS100</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>FRE351</CourseNumbers>
+        <CourseNumbers>FRE353</CourseNumbers>
+        <CourseNumbers>FRE295</CourseNumbers>
+        <CourseNumbers>FRE495</CourseNumbers>
+        <Required> 7 other French electives </Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> 1 semester study aboard </Required>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "German BA">
+        <Required> All of</Required>
+        <CourseNumbers>CCS100</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>GER351</CourseNumbers>
+        <CourseNumbers>GER354</CourseNumbers>
+        <CourseNumbers>GER295</CourseNumbers>
+        <CourseNumbers>GER495</CourseNumbers>
+        <Required> 7 other German electives </Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> 1 semester study aboard </Required>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "History BA">
+        <Required> All of</Required>
+        <CourseNumbers>HIS280</CourseNumbers>
+        <CourseNumbers>HIS480</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>HIS101</CourseNumbers>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS360</CourseNumbers>
+        <CourseNumbers>HIS361</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>HIS370</CourseNumbers>
+        <CourseNumbers>HIS374</CourseNumbers>
+        <CourseNumbers>HIS378</CourseNumbers>
+        <CourseNumbers>HUM120</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>HIS102</CourseNumbers>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS282</CourseNumbers>
+        <CourseNumbers>HIS348</CourseNumbers>
+        <CourseNumbers>HIS352</CourseNumbers>
+        <CourseNumbers>HIS354</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>HIS120</CourseNumbers>
+        <CourseNumbers>HIS121</CourseNumbers>
+        <CourseNumbers>HIS122</CourseNumbers>
+        <CourseNumbers>HIS225</CourseNumbers>
+        <CourseNumbers>HIS234</CourseNumbers>
+        <CourseNumbers>HIS236</CourseNumbers>
+        <CourseNumbers>HIS241</CourseNumbers>
+        <CourseNumbers>HIS242</CourseNumbers>
+        <CourseNumbers>HIS243</CourseNumbers>
+        <CourseNumbers>HIS249/349</CourseNumbers>
+        <CourseNumbers>HIS300</CourseNumbers>
+        <CourseNumbers>HIS316</CourseNumbers>
+        <CourseNumbers>HIS331</CourseNumbers>
+        <CourseNumbers>HIS332</CourseNumbers>
+        <CourseNumbers>HIS335</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>HIS104</CourseNumbers>
+        <CourseNumbers>HIS140/440</CourseNumbers>
+        <CourseNumbers>HIS150/350</CourseNumbers>
+        <CourseNumbers>HIS155/355</CourseNumbers>
+        <CourseNumbers>HIS162/462</CourseNumbers>
+        <CourseNumbers>HIS323</CourseNumbers>
+        <CourseNumbers>HIS327</CourseNumbers>
+        <CourseNumbers>HIS346</CourseNumbers>
+        <CourseNumbers>HIS357</CourseNumbers>
+        <CourseNumbers>HIS474</CourseNumbers>
+        <Required>3 ADDITIONAL HISTORY ELECTIVES </Required>
+        <CourseNumbers>  </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Exercise Science BA">
+        <Required> All of</Required>
+        <CourseNumbers>HPE104</CourseNumbers>
+        <CourseNumbers>HPE110</CourseNumbers>
+        <CourseNumbers>HPE114</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>HPE205</CourseNumbers>
+        <CourseNumbers>HPE215</CourseNumbers>
+        <CourseNumbers>HPE220</CourseNumbers>
+        <CourseNumbers>HPE275</CourseNumbers>
+        <CourseNumbers>HPE300</CourseNumbers>
+        <CourseNumbers>HPE304</CourseNumbers>
+        <CourseNumbers>HPE305</CourseNumbers>
+        <CourseNumbers>HPE315</CourseNumbers>
+        <CourseNumbers>HPE350</CourseNumbers>
+        <CourseNumbers>HPE351</CourseNumbers>
+        <CourseNumbers>HPE357</CourseNumbers>
+        <CourseNumbers>HPE450</CourseNumbers>
+        <CourseNumbers>HPE452</CourseNumbers>
+        <CourseNumbers>HPE490</CourseNumbers>
+        <CourseNumbers>BIO103</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>HPE397</CourseNumbers>
+        <CourseNumbers>HPE399</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Exercise Science:Pre-Health Science BS">
+        <Required> All of</Required>
+        <CourseNumbers>HPE104</CourseNumbers>
+        <CourseNumbers>HPE110</CourseNumbers>
+        <CourseNumbers>HPE114</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>HPE205</CourseNumbers>
+        <CourseNumbers>HPE215</CourseNumbers>
+        <CourseNumbers>HPE220</CourseNumbers>
+        <CourseNumbers>HPE275</CourseNumbers>
+        <CourseNumbers>HPE300</CourseNumbers>
+        <CourseNumbers>HPE304</CourseNumbers>
+        <CourseNumbers>HPE315</CourseNumbers>
+        <CourseNumbers>HPE350</CourseNumbers>
+        <CourseNumbers>HPE351</CourseNumbers>
+        <CourseNumbers>HPE357</CourseNumbers>
+        <CourseNumbers>HPE490</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>HPE397</CourseNumbers>
+        <CourseNumbers>HPE399</CourseNumbers>
+        <Required> Supporting Courses</Required>
+        <CourseNumbers>BIO151</CourseNumbers>
+        <CourseNumbers>BIO152</CourseNumbers>
+        <CourseNumbers>CHM115,CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116,CHM116L</CourseNumbers>
+        <CourseNumbers>PHY107</CourseNumbers>
+        <CourseNumbers>PHY108</CourseNumbers>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <Required> 1 OF</Required>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <Required> 1 OF</Required>
+        <CourseNumbers>PSY203</CourseNumbers>
+        <CourseNumbers>PST262</CourseNumbers>
+        <Required> SEQUENCE  either BIO535 and BIO473 or BIOL261o and BIOL2620</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers> </CourseNumbers>
+        <Required> 1 OF</Required>
+        <CourseNumbers>HPE215</CourseNumbers>
+        <CourseNumbers>HPE220</CourseNumbers>
+        <CourseNumbers>HPE305</CourseNumbers>
+        <CourseNumbers>HPE450</CourseNumbers>
+        <CourseNumbers>HPE452</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Health Education BA or  BS">
+        <Required> All of</Required>
+        <CourseNumbers>HPE104</CourseNumbers>
+        <CourseNumbers>HPE110</CourseNumbers>
+        <CourseNumbers>HPE114</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>HPE215</CourseNumbers>
+        <CourseNumbers>HPE316</CourseNumbers>
+        <CourseNumbers>HPE357</CourseNumbers>
+        <CourseNumbers>HPE358</CourseNumbers>
+        <CourseNumbers>HPE390</CourseNumbers>
+        <CourseNumbers>HPE410</CourseNumbers>
+        <CourseNumbers>HPE450</CourseNumbers>
+        <CourseNumbers>BIO103</CourseNumbers>
+        <Required> 1 OF </Required>
+        <CourseNumbers>PSY250</CourseNumbers>
+        <CourseNumbers>PSY252</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Physical Education BA or  BS">
+        <Required> All of</Required>
+        <CourseNumbers>HPE104</CourseNumbers>
+        <CourseNumbers>HPE114</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>HPE205</CourseNumbers>
+        <CourseNumbers>HPE220</CourseNumbers>
+        <CourseNumbers>HPE254</CourseNumbers>
+        <CourseNumbers>HPE275</CourseNumbers>
+        <CourseNumbers>HPE324</CourseNumbers>
+        <CourseNumbers>HPE334</CourseNumbers>
+        <CourseNumbers>HPE335</CourseNumbers>
+        <CourseNumbers>HPE340</CourseNumbers>
+        <CourseNumbers>HPE350</CourseNumbers>
+        <CourseNumbers>HPE351</CourseNumbers>
+        <CourseNumbers>HPE357</CourseNumbers>
+        <CourseNumbers>HPE358</CourseNumbers>
+        <CourseNumbers>HPE473</CourseNumbers>
+        <CourseNumbers>BIO103</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Interdisciplinary Studies  BA">
+        <Required> All of</Required>
+    </MajorName>
+    
+    <MajorName id = "International Relations BA">
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS104</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL158</CourseNumbers>
+        <CourseNumbers>POL160</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL490</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>HIS332</CourseNumbers>
+        <CourseNumbers>POL368</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <CourseNumbers>POL461</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ANT141</CourseNumbers>
+        <CourseNumbers>INS225</CourseNumbers>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>SWK230</CourseNumbers>
+        <CourseNumbers>WST250</CourseNumbers>
+        <Required> 5 of</Required>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>BUS465</CourseNumbers>
+        <CourseNumbers>COM329</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <CourseNumbers>ENV310</CourseNumbers>
+        <CourseNumbers>FIN460</CourseNumbers>
+        <CourseNumbers>FRE332</CourseNumbers>
+        <CourseNumbers>GER332</CourseNumbers>
+        <CourseNumbers>HIS323</CourseNumbers>
+        <CourseNumbers>HIS346</CourseNumbers>
+        <CourseNumbers>HIS352</CourseNumbers>
+        <CourseNumbers>HIS354</CourseNumbers>
+        <CourseNumbers>HIS440</CourseNumbers>
+        <CourseNumbers>HIS474</CourseNumbers>
+        <CourseNumbers>MKT466</CourseNumbers>
+        <CourseNumbers>POL350</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>RLN276</CourseNumbers>
+        <CourseNumbers>SPA331</CourseNumbers>
+        <CourseNumbers>SPA332</CourseNumbers>
+        <Required> 4 Semester of language</Required>
+        <CourseNumbers>FRE212</CourseNumbers>
+        <CourseNumbers>GER212</CourseNumbers>
+        <CourseNumbers>SPA212</CourseNumbers>
+        <Required> GRADUATION SKILLS</Required>
+        <Required> SPEAKING 2 OPTIONS</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <Required> 1 OF</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "International Relations:Intl Business BA">
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>HIS103</CourseNumbers>
+        <CourseNumbers>HIS104</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL158</CourseNumbers>
+        <CourseNumbers>POL160</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL490</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required> 3 of</Required>
+        <CourseNumbers>BUS362</CourseNumbers>
+        <CourseNumbers>BUS465</CourseNumbers>
+        <CourseNumbers>FIN460</CourseNumbers>
+        <CourseNumbers>MKT466</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>HIS322</CourseNumbers>
+        <CourseNumbers>POL368</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <CourseNumbers>POL461</CourseNumbers>
+        <Required> 2 of, 1 UPPER</Required>
+        <CourseNumbers>ANT141</CourseNumbers>
+        <CourseNumbers>INS225</CourseNumbers>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>SWK230</CourseNumbers>
+        <CourseNumbers>WST250</CourseNumbers>
+        <CourseNumbers>COM329</CourseNumbers>
+        <CourseNumbers>ENV310</CourseNumbers>
+        <CourseNumbers>FRE332</CourseNumbers>
+        <CourseNumbers>GER332</CourseNumbers>
+        <CourseNumbers>HIS323</CourseNumbers>
+        <CourseNumbers>HIS346</CourseNumbers>
+        <CourseNumbers>HIS352</CourseNumbers>
+        <CourseNumbers>HIS354</CourseNumbers>
+        <CourseNumbers>HIS440</CourseNumbers>
+        <CourseNumbers>HIS474</CourseNumbers>
+        <CourseNumbers>POL350</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>RLN276</CourseNumbers>
+        <CourseNumbers>SPA331</CourseNumbers>
+        <CourseNumbers>SPA332</CourseNumbers>
+        <Required> 4 Semester of language</Required>
+        <CourseNumbers>FRE212</CourseNumbers>
+        <CourseNumbers>GER212</CourseNumbers>
+        <CourseNumbers>SPA212</CourseNumbers>
+        <Required> GRADUATION SKILLS</Required>
+        <Required> SPEAKING 2 OPTIONS</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <Required> 1 OF</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Mathematics BA">
+        <Required> All of</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>MAT246</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <Required>1 of/ theoretical structure </Required>
+        <CourseNumbers>MAT304</CourseNumbers>
+        <CourseNumbers>MAT314</CourseNumbers>
+        <CourseNumbers>MAT324</CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>3 Electives, 2 upper division</Required>
+        <CourseNumbers>MAT252</CourseNumbers>
+        <CourseNumbers>MAT273</CourseNumbers>
+        <CourseNumbers>MAT287</CourseNumbers>
+        <CourseNumbers>MAT304</CourseNumbers>
+        <CourseNumbers>MAT314</CourseNumbers>
+        <CourseNumbers>MAT324</CourseNumbers>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MAT363</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <CourseNumbers>MAT373</CourseNumbers>
+        <CourseNumbers>MAT374</CourseNumbers>
+        <CourseNumbers>MAT377</CourseNumbers>
+        <CourseNumbers>MAT394</CourseNumbers>
+        <CourseNumbers>MAT395</CourseNumbers>
+        <CourseNumbers>MAT399</CourseNumbers>
+        <CourseNumbers>MAT499</CourseNumbers>
+        <CourseNumbers>ECO416</CourseNumbers>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <Required> PASS MAT491 </Required>
+        <CourseNumbers>MAT491</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>MAT201</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Mathematics BS">
+        <Required> All of</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>MAT246</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <Required>1 of theoretical structure </Required>
+        <CourseNumbers>MAT304</CourseNumbers>
+        <CourseNumbers>MAT314</CourseNumbers>
+        <CourseNumbers>MAT324</CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 of STATS structure </Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>MAT373</CourseNumbers>
+        <CourseNumbers>MAT394</CourseNumbers>
+        <CourseNumbers>MIS379</CourseNumbers>
+        <CourseNumbers>PHY215</CourseNumbers>
+        <CourseNumbers>SOC362</CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 of PROJECT  </Required>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <CourseNumbers>MAT374</CourseNumbers>
+        <CourseNumbers>MAT377</CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>4  Electives </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> PASS MAT491 </Required>
+        <CourseNumbers>MAT491</CourseNumbers>
+        <Required> Experimental component </Required>
+        <CourseNumbers>     </CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>MAT201</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Mathematics: Secondary Teaching licensure major BS">
+        <Required> All of</Required>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <CourseNumbers>MAT246</CourseNumbers>
+        <CourseNumbers>MAT252</CourseNumbers>
+        <CourseNumbers>MAT271</CourseNumbers>
+        <CourseNumbers>MAT287</CourseNumbers>
+        <CourseNumbers>MAT314</CourseNumbers>
+        <CourseNumbers>MAT324</CourseNumbers>
+        <CourseNumbers>ESE330</CourseNumbers>
+        <Required>1 stats of </Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>MAT377</CourseNumbers>
+        <CourseNumbers>     </CourseNumbers>
+        <Required>1 applied project</Required>
+        <CourseNumbers>MAT355</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <CourseNumbers>MAT374</CourseNumbers>
+        <CourseNumbers>MAT377</CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> PASS MAT491 </Required>
+        <CourseNumbers>MAT491</CourseNumbers>
+        <Required> experimental component</Required>
+        <CourseNumbers>    </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Medieval Studies BA">
+        <Required> All of</Required>
+        <CourseNumbers>HUM120</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>HIS370</CourseNumbers>
+        <CourseNumbers>LAT101</CourseNumbers>
+        <CourseNumbers>LAT102</CourseNumbers>
+        <CourseNumbers>HUM490</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL332</CourseNumbers>
+        <CourseNumbers>ENL360</CourseNumbers>
+        <CourseNumbers>ENL361</CourseNumbers>
+        <CourseNumbers>SPA352</CourseNumbers>
+        <Required>1 </Required>
+        <CourseNumbers>HIS378</CourseNumbers>
+        <CourseNumbers>PHI242</CourseNumbers>
+        <CourseNumbers>RLN342</CourseNumbers>
+        <Required>1 </Required>
+        <CourseNumbers>ART386</CourseNumbers>
+        <CourseNumbers>ART387</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>HIS374</CourseNumbers>
+        <CourseNumbers>HIS440</CourseNumbers>
+        <CourseNumbers>POL380</CourseNumbers>
+        <CourseNumbers>SPA331</CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Music BA">
+        <Required> All of</Required>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MSU114</CourseNumbers>
+        <CourseNumbers>MUS213</CourseNumbers>
+        <CourseNumbers>MUS214</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>MUS232</CourseNumbers>
+        <CourseNumbers>MUS341</CourseNumbers>
+        <CourseNumbers>MUS458</CourseNumbers>
+        <CourseNumbers>MUS238 or piano exam</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>MUS331</CourseNumbers>
+        <CourseNumbers>MUS332</CourseNumbers>
+        <CourseNumbers>MUS333</CourseNumbers>
+        <CourseNumbers>MUS334</CourseNumbers>
+        <Required>8 semesters of music credit(2 to 4 classes)</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>4 semestesr of 100 lvl and 4 semesters of 300 lvl</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>2 semesters chamber music/small ensemble participation</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Music:Music Business BA">
+        <Required> All of</Required>
+        <CourseNumbers>ACC221</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>MIS260</CourseNumbers>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MSU114</CourseNumbers>
+        <CourseNumbers>MUS162</CourseNumbers>
+        <CourseNumbers>MUS205</CourseNumbers>
+        <CourseNumbers>MUS213</CourseNumbers>
+        <CourseNumbers>MUS214</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>MUS232</CourseNumbers>
+        <CourseNumbers>MUS335</CourseNumbers>
+        <CourseNumbers>MUS336</CourseNumbers>
+        <CourseNumbers>MUS399</CourseNumbers>
+        <CourseNumbers>MUS408</CourseNumbers>
+        <CourseNumbers>MUS458</CourseNumbers>
+        <CourseNumbers>MUS238 OR PIANO EXAM</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>MUS331</CourseNumbers>
+        <CourseNumbers>MUS332</CourseNumbers>
+        <CourseNumbers>MUS333</CourseNumbers>
+        <CourseNumbers>MUS334</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>BUS200</CourseNumbers>
+        <CourseNumbers>BUS242</CourseNumbers>
+        <CourseNumbers>BUS254</CourseNumbers>
+        <Required>4 semestesr of 100 lvl and 4 semesters of 300 lvl</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>2 semesters chamber music/small ensemble participation</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Music Education BM">
+        <Required> All of</Required>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MUS114</CourseNumbers>
+        <CourseNumbers>MUS213</CourseNumbers>
+        <CourseNumbers>MUS214</CourseNumbers>
+        <CourseNumbers>MUS220</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>MUS232</CourseNumbers>
+        <CourseNumbers>MUS303</CourseNumbers>
+        <CourseNumbers>MUS311</CourseNumbers>
+        <CourseNumbers>MUS341</CourseNumbers>
+        <CourseNumbers>MUS352</CourseNumbers>
+        <CourseNumbers>MUS353</CourseNumbers>
+        <CourseNumbers>MUS355</CourseNumbers>
+        <CourseNumbers>MUS356</CourseNumbers>
+        <CourseNumbers>MUS357</CourseNumbers>
+        <CourseNumbers>MUS358</CourseNumbers>
+        <CourseNumbers>MUS359</CourseNumbers>
+        <CourseNumbers>MUS459</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>ESE300</CourseNumbers>
+        <CourseNumbers>MUS238 OR PIANO EXAM</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210</CourseNumbers>
+        <Required>4 semestesr of 100 lvl and 3 semesters of 300 lvl</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>7 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>2 semesters chamber music/small ensemble participation</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>COMPLETE A EMPAHSIS AREA</Required>
+        <Required>Vocal </Required>
+        <CourseNumbers>MUS251</CourseNumbers>
+        <CourseNumbers>MUS252</CourseNumbers>
+        <CourseNumbers>MUS253</CourseNumbers>
+        <CourseNumbers>MUS254</CourseNumbers>
+        <CourseNumbers>MUS342</CourseNumbers>
+        <CourseNumbers>MUS478</CourseNumbers>
+        <Required>Instrumental </Required>
+        <CourseNumbers>MUS344</CourseNumbers>
+        <CourseNumbers>MUS477</CourseNumbers>
+        <Required>COMPLETE STUDENT TEACHING</Required>
+        <CourseNumbers>EDC483</CourseNumbers>
+        <CourseNumbers>MUS494</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Music Performance BM">
+        <Required> All of</Required>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MUS114</CourseNumbers>
+        <CourseNumbers>MUS213</CourseNumbers>
+        <CourseNumbers>MUS214</CourseNumbers>
+        <CourseNumbers>MUS220</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>MUS232</CourseNumbers>
+        <CourseNumbers>MUS358</CourseNumbers>
+        <CourseNumbers>MUS459</CourseNumbers>
+        <CourseNumbers>MUS238 OR PIANO EXAM</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>MUS331</CourseNumbers>
+        <CourseNumbers>MUS332</CourseNumbers>
+        <CourseNumbers>MUS333</CourseNumbers>
+        <CourseNumbers>MUS334</CourseNumbers>
+        <Required>4 semestesr of 100 lvl and 3 semesters of 300 lvl</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>4 semesters chamber music/small ensemble participation</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>COMPLETE A EMPAHSIS AREA</Required>
+        <Required>Vocal </Required>
+        <CourseNumbers>MUS251</CourseNumbers>
+        <CourseNumbers>MUS252</CourseNumbers>
+        <CourseNumbers>MUS253</CourseNumbers>
+        <CourseNumbers>MUS254</CourseNumbers>
+        <CourseNumbers>MUS359</CourseNumbers>
+        <CourseNumbers>MUS435</CourseNumbers>
+        <CourseNumbers>2 CREDITS OF ELECTIVES</CourseNumbers>
+        <Required>KEYBOARD </Required>
+        <CourseNumbers>MUS436</CourseNumbers>
+        <CourseNumbers>MUS456</CourseNumbers>
+        <CourseNumbers>2 CREDITS OF ELECTIVES</CourseNumbers>
+        <Required>Instrumental, MUS355,356 OR 357 and 4 credits of MUS electives </Required>
+        <CourseNumbers>MUS355,MUS356,357</CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Music Therapy BS">
+        <Required> All of</Required>
+        <CourseNumbers>MUS113</CourseNumbers>
+        <CourseNumbers>MUS114</CourseNumbers>
+        <CourseNumbers>MUS135</CourseNumbers>
+        <CourseNumbers>MUS136</CourseNumbers>
+        <CourseNumbers>MUS152</CourseNumbers>
+        <CourseNumbers>MUS158</CourseNumbers>
+        <CourseNumbers>MUS213</CourseNumbers>
+        <CourseNumbers>MUS214</CourseNumbers>
+        <CourseNumbers>MUS231</CourseNumbers>
+        <CourseNumbers>MUS232</CourseNumbers>
+        <CourseNumbers>MUS237</CourseNumbers>
+        <CourseNumbers>MUS238</CourseNumbers>
+        <CourseNumbers>MUS258</CourseNumbers>
+        <CourseNumbers>MUS271</CourseNumbers>
+        <CourseNumbers>MUS273</CourseNumbers>
+        <CourseNumbers>MUS315</CourseNumbers>
+        <CourseNumbers>MUS340</CourseNumbers>
+        <CourseNumbers>MUS345</CourseNumbers>
+        <CourseNumbers>MUS374</CourseNumbers>
+        <CourseNumbers>MUS375</CourseNumbers>
+        <CourseNumbers>MUS376</CourseNumbers>
+        <CourseNumbers>MUS385</CourseNumbers>
+        <CourseNumbers>MUS458</CourseNumbers>
+        <CourseNumbers>MUS474</CourseNumbers>
+        <CourseNumbers>MUS475</CourseNumbers>
+        <CourseNumbers>MUS480</CourseNumbers>
+        <CourseNumbers>MUS481</CourseNumbers>
+        <CourseNumbers>BIO103</CourseNumbers>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY203</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY262</CourseNumbers>
+        <CourseNumbers>Piano proficiency</CourseNumbers>
+        <CourseNumbers>Guitar proficiency</CourseNumbers>
+        <CourseNumbers>Voice proficiency</CourseNumbers>
+        <Required>4 semestesr of 100 lvl and 3 semesters of 300 lvl</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>2 semesters chamber music/small ensemble participation</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "New Media BA">
+        <Required> All of</Required>
+        <CourseNumbers>NMS220</CourseNumbers>
+        <CourseNumbers>NMS242/ENL242</CourseNumbers>
+        <CourseNumbers>COM415</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <CourseNumbers>NMS490</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>NMS399</CourseNumbers>
+        <CourseNumbers>NMS375</CourseNumbers>
+        <Required> 16 CREDITS</Required>
+        <CourseNumbers>ART102</CourseNumbers>
+        <CourseNumbers>ART124</CourseNumbers>
+        <CourseNumbers>ART125</CourseNumbers>
+        <CourseNumbers>ART126</CourseNumbers>
+        <CourseNumbers>ART133</CourseNumbers>
+        <CourseNumbers>ART180</CourseNumbers>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART202</CourseNumbers>
+        <CourseNumbers>ART215</CourseNumbers>
+        <CourseNumbers>ART226</CourseNumbers>
+        <CourseNumbers>ART315</CourseNumbers>
+        <CourseNumbers>ART340</CourseNumbers>
+        <CourseNumbers>COM243</CourseNumbers>
+        <CourseNumbers>CSC250</CourseNumbers>
+        <CourseNumbers>CSC431</CourseNumbers>
+        <CourseNumbers>CSC495 (Mobile Applications topic only)</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL226</CourseNumbers>
+        <CourseNumbers>ENL228</CourseNumbers>
+        <CourseNumbers>ENL229</CourseNumbers>
+        <CourseNumbers>ENL241</CourseNumbers>
+        <CourseNumbers>ENL290</CourseNumbers>
+        <CourseNumbers>ENL324</CourseNumbers>
+        <CourseNumbers>ENL371</CourseNumbers>
+        <CourseNumbers>ENL427</CourseNumbers>
+        <CourseNumbers>FLM180</CourseNumbers>
+        <CourseNumbers>FLM240</CourseNumbers>
+        <CourseNumbers>FLM260</CourseNumbers>
+        <CourseNumbers>FLM495(Producer topic only)</CourseNumbers>
+        <CourseNumbers>INS330</CourseNumbers>
+        <CourseNumbers>INS331</CourseNumbers>
+        <CourseNumbers>MUS221</CourseNumbers>
+        <CourseNumbers>MUS272</CourseNumbers>
+        <CourseNumbers>MUS336</CourseNumbers>
+        <CourseNumbers>NMS230</CourseNumbers>
+        <CourseNumbers>NMS260</CourseNumbers>
+        <CourseNumbers>NMS295</CourseNumbers>
+        <CourseNumbers>NMS320</CourseNumbers>
+        <CourseNumbers>NSM495</CourseNumbers>
+        <CourseNumbers>NMS499</CourseNumbers>
+        <CourseNumbers>PHI260</CourseNumbers>
+        <CourseNumbers>PHY260</CourseNumbers>
+        <CourseNumbers>POL342</CourseNumbers>
+        <CourseNumbers>POL495 (Impact of the Internet)</CourseNumbers>
+        <CourseNumbers>RLN216</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "New Media:Game Design BA">
+        <Required> All of</Required>
+        <CourseNumbers>NMS220</CourseNumbers>Game Design
+        <CourseNumbers>NMS242/ENL242</CourseNumbers>
+        <CourseNumbers>COM415</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <CourseNumbers>NMS490</CourseNumbers>
+        <CourseNumbers>CSC240</CourseNumbers>
+        <CourseNumbers>CSC250</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>NMS399</CourseNumbers>
+        <CourseNumbers>NMS375</CourseNumbers>
+        <Required> 2 ELECTIVES</Required>
+        <CourseNumbers>CSC373</CourseNumbers>
+        <CourseNumbers>CSC431</CourseNumbers>
+        <CourseNumbers>CSC495 (Mobile Applications topic only)</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "New Media:Web Design BA">
+        <Required> All of</Required>
+        <CourseNumbers>NMS220</CourseNumbers>
+        <CourseNumbers>NMS242/ENL242</CourseNumbers>
+        <CourseNumbers>COM415</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <CourseNumbers>NMS490</CourseNumbers>
+        <CourseNumbers>ART124</CourseNumbers>
+        <CourseNumbers>ART127</CourseNumbers>
+        <CourseNumbers>ART201</CourseNumbers>
+        <CourseNumbers>ART202</CourseNumbers>
+        <CourseNumbers>ART215</CourseNumbers>
+        <CourseNumbers>ART315</CourseNumbers>
+        <CourseNumbers>POL495</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>NMS399</CourseNumbers>
+        <CourseNumbers>NMS375</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Nursing BS">
+        <Required> All of</Required>
+        <CourseNumbers>NUR300</CourseNumbers>
+        <CourseNumbers>NUR305</CourseNumbers>
+        <CourseNumbers>NUR306</CourseNumbers>
+        <CourseNumbers>NUR403</CourseNumbers>
+        <CourseNumbers>NUR410</CourseNumbers>
+        <CourseNumbers>NUR411</CourseNumbers>
+        <CourseNumbers>NUR490</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Philosophy BA">
+        <Required> All of</Required>
+        <CourseNumbers>PHI241</CourseNumbers>
+        <CourseNumbers>PHI242</CourseNumbers>
+        <CourseNumbers>PHI343</CourseNumbers>
+        <CourseNumbers>PHI344</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHI385</CourseNumbers>
+        <Required> 400 lvl other than PHI 499</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PHI110</CourseNumbers>
+        <CourseNumbers>PHI120</CourseNumbers>
+        <CourseNumbers>PHI125</CourseNumbers>
+        <CourseNumbers>PHI175</CourseNumbers>
+        <CourseNumbers>PHI180</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHI260</CourseNumbers>
+        <CourseNumbers>PHI315</CourseNumbers>
+        <CourseNumbers>PHI350</CourseNumbers>
+        <CourseNumbers>PHI370</CourseNumbers>
+        <CourseNumbers>PHI380</CourseNumbers>
+        <CourseNumbers>PHI385</CourseNumbers>
+        <CourseNumbers>PHI399</CourseNumbers>
+        <CourseNumbers>PHI410</CourseNumbers>
+        <CourseNumbers>PHI499</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Physics: Biophysics BS">
+        <Required> All of</Required>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <CourseNumbers>PHY245</CourseNumbers>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <CourseNumbers>PHY351</CourseNumbers>
+        <CourseNumbers>PHY362</CourseNumbers>
+        <CourseNumbers>PHY363</CourseNumbers>
+        <CourseNumbers>PHY395</CourseNumbers>
+        <CourseNumbers>PHY396</CourseNumbers>
+        <CourseNumbers>CHM115 and CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116 and CHM116L</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>BIO499</CourseNumbers>
+        <CourseNumbers>CHM499</CourseNumbers>
+        <CourseNumbers>MAT499</CourseNumbers>
+        <CourseNumbers>PHY499</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PHY320</CourseNumbers>
+        <CourseNumbers>PHY352</CourseNumbers>
+        <CourseNumbers>PHY420</CourseNumbers>
+        <CourseNumbers>PHY430</CourseNumbers>
+        <CourseNumbers>PHY486</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>BIO253</CourseNumbers>
+        <CourseNumbers>BIO255</CourseNumbers>
+        <CourseNumbers>BIO369</CourseNumbers>
+        <CourseNumbers>BIO471</CourseNumbers>
+        <CourseNumbers>BIO475</CourseNumbers>
+        <CourseNumbers>BIO476</CourseNumbers>
+        <CourseNumbers>BIO486</CourseNumbers>
+        <CourseNumbers>CHM280 and CHM280L</CourseNumbers>
+        <CourseNumbers>CHM368</CourseNumbers>
+        <CourseNumbers>CHM464</CourseNumbers>
+        <CourseNumbers>CHM481</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>PHY430</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Physics BA">
+        <Required> All of</Required>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <CourseNumbers>PHY245</CourseNumbers>
+        <CourseNumbers>PHY351</CourseNumbers>
+        <CourseNumbers>PHY362</CourseNumbers>
+        <CourseNumbers>PHY363</CourseNumbers>
+        <CourseNumbers>PHY395</CourseNumbers>
+        <CourseNumbers>PHY396</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <CourseNumbers>PHY299</CourseNumbers>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <CourseNumbers>PHY320</CourseNumbers>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>PHY352</CourseNumbers>
+        <CourseNumbers>PHY399</CourseNumbers>
+        <CourseNumbers>PHY420</CourseNumbers>
+        <CourseNumbers>PHY430</CourseNumbers>
+        <CourseNumbers>PHY486</CourseNumbers>
+        <CourseNumbers>PHY499</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>MAT201</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Physics BS">
+        <Required> All of</Required>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <CourseNumbers>PHY245</CourseNumbers>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <CourseNumbers>PHY351</CourseNumbers>
+        <CourseNumbers>PHY362</CourseNumbers>
+        <CourseNumbers>PHY363</CourseNumbers>
+        <CourseNumbers>PHY395</CourseNumbers>
+        <CourseNumbers>PHY396</CourseNumbers>
+        <CourseNumbers>CHM115 and CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116 and CHM116L</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <CourseNumbers>PHY320</CourseNumbers>
+        <CourseNumbers>PHY352</CourseNumbers>
+        <CourseNumbers>PHY420</CourseNumbers>
+        <CourseNumbers>PHY430</CourseNumbers>
+        <CourseNumbers>PHY486</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Physics:Space Physics BS">
+        <Required> All of</Required>
+        <CourseNumbers>PHY121</CourseNumbers>
+        <CourseNumbers>PHY122</CourseNumbers>
+        <CourseNumbers>PHY245</CourseNumbers>
+        <CourseNumbers>PHY261</CourseNumbers>
+        <CourseNumbers>PHY320</CourseNumbers>
+        <CourseNumbers>PHY351</CourseNumbers>
+        <CourseNumbers>PHY362</CourseNumbers>
+        <CourseNumbers>PHY363</CourseNumbers>
+        <CourseNumbers>PHY395</CourseNumbers>
+        <CourseNumbers>PHY396</CourseNumbers>
+        <CourseNumbers>PHY420</CourseNumbers>
+        <CourseNumbers>CHM115 and CHM115L</CourseNumbers>
+        <CourseNumbers>CHM116 and CHM116L</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT245</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PHY327</CourseNumbers>
+        <CourseNumbers>MAT369</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PHY317</CourseNumbers>
+        <CourseNumbers>PHY352</CourseNumbers>
+        <CourseNumbers>PHY430</CourseNumbers>
+        <CourseNumbers>PHY486</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>COM115</CourseNumbers>
+        <CourseNumbers>HON130</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Political Science and Economics BA">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>ESE310</CourseNumbers>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>POL121</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO315</CourseNumbers>
+        <CourseNumbers>ECO318</CourseNumbers>
+        <CourseNumbers>ECO350</CourseNumbers>
+        <CourseNumbers>ECO360</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ECO370</CourseNumbers>
+        <CourseNumbers>ECO399</CourseNumbers>
+        <CourseNumbers>ECO416</CourseNumbers>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>ECO495</CourseNumbers>
+        <CourseNumbers>ECO499</CourseNumbers>
+        <Required> 2 of different areas</Required>
+        <Required> Area 1:American Government and Politics</Required>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <CourseNumbers>POL342</CourseNumbers>
+        <CourseNumbers>POL421</CourseNumbers>
+        <Required> Area 2:Comparative Politics and Analysis</Required>
+        <CourseNumbers>POL350</CourseNumbers>
+        <CourseNumbers>POL359</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <Required> Area 3:International Politics</Required>
+        <CourseNumbers>POL368</CourseNumbers>
+        <CourseNumbers>POL461</CourseNumbers>
+        <CourseNumbers>POL490</CourseNumbers>
+        <Required> Area 4:Public Law</Required>
+        <CourseNumbers>POL370</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <Required> Area 5:Political Theory and Analysis</Required>
+        <CourseNumbers>POL380</CourseNumbers>
+        <CourseNumbers>POL381</CourseNumbers>
+        <Required> 2 addtional POL electives</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <Required> Complete the requirements for secondary education licensure.
+        </Required>
+    </MajorName>
+    
+    <MajorName id = "Political Science BA">
+        <Required> All of</Required>
+        <CourseNumbers>POL158</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>POL484</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL122</CourseNumbers>
+        <CourseNumbers>POL160</CourseNumbers>
+        <CourseNumbers>POL170</CourseNumbers>
+        <Required> 5 Classes from 4  different areas</Required>
+        <Required> Area 1:American Government and Politics</Required>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <CourseNumbers>POL342</CourseNumbers>
+        <CourseNumbers>POL421</CourseNumbers>
+        <Required> Area 2:Comparative Politics and Analysis</Required>
+        <CourseNumbers>POL350</CourseNumbers>
+        <CourseNumbers>POL359</CourseNumbers>
+        <CourseNumbers>POL459</CourseNumbers>
+        <Required> Area 3:International Politics</Required>
+        <CourseNumbers>POL368</CourseNumbers>
+        <CourseNumbers>POL461</CourseNumbers>
+        <CourseNumbers>POL490</CourseNumbers>
+        <Required> Area 4:Public Law</Required>
+        <CourseNumbers>POL370</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <Required> Area 5:Political Theory and Analysis</Required>
+        <CourseNumbers>POL380</CourseNumbers>
+        <CourseNumbers>POL381</CourseNumbers>
+        <Required> 1 addtional POL electives</Required>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL122</CourseNumbers>
+        <CourseNumbers>POL124</CourseNumbers>
+        <CourseNumbers>POL160</CourseNumbers>
+        <CourseNumbers>POL170</CourseNumbers>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>POL295</CourseNumbers>
+        <CourseNumbers>POL299</CourseNumbers>
+        <CourseNumbers>POL310</CourseNumbers>
+        <CourseNumbers>POL341</CourseNumbers>
+        <CourseNumbers>POL353</CourseNumbers>
+        <CourseNumbers>POL354</CourseNumbers>
+        <CourseNumbers>POL357</CourseNumbers>
+        <CourseNumbers>POL399</CourseNumbers>
+        <CourseNumbers>POL495</CourseNumbers>
+        <CourseNumbers>POL499</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <CourseNumbers>POL380</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Political Science:Pre-Law BA">
+        <Required> All of</Required>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL170</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>POL484</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>COM111</CourseNumbers>
+        <CourseNumbers>ENL220</CourseNumbers>
+        <CourseNumbers>ENL223</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>POL350</CourseNumbers>
+        <CourseNumbers>POL370</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <CourseNumbers>POL380</CourseNumbers>
+        <CourseNumbers>POL381</CourseNumbers>
+        <Required> 2 addtional upper POL electives</Required>
+        <CourseNumbers>  </CourseNumbers>
+        <CourseNumbers>  </CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <CourseNumbers>POL380</CourseNumbers>
+        <CourseNumbers>COM111</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Political Science:Public Policy/Change BA">
+        <Required> All of</Required>
+        <CourseNumbers>POL399</CourseNumbers>
+        <CourseNumbers>POL484</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL122</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>ECO490</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>SOC362</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL122</CourseNumbers>
+        <CourseNumbers>POL124</CourseNumbers>
+        <CourseNumbers>POL158</CourseNumbers>
+        <CourseNumbers>POL160</CourseNumbers>
+        <CourseNumbers>POL170</CourseNumbers>
+        <Required> 4 of</Required>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>POL326</CourseNumbers>
+        <CourseNumbers>POL342</CourseNumbers>
+        <CourseNumbers>POL370</CourseNumbers>
+        <CourseNumbers>POL371</CourseNumbers>
+        <CourseNumbers>POL381</CourseNumbers>
+        <CourseNumbers>POL421</CourseNumbers>
+        <CourseNumbers>POL461</CourseNumbers>
+        <CourseNumbers>ECO312</CourseNumbers>
+        <CourseNumbers>ECO313</CourseNumbers>
+        <CourseNumbers>SOC381</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Psychology: Clinical Psychology  BA">
+        <Required> All of</Required>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY262</CourseNumbers>
+        <CourseNumbers>PSY315</CourseNumbers>
+        <CourseNumbers>PSY385</CourseNumbers>
+        <CourseNumbers>PSY400</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PSY325</CourseNumbers>
+        <CourseNumbers>PSY354</CourseNumbers>
+        <CourseNumbers>PSY355</CourseNumbers>
+        <Required> 1 of PSY491 or PSY493</Required>
+        <CourseNumbers>PSY491</CourseNumbers>
+        <CourseNumbers>PSY493</CourseNumbers>
+        <CourseNumbers>PSY495</CourseNumbers>
+        <Required> 1 of</Required>
+        <CourseNumbers>PSY261</CourseNumbers>
+        <CourseNumbers>PSY359</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Psychology  BA">
+        <Required> All of</Required>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY315</CourseNumbers>
+        <CourseNumbers>PSY400</CourseNumbers>
+        <Required> 2 of</Required>
+        <CourseNumbers>PSY325</CourseNumbers>
+        <CourseNumbers>PSY354</CourseNumbers>
+        <CourseNumbers>PSY355</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>PSY491</CourseNumbers>
+        <CourseNumbers>PSY493</CourseNumbers>
+        <CourseNumbers>PSY495</CourseNumbers>
+        <Required> 3 additional PSY electives of</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Psychology: Psychology and Law  BA">
+        <Required> All of</Required>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY235</CourseNumbers>
+        <CourseNumbers>PSY262</CourseNumbers>
+        <CourseNumbers>PSY315</CourseNumbers>
+        <CourseNumbers>PSY325</CourseNumbers>
+        <CourseNumbers>PSY354</CourseNumbers>
+        <CourseNumbers>PSY360</CourseNumbers>
+        <CourseNumbers>PSY400</CourseNumbers>
+        <CourseNumbers>PSY491</CourseNumbers>
+        <CourseNumbers>SOC277</CourseNumbers>
+        <Required> 1of</Required>
+        <CourseNumbers>PSY359</CourseNumbers>
+        <CourseNumbers>PSY385</CourseNumbers>
+        <CourseNumbers>PSY410</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>POL170</CourseNumbers>
+        <CourseNumbers>POL370</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Psychology: Social Psychology BA">
+        <Required> All of</Required>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>PSY215</CourseNumbers>
+        <CourseNumbers>PSY315</CourseNumbers>
+        <CourseNumbers>PSY325</CourseNumbers>
+        <CourseNumbers>PSY400</CourseNumbers>
+        <CourseNumbers>SOC121</CourseNumbers>
+        <CourseNumbers>SOC375</CourseNumbers>
+        <Required> 1of</Required>
+        <CourseNumbers>PSY354</CourseNumbers>
+        <CourseNumbers>PSY355</CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>PSY491</CourseNumbers>
+        <CourseNumbers>PSY493</CourseNumbers>
+        <CourseNumbers>PSY495</CourseNumbers>
+        <Required> 3 addtional electives </Required>
+        <CourseNumbers>     </CourseNumbers>
+        <CourseNumbers>     </CourseNumbers>
+        <CourseNumbers>     </CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Religion BA">
+        <Required> All of</Required>
+        <CourseNumbers>RLN209</CourseNumbers>
+        <CourseNumbers>RLN400</CourseNumbers>
+        <Required> twenty-four (24) credits of major electives(usually 6 classes)</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <Required> 1 Speaking </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>RLN342</CourseNumbers>
+        <CourseNumbers>RLN370</CourseNumbers>
+        <CourseNumbers>RLN441</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Theology and Public Leadership BA">
+        <Required> All of</Required>
+        <CourseNumbers>RLN209</CourseNumbers>
+        <CourseNumbers>RLN251</CourseNumbers>
+        <CourseNumbers>RLN290</CourseNumbers>
+        <CourseNumbers>RLN295</CourseNumbers>
+        <CourseNumbers>RLN342</CourseNumbers>
+        <CourseNumbers>RLN390</CourseNumbers>
+        <CourseNumbers>RLN399</CourseNumbers>
+        <CourseNumbers>RLN400</CourseNumbers>
+        <CourseNumbers>RLN441</CourseNumbers>
+        <Required> 4 credits</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <Required> 1 Speaking </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <Required> 1 of </Required>
+        <CourseNumbers>RLN342</CourseNumbers>
+        <CourseNumbers>RLN370</CourseNumbers>
+        <CourseNumbers>RLN441</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Sociology BA">
+        <Required> All of</Required>
+        <CourseNumbers>SOC121</CourseNumbers>
+        <CourseNumbers>SOC362</CourseNumbers>
+        <CourseNumbers>SOC363</CourseNumbers>
+        <CourseNumbers>SOC485</CourseNumbers>
+        <CourseNumbers>SOC490</CourseNumbers>
+        <Required> 5 of, 3 upper</Required>
+        <CourseNumbers>SOC111</CourseNumbers>
+        <CourseNumbers>SOC231</CourseNumbers>
+        <CourseNumbers>SOC240</CourseNumbers>
+        <CourseNumbers>SOC265</CourseNumbers>
+        <CourseNumbers>SOC266</CourseNumbers>
+        <CourseNumbers>SOC277</CourseNumbers>
+        <CourseNumbers>SOC290</CourseNumbers>
+        <CourseNumbers>SOC295</CourseNumbers>
+        <CourseNumbers>SOC299</CourseNumbers>
+        <CourseNumbers>SOC300</CourseNumbers>
+        <CourseNumbers>SOC320</CourseNumbers>
+        <CourseNumbers>SOC349</CourseNumbers>
+        <CourseNumbers>SOC375</CourseNumbers>
+        <CourseNumbers>SOC377</CourseNumbers>
+        <CourseNumbers>SOC380</CourseNumbers>
+        <CourseNumbers>SOC381</CourseNumbers>
+        <CourseNumbers>SOC387</CourseNumbers>
+        <CourseNumbers>SOC390</CourseNumbers>
+        <CourseNumbers>SOC/URB399</CourseNumbers>
+        <CourseNumbers>SOC495</CourseNumbers>
+        <CourseNumbers>SOC499</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Spanish BA">
+        <Required> All of</Required>
+        <CourseNumbers>CCS100</CourseNumbers>
+        <CourseNumbers>KEY480</CourseNumbers>
+        <Required>1 of</Required>
+        <CourseNumbers>SPA334</CourseNumbers>
+        <CourseNumbers>SPA352</CourseNumbers>
+        <CourseNumbers>SPA353</CourseNumbers>
+        <CourseNumbers>SPA354</CourseNumbers>
+        <CourseNumbers>SPA356</CourseNumbers>
+        <CourseNumbers>SPA357</CourseNumbers>
+        <Required>7 Other SPA electives</Required>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>Study abroad</Required>
+        <Required>1 of</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>HIS369</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>PHY119</CourseNumbers>
+        <CourseNumbers>POL483</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Special Education: Academic Behavioral Strategist BA">
+        <Required> All of</Required>
+        <CourseNumbers>EDC200</CourseNumbers>
+        <CourseNumbers>EDC220</CourseNumbers>
+        <CourseNumbers>EDC310</CourseNumbers>
+        <CourseNumbers>EDC330</CourseNumbers>
+        <CourseNumbers>EDC331</CourseNumbers>
+        <CourseNumbers>EDC332</CourseNumbers>
+        <CourseNumbers>EDC333</CourseNumbers>
+        <CourseNumbers>EDC410</CourseNumbers>
+        <CourseNumbers>EED225</CourseNumbers>
+        <CourseNumbers>EED325</CourseNumbers>
+        <CourseNumbers>EED326</CourseNumbers>
+        <CourseNumbers>EED336</CourseNumbers>
+        <CourseNumbers>EED350</CourseNumbers>
+        <CourseNumbers>EED360</CourseNumbers>
+        <CourseNumbers>SPE410</CourseNumbers>
+        <CourseNumbers>SPE411</CourseNumbers>
+        <CourseNumbers>SPE415</CourseNumbers>
+        <CourseNumbers>SPE425</CourseNumbers>
+        <CourseNumbers>SPE430</CourseNumbers>
+        <CourseNumbers>SPE490</CourseNumbers>
+        <Required>EDC206 OR both EDC210 and EDC211</Required>
+        <CourseNumbers>EDC206</CourseNumbers>
+        <CourseNumbers>EDC210 and EDC211</CourseNumbers>
+        <Required>Complete student teaching (SPE481, 483, 485, or 487</Required>
+        <Required>Supporting classes </Required>
+        <CourseNumbers>ENL111</CourseNumbers>
+        <CourseNumbers>HPE115</CourseNumbers>
+        <CourseNumbers>MAT137</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Social Work  BS">
+        <Required> All of</Required>
+        <CourseNumbers>SWK301</CourseNumbers>
+        <CourseNumbers>SWK303</CourseNumbers>
+        <CourseNumbers>SWK306</CourseNumbers>
+        <CourseNumbers>SWK307</CourseNumbers>
+        <CourseNumbers>SWK316</CourseNumbers>
+        <CourseNumbers>SWK317</CourseNumbers>
+        <CourseNumbers>SWK401</CourseNumbers>
+        <CourseNumbers>SWK406</CourseNumbers>
+        <CourseNumbers>SWK407</CourseNumbers>
+        <CourseNumbers>SWK417</CourseNumbers>
+        <Required>Supporting classes </Required>
+        <CourseNumbers>BIO121</CourseNumbers>
+        <CourseNumbers>PSY105</CourseNumbers>
+        <CourseNumbers>SOC121</CourseNumbers>
+        <CourseNumbers>SWK280</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>SWK100</CourseNumbers>
+        <CourseNumbers>SWK210</CourseNumbers>
+        <CourseNumbers>SWK230</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>ECO112</CourseNumbers>
+        <CourseNumbers>POL121</CourseNumbers>
+        <CourseNumbers>POL122</CourseNumbers>
+        <CourseNumbers>POL325</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>SOC362</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Theater  BA">
+        <Required> All of</Required>
+        <CourseNumbers>THR228</CourseNumbers>
+        <CourseNumbers>THR229</CourseNumbers>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR250</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>THR226</CourseNumbers>
+        <CourseNumbers>THR/FLM230</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <CourseNumbers>THR235</CourseNumbers>
+        <CourseNumbers>THR237</CourseNumbers>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR255</CourseNumbers>
+        <CourseNumbers>THR265</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR275</CourseNumbers>
+        <CourseNumbers>THR280</CourseNumbers>
+        <CourseNumbers>THR295</CourseNumbers>
+        <CourseNumbers>THR/ENL325</CourseNumbers>
+        <CourseNumbers>THR/ENL326</CourseNumbers>
+        <CourseNumbers>THR350</CourseNumbers>
+        <CourseNumbers>THR355</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <CourseNumbers>THR365</CourseNumbers>
+        <CourseNumbers>THR366</CourseNumbers>
+        <CourseNumbers>THR367</CourseNumbers>
+        <CourseNumbers>THR490</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <Required> four (4) theater practicum </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>vPHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Theater:Design/Technical   BA">
+        <Required> All of</Required>
+        <CourseNumbers>THR228</CourseNumbers>
+        <CourseNumbers>THR229</CourseNumbers>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR250</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR230</CourseNumbers>
+        <CourseNumbers>THR275</CourseNumbers>
+        <CourseNumbers>THR280</CourseNumbers>
+        <CourseNumbers>THR285</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>THR226</CourseNumbers>
+        <CourseNumbers>THR/FLM230</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <CourseNumbers>THR235</CourseNumbers>
+        <CourseNumbers>THR237</CourseNumbers>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR255</CourseNumbers>
+        <CourseNumbers>THR265</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR275</CourseNumbers>
+        <CourseNumbers>THR280</CourseNumbers>
+        <CourseNumbers>THR295</CourseNumbers>
+        <CourseNumbers>THR/ENL325</CourseNumbers>
+        <CourseNumbers>THR/ENL326</CourseNumbers>
+        <CourseNumbers>THR350</CourseNumbers>
+        <CourseNumbers>THR355</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <CourseNumbers>THR365</CourseNumbers>
+        <CourseNumbers>THR366</CourseNumbers>
+        <CourseNumbers>THR367</CourseNumbers>
+        <CourseNumbers>THR490</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <Required> 8 theater practicum </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>vPHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Theater:Directing/Dramaturgy/Playwriting   BA">
+        <Required> All of</Required>
+        <CourseNumbers>THR228</CourseNumbers>
+        <CourseNumbers>THR229</CourseNumbers>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR250</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR325</CourseNumbers>
+        <CourseNumbers>THR326</CourseNumbers>
+        <CourseNumbers>THR366</CourseNumbers>
+        <CourseNumbers>THR367</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>THR226</CourseNumbers>
+        <CourseNumbers>THR/FLM230</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <CourseNumbers>THR235</CourseNumbers>
+        <CourseNumbers>THR237</CourseNumbers>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR255</CourseNumbers>
+        <CourseNumbers>THR265</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR275</CourseNumbers>
+        <CourseNumbers>THR280</CourseNumbers>
+        <CourseNumbers>THR295</CourseNumbers>
+        <CourseNumbers>THR/ENL325</CourseNumbers>
+        <CourseNumbers>THR/ENL326</CourseNumbers>
+        <CourseNumbers>THR350</CourseNumbers>
+        <CourseNumbers>THR355</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <CourseNumbers>THR365</CourseNumbers>
+        <CourseNumbers>THR366</CourseNumbers>
+        <CourseNumbers>THR367</CourseNumbers>
+        <CourseNumbers>THR490</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <Required> 8 theater practicum </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>vPHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Theater: Performance   BA">
+        <Required> All of</Required>
+        <CourseNumbers>THR228</CourseNumbers>
+        <CourseNumbers>THR229</CourseNumbers>
+        <CourseNumbers>THR232</CourseNumbers>
+        <CourseNumbers>THR250</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <Required>3 OF </Required>
+        <CourseNumbers>THR226</CourseNumbers>
+        <CourseNumbers>THR350</CourseNumbers>
+        <CourseNumbers>THR355</CourseNumbers>
+        <CourseNumbers>THR365</CourseNumbers>
+        <Required>2 OF</Required>
+        <CourseNumbers>THR226</CourseNumbers>
+        <CourseNumbers>THR/FLM230</CourseNumbers>
+        <CourseNumbers>THR233</CourseNumbers>
+        <CourseNumbers>THR235</CourseNumbers>
+        <CourseNumbers>THR237</CourseNumbers>
+        <CourseNumbers>THR245</CourseNumbers>
+        <CourseNumbers>THR255</CourseNumbers>
+        <CourseNumbers>THR265</CourseNumbers>
+        <CourseNumbers>THR270</CourseNumbers>
+        <CourseNumbers>THR273</CourseNumbers>
+        <CourseNumbers>THR275</CourseNumbers>
+        <CourseNumbers>THR280</CourseNumbers>
+        <CourseNumbers>THR295</CourseNumbers>
+        <CourseNumbers>THR/ENL325</CourseNumbers>
+        <CourseNumbers>THR/ENL326</CourseNumbers>
+        <CourseNumbers>THR350</CourseNumbers>
+        <CourseNumbers>THR355</CourseNumbers>
+        <CourseNumbers>THR361</CourseNumbers>
+        <CourseNumbers>THR362</CourseNumbers>
+        <CourseNumbers>THR365</CourseNumbers>
+        <CourseNumbers>THR366</CourseNumbers>
+        <CourseNumbers>THR367</CourseNumbers>
+        <CourseNumbers>THR490</CourseNumbers>
+        <CourseNumbers>ENL221</CourseNumbers>
+        <CourseNumbers>ENL330</CourseNumbers>
+        <CourseNumbers>ENL338</CourseNumbers>
+        <CourseNumbers>ENL358</CourseNumbers>
+        <CourseNumbers>ENL368</CourseNumbers>
+        <Required> 8 theater practicum </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>   </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT111</CourseNumbers>
+        <CourseNumbers>MAT145</CourseNumbers>
+        <CourseNumbers>MAT146</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+        <CourseNumbers>PHI230</CourseNumbers>
+        <CourseNumbers>vPHY119</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Urban Studies  BA">
+        <Required> All of</Required>
+        <CourseNumbers>ECO113</CourseNumbers>
+        <CourseNumbers>POL/URB122</CourseNumbers>
+        <CourseNumbers>SOC/URB111</CourseNumbers>
+        <CourseNumbers>URB/SOC381</CourseNumbers>
+        <CourseNumbers>SOC/URB399</CourseNumbers>
+        <CourseNumbers>URB492</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>HIS316</CourseNumbers>
+        <CourseNumbers>SOC380</CourseNumbers>
+        <CourseNumbers>ART249/349</CourseNumbers>
+        <CourseNumbers>HIS249/349</CourseNumbers>
+        <Required>1 OF </Required>
+        <CourseNumbers>POL483</CourseNumbers>
+        <CourseNumbers>SOC362</CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>POL484</CourseNumbers>
+        <CourseNumbers>SOC363</CourseNumbers>
+        <Required> 2 theater practicum </Required>
+        <CourseNumbers>ART243</CourseNumbers>
+        <CourseNumbers>ART244</CourseNumbers>
+        <CourseNumbers>ART249/349 or HIS249/349</CourseNumbers>
+        <CourseNumbers>ECO365</CourseNumbers>
+        <CourseNumbers>ENV100</CourseNumbers>
+        <CourseNumbers>HIS316</CourseNumbers>
+        <CourseNumbers>POL241</CourseNumbers>
+        <CourseNumbers>POL325</CourseNumbers>
+        <CourseNumbers>SOC265</CourseNumbers>
+        <CourseNumbers>SOC349</CourseNumbers>
+        <CourseNumbers>SOC380</CourseNumbers>
+        <CourseNumbers>URB199</CourseNumbers>
+        <CourseNumbers>URB295</CourseNumbers>
+        <CourseNumbers>URB299</CourseNumbers>
+        <CourseNumbers>URB395</CourseNumbers>
+    </MajorName>
+    
+    <MajorName id = "Gender, Sexuality and Women’s Studies   BA">
+        <Required> All of</Required>
+        <CourseNumbers>WST201</CourseNumbers>
+        <CourseNumbers>WST315</CourseNumbers>
+        <CourseNumbers>WST399</CourseNumbers>
+        <CourseNumbers>WST485</CourseNumbers>
+        <Required>1 elective with a  racial, ethnic, or global emphasis  </Required>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 elective with a sexuality emphasis </Required>
+        <CourseNumbers>      </CourseNumbers>
+        <Required>4 other  gender, sexuality, and women’s studies electives</Required>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <CourseNumbers>    </CourseNumbers>
+        <Required>1 OF</Required>
+        <CourseNumbers>GST200</CourseNumbers>
+        <CourseNumbers>MAT163</CourseNumbers>
+        <CourseNumbers>MAT164</CourseNumbers>
+    </MajorName>
+    
+   
+
+</Majors>
