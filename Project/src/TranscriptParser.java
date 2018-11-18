@@ -27,6 +27,7 @@ import javax.xml.xpath.XPathFactory;
  
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -35,7 +36,7 @@ import java.util.*;
 import java.lang.*;
 
 /**
- * @author Erik Ayavaca-Tirado
+ * @author Erik, Olson, and Mahamed
  *  Program is going to be comparing the 2 files transcript and course list and spitiing out the difference between them.
  *  Orginal implentation ideas:
  *  // posibly use the hasmap
@@ -57,33 +58,11 @@ public class TranscriptParser {
 			+ " POL ART HIS ECO PHI BUS FIN BIO HPE EDC EED CHM SPE SWK"
 			+ " ENV PHY HON KEY MIS MKT HUM RLN THR MUS SPA MUE ACC SCI"
 			+ " NUR NMS FLM THP URB YST REL AUG";
+	//Erik added more abbreviations into this list
 
 	public static void main(String[] args) throws IOException {
 //		GUI window = new GUI();
 //		window.setVisible(true);
-		
-//		XPath xpath = XPathFactory.newInstance().newXPath();
-//		String expression = "/Majors/*";
-//		InputSource inputSource = new InputSource("completedmajors.xml");
-//		try {
-//			Node nodes = (Node) xpath.evaluate(expression, inputSource, XPathConstants.STRING);
-//		} catch (XPathExpressionException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-
-//		private File file;
-//		 
-//	    public TranscriptParser(File file) {
-//	        this.file = file;
-//	        FileInputStream fileIS = new FileInputStream(this.getFile());
-//	        DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
-//	        DocumentBuilder builder = builderFactory.newDocumentBuilder();
-//	        Document xmlDocument = builder.parse(fileIS);
-//	        XPath xPath = XPathFactory.newInstance().newXPath();
-//	        String expression = "/Tutorials/Tutorial";
-//	        nodeList = (NodeList) xPath.compile(expression).evaluate(xmlDocument, XPathConstants.NODESET);
-//	    }
 		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = null;
@@ -102,19 +81,88 @@ public class TranscriptParser {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		Element rootElement = document.getDocumentElement();
-		NodeList test = rootElement.getElementsByTagName("*");
 		
-		System.out.println(rootElement);
-		System.out.println(test.item(1));
-		System.out.println(test.item(2));
-//		System.out.println(test.item(3));
-		System.out.println(rootElement.getTextContent());
-		System.out.println(rootElement.hasAttribute("American Indian Studies BA"));	//getNodeValue() vs getContentText
-		System.out.println(rootElement.getTagName());
-		System.out.println(rootElement.getAttribute("Majors"));
-		System.out.println(rootElement.getAttributeNode("Majors"));
-		System.out.println(test.item(2).getTextContent());
+		Node test1 = document.getFirstChild();
+		NodeList test2 = document.getElementsByTagName("AmericanIndianStudiesBA");
+		
+		System.out.println(test1.getChildNodes());
+//		System.out.println("test \n"+test2.item(0).getTextContent());
+		
+		//grab 'someof' from xml database
+		System.out.println("Required: \n"+test2.item(0).getTextContent());
+//		System.out.println(test2.item(0).hasChildNodes());
+		
+		//getNodeValue() vs getContentText()
+
+		
+		/* Testing with a schema. Was informed from information on the net
+		 that in order to call 'Element'.getElementById a schema must be made. 
+		 When calling the DocumentBuilderFactory, that schema (which is another
+		 file) needs to be used to correctly assign id's to our xml file. 
+		 That way the program knows where id's point to, making the information 
+		 extraction more efficient. 
+		 
+		 Source: http://crumpling-rumblings.blogspot.com/2008/05/java-how-to-make-getelementbyid-work.html
+		 
+		 -- May not go this route since I couldn't get 
+		 it working even after following examples online. 2nd option: Adjust XML 
+		 file so we can grab it by Element name instead of ID. */
+		
+//		 final String XML_SCHEMA =
+//				 "http://www.w3.org/2001/XMLSchema";
+//				final String SCHEMA_LANG =
+//				 "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
+//				final String SCHEMA_SOURCE =
+//				 "http://java.sun.com/xml/jaxp/properties/schemaSource";
+//
+//				File input = new File("library1.xml");
+//				File schema = new File("library1.xsd");
+//				DocumentBuilderFactory factory =
+//				  DocumentBuilderFactory.newInstance();
+//				factory.setNamespaceAware(true);
+//				// Enables validation of xml document.
+//				factory.setValidating(true);
+//				try
+//				{
+//				//Setting the required schema details
+//				     factory.setAttribute(SCHEMA_LANG,XML_SCHEMA);
+//				     factory.setAttribute(SCHEMA_SOURCE, schema);
+//				} catch(IllegalArgumentException x) {
+//				     System.err.println("DOM Parser" +
+//				   "does not support validation.");
+//				}
+//
+//				DocumentBuilder parser = null;
+//				try {
+//				//Creating the parser
+//				     parser = factory.newDocumentBuilder();
+//				} catch (ParserConfigurationException e) {
+//				     e.printStackTrace();
+//				}
+//
+//				Document doc = null;
+//				try {
+//				//Actual parsing of the xml file
+//				     doc = parser.parse(input);
+//				} catch (IOException | SAXException e) {
+//				     e.printStackTrace();
+//				}
+//				
+//				Element rootElement = doc.getDocumentElement();
+//				NodeList test = rootElement.getElementsByTagName("*");
+//				
+//				System.out.println("rootelement = "+rootElement);
+//				System.out.println("rootelement get first tag name = "+test.item(1));
+//				System.out.println("rootelement get second tag name = "+test.item(2));
+//				System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
+//				System.out.println("look at me = "+doc.getElementById("isbn=\"0836217462\""));	//getNodeValue() vs getContentText
+//				System.out.println("rootElement getTag = "+rootElement.getTagName());
+//				System.out.println("rootElement get attribute = "+rootElement.getAttribute("0836217462"));
+//				System.out.println("rootElement get attributenode = "+rootElement.getAttributeNode("book"));
+//				System.out.println(test.item(2).getTextContent());
+//				System.out.println(rootElement.getElementsByTagName("book"));
+//				System.out.println(rootElement.getAttributeNode("Majors"));
+		
     }
 	
 	

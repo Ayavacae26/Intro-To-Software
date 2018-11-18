@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Majors> hello
-	<MajorName> id="American Indian Studies BA"
+	<AmericanIndianStudiesBA>
 		<Required>
 			AIS105
 			AIS205
@@ -43,5 +43,13 @@
 			MAT164
 			PHI230
 		</SomeOf>
-	</MajorName>
+	</AmericanIndianStudiesBA>
+	<testingme> testing me
+		<Required>
+			tetsing required
+		</Required>
+		<SomeOf>
+			testing someof
+		</SomeOf>
+	</testingme>
 </Majors>
