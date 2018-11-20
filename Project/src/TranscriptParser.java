@@ -92,8 +92,8 @@ public class TranscriptParser {
 //		                    System.out.println(((Element) nameList.item(1)).getTagName());
 //		                    System.out.println("Major " + id + ":");
 		                    
-		                    // Stores 'Required' classes in one array
-		                    if(n.getNodeType()==Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+		                    // Stores 'Required' classes into one array
+		                    if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
 		                    {
 		                    	Element name = (Element)n;
 		                    	String requiredList = name.getTextContent();
@@ -111,11 +111,27 @@ public class TranscriptParser {
 		                        System.out.println(requiredList);
 		                        System.out.println(requiredArray.toString());
 		                    }
+		                    // Stores 'SomeOf' classes into one array
+		                    if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
+		                    {
+		                    	Element name = (Element)n;
+		                    	String someofList = name.getTextContent();
+//		                    	System.out.println(name.getTextContent()); //verify with this line of code
+		                    	ArrayList<String> someofArray = new ArrayList<String>();
+		                    	Scanner scan = new Scanner(someofList);
+		                    	
+		                    	// store our String someofList into an array
+		                    	while(scan.hasNext())
+		                    	{
+		                    		someofArray.add(scan.next());
+		                    	}
+		                    	scan.close();
+		                    	
+		                        System.out.println(someofList);
+		                        System.out.println(someofArray.toString());
+		                    }
 		                }
 	                }
-	                    
-	                
-
 	            }
 	        } catch (ParserConfigurationException e) {
 	            // TODO Auto-generated catch block
@@ -127,9 +143,6 @@ public class TranscriptParser {
 	            // TODO Auto-generated catch block
 	            e.printStackTrace();
 	        }
-		  
-		
-		
 	}
 	
 	
