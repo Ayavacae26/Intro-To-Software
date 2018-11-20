@@ -96,8 +96,20 @@ public class TranscriptParser {
 		                    if(n.getNodeType()==Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
 		                    {
 		                    	Element name = (Element)n;
+		                    	String requiredList = name.getTextContent();
+//		                    	System.out.println(name.getTextContent()); //verify with this line of code
+		                    	ArrayList<String> requiredArray = new ArrayList<String>();
+		                    	Scanner scan = new Scanner(requiredList);
 		                    	
-		                        System.out.println(name.getTextContent());
+		                    	// store our String requiredList into an array
+		                    	while(scan.hasNext())
+		                    	{
+		                    		requiredArray.add(scan.next());
+		                    	}
+		                    	scan.close();
+		                    	
+		                        System.out.println(requiredList);
+		                        System.out.println(requiredArray.toString());
 		                    }
 		                }
 	                }
