@@ -64,88 +64,90 @@ public class TranscriptParser {
 
 
 	  public static void main(String[] args) throws IOException {
-
-//		GUI window = new GUI();
-//		window.setVisible(true);
 		  
-		  readFile(new File("TranscriptTest.txt"));
+//		  GUI window = new GUI();
+//		  window.setVisible(true);
 		  
-	        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		  // call testing method
+		  System.out.println(readFile(new File("TranscriptTest.txt")));
+		  
+		  
+	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	        
-	        try {
-	            DocumentBuilder builder = factory.newDocumentBuilder();
-	            Document doc = builder.parse("CompletedMajors2.xml");
-	            NodeList majorList = doc.getElementsByTagName("MajorName");
-	            for(int i =0; i<majorList.getLength(); i++) 
-	            {
-	                Node p = majorList.item(i);
-	                Element major = (Element) p;
-	                String id = major.getAttribute("id");
-	                
-	                if(id.equals("American Indian Studies BA"))	//testing to grab only when id equals
-	                {
-	                	NodeList nameList  = major.getChildNodes();
+	      try {
+	          DocumentBuilder builder = factory.newDocumentBuilder();
+	          Document doc = builder.parse("CompletedMajors2.xml");
+	          NodeList majorList = doc.getElementsByTagName("MajorName");
+	          for(int i =0; i<majorList.getLength(); i++) 
+	          {
+	              Node p = majorList.item(i);
+	              Element major = (Element) p;
+	              String id = major.getAttribute("id");
+	              
+	              if(id.equals("American Indian Studies BA"))	//testing to grab only when id equals
+	              {
+	            	  NodeList nameList  = major.getChildNodes();
 	                	
-		                for(int j=0; j<nameList.getLength(); j++) {
-		                    Node n = nameList.item(j);
+		              for(int j=0; j<nameList.getLength(); j++) {
+		                  Node n = nameList.item(j);
 		                    
-//		                    System.out.println(n);
-//		                    System.out.println(nameList);
-//		                    System.out.println(((Element) nameList.item(1)).getTagName());
-//		                    System.out.println("Major " + id + ":");
+//		                  System.out.println(n);
+//		                  System.out.println(nameList);
+//		                  System.out.println(((Element) nameList.item(1)).getTagName());
+//		                  System.out.println("Major " + id + ":");
 		                    
-		                    // Stores 'Required' classes into one array
-		                    if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
-		                    {
-		                    	Element name = (Element)n;
-		                    	String requiredList = name.getTextContent();
-//		                    	System.out.println(name.getTextContent()); //verify with this line of code
-		                    	ArrayList<String> requiredArray = new ArrayList<String>();
-		                    	Scanner scan = new Scanner(requiredList);
+		                  // Stores 'Required' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+		                  {
+		                	  Element name = (Element)n;
+		                	  String requiredList = name.getTextContent();
+//		                	  System.out.println(name.getTextContent()); //verify with this line of code
+		                	  ArrayList<String> requiredArray = new ArrayList<String>();
+		                	  Scanner scan = new Scanner(requiredList);
 		                    	
-		                    	// store our String requiredList into an array
-		                    	while(scan.hasNext())
-		                    	{
-		                    		requiredArray.add(scan.next());
-		                    	}
-		                    	scan.close();
+		                	  // store our String requiredList into an array
+		                	  while(scan.hasNext())
+		                	  {
+		                		  requiredArray.add(scan.next());
+		                	  }
+		                	  scan.close();
+		                	  
+		                	  System.out.println(requiredList);
+		                	  System.out.println(requiredArray.toString());
+		                  }
+		                  // Stores 'SomeOf' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  String someofList = name.getTextContent();
+//		                	  System.out.println(name.getTextContent()); //verify with this line of code
+		                	  ArrayList<String> someofArray = new ArrayList<String>();
+		                	  Scanner scan = new Scanner(someofList);
 		                    	
-		                        System.out.println(requiredList);
-		                        System.out.println(requiredArray.toString());
-		                    }
-		                    // Stores 'SomeOf' classes into one array
-		                    if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
-		                    {
-		                    	Element name = (Element)n;
-		                    	String someofList = name.getTextContent();
-//		                    	System.out.println(name.getTextContent()); //verify with this line of code
-		                    	ArrayList<String> someofArray = new ArrayList<String>();
-		                    	Scanner scan = new Scanner(someofList);
+		                	  // store our String someofList into an array
+		                	  while(scan.hasNext())
+		                	  {
+		                		  someofArray.add(scan.next());
+		                	  }
+		                	  scan.close();
 		                    	
-		                    	// store our String someofList into an array
-		                    	while(scan.hasNext())
-		                    	{
-		                    		someofArray.add(scan.next());
-		                    	}
-		                    	scan.close();
-		                    	
-		                        System.out.println(someofList);
-		                        System.out.println(someofArray.toString());
-		                    }
-		                }
-	                }
-	            }
-	        } catch (ParserConfigurationException e) {
-	            // TODO Auto-generated catch block
-	            e.printStackTrace();
-	        } catch (SAXException e) {
-	            // TODO Auto-generated catch block
-	            e.printStackTrace();
-	        } catch (IOException e) {
-	            // TODO Auto-generated catch block
-	            e.printStackTrace();
-	        }
-	}
+		                	  System.out.println(someofList);
+		                	  System.out.println(someofArray.toString());
+		                  }
+		              }
+	              }
+	          }
+	      } catch (ParserConfigurationException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (SAXException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (IOException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      }
+}
 	
 	
 	
@@ -186,7 +188,7 @@ public class TranscriptParser {
 	/* This method will scan the text file word by word and ONLY compare
 	the word to the abbreviations IF AND ONLY IF the scanned word has a length
 	of between 6 and 7. */
-	public static void readFile(File a) {
+	public static ArrayList<String> readFile(File a) {
 		Scanner scanLine = null;
 		Scanner abbreviationList = null;
 
@@ -201,7 +203,7 @@ public class TranscriptParser {
 			System.exit(1);
 		}
 
-		createTranscriptArray(scanLine, abbreviationList);
+		return createTranscriptArray(scanLine, abbreviationList);
 	}
 
 	/**
@@ -211,8 +213,9 @@ public class TranscriptParser {
 	 * @param nameOfFile       the name of the file being created
 	 * @param scanLine         the Scanner for the text file
 	 * @param abbreviationList the Scanner for abbreviations String
+	 * @return 
 	 */
-	public static void createTranscriptArray(Scanner scanLine, Scanner abbreviationList) {
+	public static ArrayList<String> createTranscriptArray(Scanner scanLine, Scanner abbreviationList) {
 		ArrayList<String> test = new ArrayList<String>();
 		
 //			FileWriter writeToFile = new FileWriter(nameOfFile);
@@ -241,6 +244,7 @@ public class TranscriptParser {
 				}
 			}
 		}
+		return test;
 	}
 	
 	// won't need this function but will keep for reference
