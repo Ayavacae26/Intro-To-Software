@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><Majors>
+﻿<?xml version="1.0" encoding="UTF-8"?><Majors>
     
     <MajorName id = "American Indian Studies BA">
         <Required>
@@ -6,44 +6,43 @@
         AIS205
         HIS236
         RLN370
-        </Required>
-        <Required1>
         AIS264
         ENL255
         AIS264
         ENL255
-        </Required1>
-        <Required>
-        4 electives, 3 upper divison
         </Required>
-        <CourseNumbers>AIS208</CourseNumbers>
-        <CourseNumbers>AIS233</CourseNumbers>
-        <CourseNumbers>AIS264</CourseNumbers>
-        <CourseNumbers>AIS299</CourseNumbers>
-        <CourseNumbers>AIS305</CourseNumbers>
-        <CourseNumbers>AIS320</CourseNumbers>
-        <CourseNumbers>AIS332</CourseNumbers>
-        <CourseNumbers>AIS364</CourseNumbers>
-        <CourseNumbers>AIS396</CourseNumbers>
-        <CourseNumbers>AIS399</CourseNumbers>
-        <CourseNumbers>AIS405</CourseNumbers>
-        <CourseNumbers>AIS408</CourseNumbers>
-        <CourseNumbers>AIS490</CourseNumbers>
-        <CourseNumbers>AIS495</CourseNumbers>
-        <CourseNumbers>AIS498</CourseNumbers>
-        <CourseNumbers>AIS499</CourseNumbers>
-        <CourseNumbers>ART290</CourseNumbers>
-        <CourseNumbers>DAK111</CourseNumbers>
-        <CourseNumbers>DAK112</CourseNumbers>
-        <CourseNumbers>ENL255</CourseNumbers>
-        <CourseNumbers>ENL355</CourseNumbers>
-        <CourseNumbers>OJB111</CourseNumbers>
-        <CourseNumbers>OJB112</CourseNumbers>
-        <Required> 1  </Required>
-        <CourseNumbers>GST200</CourseNumbers>
-        <CourseNumbers>MAT163</CourseNumbers>
-        <CourseNumbers>MAT164</CourseNumbers>
-        <CourseNumbers>PHI230</CourseNumbers>
+        <SomeOf>
+	1
+	AIS208
+        AIS233
+        AIS264
+        AIS299
+	ART290
+        DAK111
+        DAK112
+        ENL255
+        OJB111
+        OJB112
+	3
+        AIS305
+        AIS320
+        AIS332
+        AIS364
+        AIS396
+        AIS399
+        AIS405
+        AIS408
+        AIS490
+        AIS495
+        AIS498
+        AIS499
+        ENL355
+	1
+	GST200
+        MAT163
+        MAT164
+        PHI230
+        </SomeOf>
     </MajorName>
     
     <MajorName id = "Art History BA">
