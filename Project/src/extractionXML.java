@@ -13,7 +13,7 @@ public class extractionXML {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document doc = builder.parse("/Users/erikayavaca/IdeaProjects/softwareproject/Project/CompletedMajors2.xml");
+            Document doc = builder.parse("CompletedMajors2.xml");
             NodeList majorList =doc.getElementsByTagName("MajorName");
             for(int i =0;i<majorList.getLength();i++) {
                 Node p = majorList.item(i);
