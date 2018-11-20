@@ -68,6 +68,8 @@ public class TranscriptParser {
 //		GUI window = new GUI();
 //		window.setVisible(true);
 		  
+		  readFile(new File("TranscriptTest.txt"));
+		  
 	        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	        
 	        try {
@@ -147,7 +149,11 @@ public class TranscriptParser {
 	
 	
 	
-	
+	// won't need this method but might use it for reference 
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	public static void compareTranscriptAndDegree()
 	{
 		Path firstFile = Paths.get("degree.txt");
@@ -180,12 +186,13 @@ public class TranscriptParser {
 	/* This method will scan the text file word by word and ONLY compare
 	the word to the abbreviations IF AND ONLY IF the scanned word has a length
 	of between 6 and 7. */
-	public static void readFile(File a, String nameOfFile) {
+	public static void readFile(File a) {
 		Scanner scanLine = null;
 		Scanner abbreviationList = null;
 
 		try 
 		{
+			//set scanner to file 'a'
 			scanLine = new Scanner(a);
 		} 
 		catch (Exception e) 
@@ -194,7 +201,7 @@ public class TranscriptParser {
 			System.exit(1);
 		}
 
-		createFile(nameOfFile, scanLine, abbreviationList);
+		createTranscriptArray(scanLine, abbreviationList);
 	}
 
 	/**
@@ -205,46 +212,42 @@ public class TranscriptParser {
 	 * @param scanLine         the Scanner for the text file
 	 * @param abbreviationList the Scanner for abbreviations String
 	 */
-	public static void createFile(String nameOfFile, Scanner scanLine, Scanner abbreviationList) {
-		try {
-			FileWriter writeToFile = new FileWriter(nameOfFile);
-			BufferedWriter out = new BufferedWriter(writeToFile);
-
-			while (scanLine.hasNext()) 
+	public static void createTranscriptArray(Scanner scanLine, Scanner abbreviationList) {
+		ArrayList<String> test = new ArrayList<String>();
+		
+//			FileWriter writeToFile = new FileWriter(nameOfFile);
+//			BufferedWriter out = new BufferedWriter(writeToFile);
+		while (scanLine.hasNext()) 
+		{
+			String word = scanLine.next();
+			
+			if (word.endsWith(","))
 			{
-				String word = scanLine.next();
-				if (word.endsWith(","))
-				{
-					word = word.substring(0, word.length() - 1);
-				}
+				word = word.substring(0, word.length() - 1);
+			}
+			//System.out.println("String word: " + word); 
+			abbreviationList = new Scanner(abbreviations);
+			
+			//only check words with length between 6-7
+			while (abbreviationList.hasNext() && word.length() >= 6 && word.length() <= 7) 
+			{
+				String courseAbbrev = abbreviationList.next();
+				courseAbbrev.replace(",", "");
 				
-				//System.out.println("String word: " + word); //Testing purpose, uncheck if you want to see how it works
-				abbreviationList = new Scanner(abbreviations);
-
-				//only check words with length between 6-7
-				while (abbreviationList.hasNext() && word.length() >= 6 && word.length() <= 7) 
+				if (word.regionMatches(0, courseAbbrev, 0, 3)) 
 				{
-					String courseAbbrev = abbreviationList.next();
-					courseAbbrev.replace(",", "");
-
-					if (word.regionMatches(0, courseAbbrev, 0, 3)) 
-					{
-						out.write(word);
-						out.newLine();
-						break; //exit out 2nd loop if found a match
-					}
+					test.add(word);
+					break; //exit out 2nd loop if found a match
 				}
 			}
-			out.close();
-		} 
-		catch (IOException e) 
-		{
-			System.out.println("Error - IOException");
 		}
-
-		System.out.println(nameOfFile + " text file has been created.");
 	}
-
+	
+	// won't need this function but will keep for reference
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	// function that prints out the differences in the 2 files
 	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
 	{		
@@ -257,6 +260,11 @@ public class TranscriptParser {
 		return diff;
 	}
 
+	// won't need this function but will use for reference
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	// Function prints class that do count for the major
 	public static List<String> sameFiles( List<String> firstFileContent,List<String> secondFileContent)
 	{
