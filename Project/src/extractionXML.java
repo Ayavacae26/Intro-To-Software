@@ -9,6 +9,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 public class extractionXML {
+	/*
     public static void main(String[] args) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try {
@@ -42,5 +43,5 @@ public class extractionXML {
             e.printStackTrace();
         }
 
-    }
+    }*/
 }
