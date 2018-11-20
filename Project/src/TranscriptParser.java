@@ -83,13 +83,21 @@ public class TranscriptParser {
 	                if(id.equals("American Indian Studies BA"))	//testing to grab only when id equals
 	                {
 	                	NodeList nameList  = major.getChildNodes();
+	                	
 		                for(int j=0; j<nameList.getLength(); j++) {
 		                    Node n = nameList.item(j);
-		                    System.out.println("Major " + id + ":");
-		                    if(n.getNodeType()==Node.ELEMENT_NODE) {
+		                    
+//		                    System.out.println(n);
+//		                    System.out.println(nameList);
+//		                    System.out.println(((Element) nameList.item(1)).getTagName());
+//		                    System.out.println("Major " + id + ":");
+		                    
+		                    // Stores 'Required' classes in one array
+		                    if(n.getNodeType()==Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+		                    {
 		                    	Element name = (Element)n;
-		                        System.out.println(name.getTagName()+"=" + name.getTextContent());
-//		                        System.out.println("majorList(item(1)): = " + p);
+		                    	
+		                        System.out.println(name.getTextContent());
 		                    }
 		                }
 	                }
