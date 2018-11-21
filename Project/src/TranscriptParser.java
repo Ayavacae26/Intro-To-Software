@@ -60,118 +60,102 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 	//Erik added more abbreviations into this list
 
-	  /*  comment out due to running  the extraction xml
+	  //comment out due to running  the extraction xml
 
 
 	  public static void main(String[] args) throws IOException {
-
-//		GUI window = new GUI();
-//		window.setVisible(true);
-		
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder builder = null;
-		Document document = null;
-		
-		try {
-			builder = factory.newDocumentBuilder();
-		} catch (ParserConfigurationException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		
-		try {
-			document = builder.parse(new File("test.xml"));
-		} catch (SAXException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();CompletedMajors2.xml
-		}
-		
-		Node test1 = document.getFirstChild();
-		NodeList test2 = document.getElementsByTagName("AmericanIndianStudiesBA");
-		
-		System.out.println(test1.getChildNodes());
-//		System.out.println("test \n"+test2.item(0).getTextContent());
-		
-		//grab 'someof' from xml database
-		System.out.println("Required: \n"+test2.item(0).getTextContent());
-//		System.out.println(test2.item(0).hasChildNodes());
-		
-		//getNodeValue() vs getContentText()
-
-		
-		/* Testing with a schema. Was informed from information on the net
-		 that in order to call 'Element'.getElementById a schema must be made. 
-		 When calling the DocumentBuilderFactory, that schema (which is another
-		 file) needs to be used to correctly assign id's to our xml file. 
-		 That way the program knows where id's point to, making the information 
-		 extraction more efficient. 
-		 
-		 Source: http://crumpling-rumblings.blogspot.com/2008/05/java-how-to-make-getelementbyid-work.html
-		 
-		 -- May not go this route since I couldn't get 
-		 it working even after following examples online. 2nd option: Adjust XML 
-		 file so we can grab it by Element name instead of ID. */
-		
-//		 final String XML_SCHEMA =
-//				 "http://www.w3.org/2001/XMLSchema";
-//				final String SCHEMA_LANG =
-//				 "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
-//				final String SCHEMA_SOURCE =
-//				 "http://java.sun.com/xml/jaxp/properties/schemaSource";
-//
-//				File input = new File("library1.xml");
-//				File schema = new File("library1.xsd");
-//				DocumentBuilderFactory factory =
-//				  DocumentBuilderFactory.newInstance();
-//				factory.setNamespaceAware(true);
-//				// Enables validation of xml document.
-//				factory.setValidating(true);
-//				try
-//				{
-//				//Setting the required schema details
-//				     factory.setAttribute(SCHEMA_LANG,XML_SCHEMA);
-//				     factory.setAttribute(SCHEMA_SOURCE, schema);
-//				} catch(IllegalArgumentException x) {
-//				     System.err.println("DOM Parser" +
-//				   "does not support validation.");
-//				}
-//
-//				DocumentBuilder parser = null;
-//				try {
-//				//Creating the parser
-//				     parser = factory.newDocumentBuilder();
-//				} catch (ParserConfigurationException e) {
-//				     e.printStackTrace();
-//				}
-//
-//				Document doc = null;
-//				try {
-//				//Actual parsing of the xml file
-//				     doc = parser.parse(input);
-//				} catch (IOException | SAXException e) {
-//				     e.printStackTrace();
-//				}
-//				
-//				Element rootElement = doc.getDocumentElement();
-//				NodeList test = rootElement.getElementsByTagName("*");
-//				
-//				System.out.println("rootelement = "+rootElement);
-//				System.out.println("rootelement get first tag name = "+test.item(1));
-//				System.out.println("rootelement get second tag name = "+test.item(2));
-//				System.out.println("get everything inside rootelement = \n"+rootElement.getTextContent());
-//				System.out.println("look at me = "+doc.getElementById("isbn=\"0836217462\""));	//getNodeValue() vs getContentText
-//				System.out.println("rootElement getTag = "+rootElement.getTagName());
-//				System.out.println("rootElement get attribute = "+rootElement.getAttribute("0836217462"));
-//				System.out.println("rootElement get attributenode = "+rootElement.getAttributeNode("book"));
-//				System.out.println(test.item(2).getTextContent());
-//				System.out.println(rootElement.getElementsByTagName("book"));
-//				System.out.println(rootElement.getAttributeNode("Majors"));
-		
-   // }
+		  
+//		  GUI window = new GUI();
+//		  window.setVisible(true);
+		  
+		  // call testing method
+		  System.out.println(readFile(new File("TranscriptTest.txt")));
+		  
+		  
+	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	        
+	      try {
+	          DocumentBuilder builder = factory.newDocumentBuilder();
+	          Document doc = builder.parse("CompletedMajors2.xml");
+	          NodeList majorList = doc.getElementsByTagName("MajorName");
+	          for(int i =0; i<majorList.getLength(); i++) 
+	          {
+	              Node p = majorList.item(i);
+	              Element major = (Element) p;
+	              String id = major.getAttribute("id");
+	              
+	              if(id.equals("American Indian Studies BA"))	//testing to grab only when id equals
+	              {
+	            	  NodeList nameList  = major.getChildNodes();
+	                	
+		              for(int j=0; j<nameList.getLength(); j++) {
+		                  Node n = nameList.item(j);
+		                    
+//		                  System.out.println(n);
+//		                  System.out.println(nameList);
+//		                  System.out.println(((Element) nameList.item(1)).getTagName());
+//		                  System.out.println("Major " + id + ":");
+		                    
+		                  // Stores 'Required' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+		                  {
+		                	  Element name = (Element)n;
+		                	  String requiredList = name.getTextContent();
+//		                	  System.out.println(name.getTextContent()); //verify with this line of code
+		                	  ArrayList<String> requiredArray = new ArrayList<String>();
+		                	  Scanner scan = new Scanner(requiredList);
+		                    	
+		                	  // store our String requiredList into an array
+		                	  while(scan.hasNext())
+		                	  {
+		                		  requiredArray.add(scan.next());
+		                	  }
+		                	  scan.close();
+		                	  
+		                	  System.out.println(requiredList);
+		                	  System.out.println(requiredArray.toString());
+		                  }
+		                  // Stores 'SomeOf' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  String someofList = name.getTextContent();
+//		                	  System.out.println(name.getTextContent()); //verify with this line of code
+		                	  ArrayList<String> someofArray = new ArrayList<String>();
+		                	  Scanner scan = new Scanner(someofList);
+		                    	
+		                	  // store our String someofList into an array
+		                	  while(scan.hasNext())
+		                	  {
+		                		  someofArray.add(scan.next());
+		                	  }
+		                	  scan.close();
+		                    	
+		                	  System.out.println(someofList);
+		                	  System.out.println(someofArray.toString());
+		                  }
+		              }
+	              }
+	          }
+	      } catch (ParserConfigurationException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (SAXException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (IOException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      }
+}
 	
 	
 	
-	
+	// won't need this method but might use it for reference 
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	public static void compareTranscriptAndDegree()
 	{
 		Path firstFile = Paths.get("degree.txt");
@@ -204,12 +188,13 @@ public class TranscriptParser {
 	/* This method will scan the text file word by word and ONLY compare
 	the word to the abbreviations IF AND ONLY IF the scanned word has a length
 	of between 6 and 7. */
-	public static void readFile(File a, String nameOfFile) {
+	public static ArrayList<String> readFile(File a) {
 		Scanner scanLine = null;
 		Scanner abbreviationList = null;
 
 		try 
 		{
+			//set scanner to file 'a'
 			scanLine = new Scanner(a);
 		} 
 		catch (Exception e) 
@@ -218,7 +203,7 @@ public class TranscriptParser {
 			System.exit(1);
 		}
 
-		createFile(nameOfFile, scanLine, abbreviationList);
+		return createTranscriptArray(scanLine, abbreviationList);
 	}
 
 	/**
@@ -228,47 +213,45 @@ public class TranscriptParser {
 	 * @param nameOfFile       the name of the file being created
 	 * @param scanLine         the Scanner for the text file
 	 * @param abbreviationList the Scanner for abbreviations String
+	 * @return 
 	 */
-	public static void createFile(String nameOfFile, Scanner scanLine, Scanner abbreviationList) {
-		try {
-			FileWriter writeToFile = new FileWriter(nameOfFile);
-			BufferedWriter out = new BufferedWriter(writeToFile);
-
-			while (scanLine.hasNext()) 
+	public static ArrayList<String> createTranscriptArray(Scanner scanLine, Scanner abbreviationList) {
+		ArrayList<String> test = new ArrayList<String>();
+		
+//			FileWriter writeToFile = new FileWriter(nameOfFile);
+//			BufferedWriter out = new BufferedWriter(writeToFile);
+		while (scanLine.hasNext()) 
+		{
+			String word = scanLine.next();
+			
+			if (word.endsWith(","))
 			{
-				String word = scanLine.next();
-				if (word.endsWith(","))
-				{
-					word = word.substring(0, word.length() - 1);
-				}
+				word = word.substring(0, word.length() - 1);
+			}
+			//System.out.println("String word: " + word); 
+			abbreviationList = new Scanner(abbreviations);
+			
+			//only check words with length between 6-7
+			while (abbreviationList.hasNext() && word.length() >= 6 && word.length() <= 7) 
+			{
+				String courseAbbrev = abbreviationList.next();
+				courseAbbrev.replace(",", "");
 				
-				//System.out.println("String word: " + word); //Testing purpose, uncheck if you want to see how it works
-				abbreviationList = new Scanner(abbreviations);
-
-				//only check words with length between 6-7
-				while (abbreviationList.hasNext() && word.length() >= 6 && word.length() <= 7) 
+				if (word.regionMatches(0, courseAbbrev, 0, 3)) 
 				{
-					String courseAbbrev = abbreviationList.next();
-					courseAbbrev.replace(",", "");
-
-					if (word.regionMatches(0, courseAbbrev, 0, 3)) 
-					{
-						out.write(word);
-						out.newLine();
-						break; //exit out 2nd loop if found a match
-					}
+					test.add(word);
+					break; //exit out 2nd loop if found a match
 				}
 			}
-			out.close();
-		} 
-		catch (IOException e) 
-		{
-			System.out.println("Error - IOException");
 		}
-
-		System.out.println(nameOfFile + " text file has been created.");
+		return test;
 	}
-
+	
+	// won't need this function but will keep for reference
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	// function that prints out the differences in the 2 files
 	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
 	{		
@@ -281,6 +264,11 @@ public class TranscriptParser {
 		return diff;
 	}
 
+	// won't need this function but will use for reference
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
+	//-------------------------------------------------------------------------
 	// Function prints class that do count for the major
 	public static List<String> sameFiles( List<String> firstFileContent,List<String> secondFileContent)
 	{
