@@ -86,7 +86,10 @@ public class TranscriptParser {
 		  System.out.println(Arrays.toString(majorRequirements[1]));
 		  
 		  // Third, scan transcript array against the major's arrays 
-		   compareRequiredClasses(transcript, majorRequirements[0]);
+		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
+		  System.out.println(Arrays.toString(transcriptRequired[0]));
+		  System.out.println(Arrays.toString(transcriptRequired[1]));
+		  
 		  // compareSomeOfClasses(transcript, majorRequirements[1])
 		  
 //		  //test arrayAdd
@@ -101,46 +104,45 @@ public class TranscriptParser {
 }
 	  /**
 	   * Compares the transcript and the major's required classes outputting two
-	   * arrays. One array is for classes taken, the other is for classes still needed. 
+	   * arrays. Array 1 is for classes taken, Array 2 is for classes still needed. 
 	   * 
 	   * @param transcript of the user
 	   * @param majorRequirements	of the major
 	   */
-	  public static void compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
+	  public static String[][] compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
-		  int j = 0;		// goes to for-loop
-		  
+		  String[][] returnThis = new String[2][];
 		  String majorCourse = null;
-		  ArrayList<String> coursesTaken = new ArrayList<String>();
-		  ArrayList<String> coursesNeed = new ArrayList<String>();
+		  String[] coursesTaken = new String[0];
+		  String[] coursesNeed = new String[0];
 		  
 		  for(int i = 0; i < majorRequirements.length; i++)
 		  {
 			  majorCourse = majorRequirements[i];
 			  
-			  // Breaking out of for-loop will reset the variable 'j' as if it were
-			  // the first time entering the loop. Moved variable 'j' outside so it 
-			  // doesn't reset and because incrementor couldn't be called due to 
-			  // breaking, moved incrementor to inside if-statements.
-			  for(;j < transcript.size();)
+			  // Take a major's course, compare through all transcript's courses 
+			  for(int j = 0; j < transcript.size(); j++)
 			  {
+				  
 				  if(majorCourse.equals(transcript.get(j)))
 				  {
-					  coursesTaken.add(majorCourse);
-					  j++;
+					  
+					  coursesTaken = arrayAdd(coursesTaken, majorCourse);
 					  break;	//break out of the for-loop if did find a match
 				  }
 				  else
 				  {
-					  coursesNeed.add(majorCourse);
-					  j++;
-					  break;
+					  if( j == (transcript.size()-1) )
+					  {
+						  coursesNeed = arrayAdd(coursesNeed, majorCourse);
+					  }
 				  }
 			  }
 		  }
 		  
-		  System.out.println(coursesTaken.toString());
-		  System.out.println(coursesNeed.toString());
+		  returnThis[0] = coursesTaken;
+		  returnThis[1] = coursesNeed;
+		  return returnThis;
 	  }
 	  
 	  
