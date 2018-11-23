@@ -60,8 +60,6 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 	//Erik added more abbreviations into this list
 
-	  //comment out due to running  the extraction xml
-
 
 	  public static void main(String[] args) throws IOException {
 		  
@@ -82,17 +80,19 @@ public class TranscriptParser {
 		  //Object[] majorRequirements = grabMajorRequirements("American Indian Studies BA");
 		  
 		  // Test call - making sure major arrays were created successfully 
-		  System.out.println(Arrays.toString(majorRequirements[0]));
-		  System.out.println(Arrays.toString(majorRequirements[1]));
+		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
+		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
 		  
 		  // Third, scan transcript array against the major's arrays 
 		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
-		  System.out.println(Arrays.toString(transcriptRequired[0]));
-		  System.out.println(Arrays.toString(transcriptRequired[1]));
 		  
-		  // compareSomeOfClasses(transcript, majorRequirements[1])
+		  // Test call - making sure arrays were created successfully
+		  System.out.println("Classes Taken: " + Arrays.toString(transcriptRequired[0]));
+		  System.out.println("Classes Needed: " + Arrays.toString(transcriptRequired[1]));
 		  
-//		  //test arrayAdd
+		  compareSomeOfClasses(transcript, majorRequirements[1]);
+		  
+//		  // test arrayAdd
 //		  String[] array = {"hello"};
 //		  array = arrayAdd(array, "please");
 //		  System.out.println(Arrays.toString(arrayAdd(array, "please")));
@@ -102,6 +102,59 @@ public class TranscriptParser {
 //		  System.out.println(arrayAdd(array, "please").length);
 		  
 }
+	  
+	  public static void compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
+	  {
+		  String[][] returnThis = new String[2][];
+		  String[] coursesTaken = new String[0];
+		  String[] coursesNeed = new String[0];
+		  String majorCourse = null;
+		  
+		  int classesNeeded = 0;
+		  int classesMet = 0;
+		  
+		  for(int i = 0; i < someOfRequirements.length; i++)
+		  {
+			  majorCourse = someOfRequirements[i];
+			  
+			  // if it is a number in the array, store it 
+			  if(Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  if(classesNeeded - classesMet < 0)
+				  {
+					  System.out.println("Still need a class");
+				  }
+				  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
+				  classesNeeded = Integer.parseInt(majorCourse);
+				  System.out.println(classesNeeded);
+//				  break;
+			  }
+			  else 
+			  {
+				  for(int j = 0; j < transcript.size(); j++)
+				  {
+//					  System.out.println("here");
+					  if(majorCourse.equals(transcript.get(j)))
+					  {
+						   coursesTaken = arrayAdd(coursesTaken, transcript.get(j));
+						   transcript.remove(j);
+						   classesMet++;
+						   break;
+					  }
+					  else
+					  {
+						  if( j == (transcript.size()-1) )
+						  {
+							  coursesNeed = arrayAdd(coursesNeed, majorCourse);
+						  }
+					  }
+				  }
+			  }
+		  }
+		  System.out.println(Arrays.toString(coursesTaken));
+		  System.out.println(Arrays.toString(coursesNeed));
+	  }
+	  
 	  /**
 	   * Compares the transcript and the major's required classes outputting two
 	   * arrays. Array 1 is for classes taken, Array 2 is for classes still needed. 
@@ -112,9 +165,9 @@ public class TranscriptParser {
 	  public static String[][] compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
 		  String[][] returnThis = new String[2][];
-		  String majorCourse = null;
 		  String[] coursesTaken = new String[0];
 		  String[] coursesNeed = new String[0];
+		  String majorCourse = null;
 		  
 		  for(int i = 0; i < majorRequirements.length; i++)
 		  {
