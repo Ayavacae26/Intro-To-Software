@@ -99,7 +99,13 @@ public class TranscriptParser {
 //		  System.out.println(arrayAdd(array, "please").length);
 		  
 }
-	  
+	  /**
+	   * Compares the transcript and the major's required classes outputting two
+	   * arrays. One array is for classes taken, the other is for classes still needed. 
+	   * 
+	   * @param transcript of the user
+	   * @param majorRequirements	of the major
+	   */
 	  public static void compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
 		  String majorCourse = null;
@@ -130,7 +136,6 @@ public class TranscriptParser {
 	  }
 	  
 	  
-	  
 	  /**
 	   * Takes in a String and looks inside the XML database to see if that String/Major
 	   * exists. If it does then capture those data into two arrays. 
@@ -140,83 +145,6 @@ public class TranscriptParser {
 	   * required to be taken. Second array holds in special cases for when a certain 
 	   * amount of classes need to be taken from a group of courses. 
 	   */
-//	  public static Object[] grabMajorRequirements(String majorName)
-//	  {
-//	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//	      ArrayList<String> requiredArray = new ArrayList<String>();
-//	      ArrayList<String> someofArray = new ArrayList<String>();
-//	        
-//	      try {
-//	          DocumentBuilder builder = factory.newDocumentBuilder();
-//	          Document doc = builder.parse("CompletedMajors2.xml");
-//	          NodeList majorList = doc.getElementsByTagName("MajorName");
-//	          for(int i =0; i<majorList.getLength(); i++) 
-//	          {
-//	              Node p = majorList.item(i);
-//	              Element major = (Element) p;
-//	              String id = major.getAttribute("id");
-//	              
-//	              if(id.equals(majorName))	//testing to grab only when id equals
-//	              {
-//	            	  NodeList nameList  = major.getChildNodes();
-//	                	
-//		              for(int j=0; j<nameList.getLength(); j++) {
-//		                  Node n = nameList.item(j);
-//		                    
-//		                  // Stores 'Required' classes into one array
-//		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
-//		                  {
-//		                	  Element name = (Element)n;
-//		                	  String requiredList = name.getTextContent();
-//		                	  requiredArray = new ArrayList<String>();
-//		                	  Scanner scan = new Scanner(requiredList);
-//		                    	
-//		                	  // store our String requiredList into an array
-//		                	  while(scan.hasNext())
-//		                	  {
-//		                		  requiredArray.add(scan.next());
-//		                	  }
-//		                	  scan.close();
-//		                	  
-////		                	  System.out.println(requiredList);
-////		                	  System.out.println(requiredArray.toString());
-//		                  }
-//		                  // Stores 'SomeOf' classes into one array
-//		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
-//		                  {
-//		                	  Element name = (Element)n;
-//		                	  String someofList = name.getTextContent();
-//		                	  someofArray = new ArrayList<String>();
-//		                	  Scanner scan = new Scanner(someofList);
-//		                    	
-//		                	  // store our String someofList into an array
-//		                	  while(scan.hasNext())
-//		                	  {
-//		                		  someofArray.add(scan.next());
-//		                	  }
-//		                	  scan.close();
-//		                    	
-////		                	  System.out.println(someofList);
-////		                	  System.out.println(someofArray.toString());
-//		                  }
-//		              }
-//	              }
-//	          }
-//	      } catch (ParserConfigurationException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      } catch (SAXException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      } catch (IOException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      }
-//	      
-//		  return new Object[] {requiredArray, someofArray};
-//	  }
-	
-	  
 	  public static String[][] grabMajorRequirements(String majorName)
 	  {
 		  String[][] returnThis = new String[2][];
