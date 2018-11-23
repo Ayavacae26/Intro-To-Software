@@ -71,83 +71,19 @@ public class TranscriptParser {
 		  // call testing method
 		  System.out.println(readFile(new File("TranscriptTest.txt")));
 		  
-		   grabMajorRequirements("American Indian Studies BA");
-//		  
-//	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//	        
-//	      try {
-//	          DocumentBuilder builder = factory.newDocumentBuilder();
-//	          Document doc = builder.parse("CompletedMajors2.xml");
-//	          NodeList majorList = doc.getElementsByTagName("MajorName");
-//	          for(int i =0; i<majorList.getLength(); i++) 
-//	          {
-//	              Node p = majorList.item(i);
-//	              Element major = (Element) p;
-//	              String id = major.getAttribute("id");
-//	              
-//	              if(id.equals("American Indian Studies BA"))	//testing to grab only when id equals
-//	              {
-//	            	  NodeList nameList  = major.getChildNodes();
-//	                	
-//		              for(int j=0; j<nameList.getLength(); j++) {
-//		                  Node n = nameList.item(j);
-//		                    
-//		                  // Stores 'Required' classes into one array
-//		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
-//		                  {
-//		                	  Element name = (Element)n;
-//		                	  String requiredList = name.getTextContent();
-////		                	  System.out.println(name.getTextContent()); //verify with this line of code
-//		                	  ArrayList<String> requiredArray = new ArrayList<String>();
-//		                	  Scanner scan = new Scanner(requiredList);
-//		                    	
-//		                	  // store our String requiredList into an array
-//		                	  while(scan.hasNext())
-//		                	  {
-//		                		  requiredArray.add(scan.next());
-//		                	  }
-//		                	  scan.close();
-//		                	  
-//		                	  System.out.println(requiredList);
-//		                	  System.out.println(requiredArray.toString());
-//		                  }
-//		                  // Stores 'SomeOf' classes into one array
-//		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
-//		                  {
-//		                	  Element name = (Element)n;
-//		                	  String someofList = name.getTextContent();
-////		                	  System.out.println(name.getTextContent()); //verify with this line of code
-//		                	  ArrayList<String> someofArray = new ArrayList<String>();
-//		                	  Scanner scan = new Scanner(someofList);
-//		                    	
-//		                	  // store our String someofList into an array
-//		                	  while(scan.hasNext())
-//		                	  {
-//		                		  someofArray.add(scan.next());
-//		                	  }
-//		                	  scan.close();
-//		                    	
-//		                	  System.out.println(someofList);
-//		                	  System.out.println(someofArray.toString());
-//		                  }
-//		              }
-//	              }
-//	          }
-//	      } catch (ParserConfigurationException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      } catch (SAXException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      } catch (IOException e) {
-//	          // TODO Auto-generated catch block
-//	          e.printStackTrace();
-//	      }
+		  // GUI will set the string to a variable for this call
+		  Object[] majorRequirements = grabMajorRequirements("American Indian Studies BA");
+		  
+		  System.out.println(majorRequirements[0]);
+		  System.out.println(majorRequirements[1]);
+
 }
 	  
-	  public static Object grabMajorRequirements(String majorName)
+	  public static Object[] grabMajorRequirements(String majorName)
 	  {
 	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+	      ArrayList<String> requiredArray = new ArrayList<String>();
+	      ArrayList<String> someofArray = new ArrayList<String>();
 	        
 	      try {
 	          DocumentBuilder builder = factory.newDocumentBuilder();
@@ -172,7 +108,7 @@ public class TranscriptParser {
 		                	  Element name = (Element)n;
 		                	  String requiredList = name.getTextContent();
 //		                	  System.out.println(name.getTextContent()); //verify with this line of code
-		                	  ArrayList<String> requiredArray = new ArrayList<String>();
+		                	  requiredArray = new ArrayList<String>();
 		                	  Scanner scan = new Scanner(requiredList);
 		                    	
 		                	  // store our String requiredList into an array
@@ -182,8 +118,8 @@ public class TranscriptParser {
 		                	  }
 		                	  scan.close();
 		                	  
-		                	  System.out.println(requiredList);
-		                	  System.out.println(requiredArray.toString());
+//		                	  System.out.println(requiredList);
+//		                	  System.out.println(requiredArray.toString());
 		                  }
 		                  // Stores 'SomeOf' classes into one array
 		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
@@ -191,7 +127,7 @@ public class TranscriptParser {
 		                	  Element name = (Element)n;
 		                	  String someofList = name.getTextContent();
 //		                	  System.out.println(name.getTextContent()); //verify with this line of code
-		                	  ArrayList<String> someofArray = new ArrayList<String>();
+		                	  someofArray = new ArrayList<String>();
 		                	  Scanner scan = new Scanner(someofList);
 		                    	
 		                	  // store our String someofList into an array
@@ -201,8 +137,8 @@ public class TranscriptParser {
 		                	  }
 		                	  scan.close();
 		                    	
-		                	  System.out.println(someofList);
-		                	  System.out.println(someofArray.toString());
+//		                	  System.out.println(someofList);
+//		                	  System.out.println(someofArray.toString());
 		                  }
 		              }
 	              }
@@ -217,7 +153,9 @@ public class TranscriptParser {
 	          // TODO Auto-generated catch block
 	          e.printStackTrace();
 	      }
-		  return null;
+	      
+	      //return two arrays
+		  return new Object[] {requiredArray, someofArray};
 	  }
 	
 	
