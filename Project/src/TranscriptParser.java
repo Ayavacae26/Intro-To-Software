@@ -108,6 +108,8 @@ public class TranscriptParser {
 	   */
 	  public static void compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
+		  int j = 0;		// goes to for-loop
+		  
 		  String majorCourse = null;
 		  ArrayList<String> coursesTaken = new ArrayList<String>();
 		  ArrayList<String> coursesNeed = new ArrayList<String>();
@@ -116,17 +118,23 @@ public class TranscriptParser {
 		  {
 			  majorCourse = majorRequirements[i];
 			  
-			  for (int j = 0; j < transcript.size(); j++)
+			  // Breaking out of for-loop will reset the variable 'j' as if it were
+			  // the first time entering the loop. Moved variable 'j' outside so it 
+			  // doesn't reset and because incrementor couldn't be called due to 
+			  // breaking, moved incrementor to inside if-statements.
+			  for(;j < transcript.size();)
 			  {
-				  
 				  if(majorCourse.equals(transcript.get(j)))
 				  {
 					  coursesTaken.add(majorCourse);
+					  j++;
 					  break;	//break out of the for-loop if did find a match
 				  }
 				  else
 				  {
 					  coursesNeed.add(majorCourse);
+					  j++;
+					  break;
 				  }
 			  }
 		  }
