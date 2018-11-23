@@ -68,8 +68,10 @@ public class TranscriptParser {
 //		  GUI window = new GUI();
 //		  window.setVisible(true);
 		  
+		  ArrayList<String> transcript = readFile(new File("TranscriptTest.txt"));
+		  
 		  // call testing method
-		  System.out.println(readFile(new File("TranscriptTest.txt")));
+		  System.out.println(transcript);
 		  
 		  // GUI will set the string to a variable for this call
 		  Object[] majorRequirements = grabMajorRequirements("American Indian Studies BA");
