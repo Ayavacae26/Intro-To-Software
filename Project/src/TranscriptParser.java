@@ -83,14 +83,24 @@ public class TranscriptParser {
 		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
 		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
 		  
-		  // Third, scan transcript array against the major's arrays 
+		  // Third, scan transcript array against the major's required classes 
 		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
 		  
 		  // Test call - making sure arrays were created successfully
 		  System.out.println("Classes Taken: " + Arrays.toString(transcriptRequired[0]));
 		  System.out.println("Classes Needed: " + Arrays.toString(transcriptRequired[1]));
 		  
-		  compareSomeOfClasses(transcript, majorRequirements[1]);
+		  // Fourth, scan transcript array against the major's SomeOf classes 
+		  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
+		  
+		  // Test call - making sure arrays were created successfully 
+		  System.out.println(Arrays.toString(transcriptSomeOf[0]));
+		  System.out.println(Arrays.toString(transcriptSomeOf[1]));
+		  
+		  // String classesTaken1 = readRequiredTaken(transcriptRequired[0]);
+		  // String classesTaken2 = readRequiredNeed(transcriptRequired[1]);
+		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[0]);
+		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[1]);
 		  
 //		  // test arrayAdd
 //		  String[] array = {"hello"};
@@ -103,7 +113,7 @@ public class TranscriptParser {
 		  
 }
 	  
-	  public static void compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
+	  public static String[][] compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
 	  {
 		  String[][] returnThis = new String[2][];
 		  String[] coursesTaken = new String[0];
@@ -138,15 +148,13 @@ public class TranscriptParser {
 //						   System.out.println(classesMet);
 						   break;
 					  }
-					  else
+					  else if( j == (transcript.size()-1) )
 					  {
-						  // if not equal to any
-						  if( j == (transcript.size()-1) )
-						  {
+//						  // if not equal to any inside transcript 
+//						  if( j == (transcript.size()-1) )
+//						  {
 							  coursesNeed = arrayAdd(coursesNeed, majorCourse);
-//							  Character.isDigit(someOfRequirements[i+1].charAt(0))
-							  
-						  }
+//						  }
 						  
 					  }
 				  }
@@ -164,9 +172,12 @@ public class TranscriptParser {
 				  }
 			  }
 		  }
-		  System.out.println(Arrays.toString(coursesTaken));
-		  System.out.println(Arrays.toString(coursesNeed));
-//		  System.out.println("hello");
+//		  System.out.println(Arrays.toString(coursesTaken));
+//		  System.out.println(Arrays.toString(coursesNeed));
+		  returnThis[0] = coursesTaken;
+		  returnThis[1] = coursesNeed;
+		  
+		  return returnThis;
 	  }
 	  
 	  /**
