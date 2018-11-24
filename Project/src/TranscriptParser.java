@@ -60,8 +60,6 @@ public class TranscriptParser {
 			+ " NUR NMS FLM THP URB YST REL AUG";
 	//Erik added more abbreviations into this list
 
-	  //comment out due to running  the extraction xml
-
 
 	  public static void main(String[] args) throws IOException {
 		  
@@ -82,14 +80,29 @@ public class TranscriptParser {
 		  //Object[] majorRequirements = grabMajorRequirements("American Indian Studies BA");
 		  
 		  // Test call - making sure major arrays were created successfully 
-		  System.out.println(Arrays.toString(majorRequirements[0]));
-		  System.out.println(Arrays.toString(majorRequirements[1]));
+		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
+		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
 		  
-		  // Third, scan transcript array against the major's arrays 
-		   compareRequiredClasses(transcript, majorRequirements[0]);
-		  // compareSomeOfClasses(transcript, majorRequirements[1])
+		  // Third, scan transcript array against the major's required classes 
+		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
 		  
-//		  //test arrayAdd
+		  // Test call - making sure arrays were created successfully
+		  System.out.println("Classes Taken: " + Arrays.toString(transcriptRequired[0]));
+		  System.out.println("Classes Needed: " + Arrays.toString(transcriptRequired[1]));
+		  
+		  // Fourth, scan transcript array against the major's SomeOf classes 
+		  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
+		  
+		  // Test call - making sure arrays were created successfully 
+		  System.out.println(Arrays.toString(transcriptSomeOf[0]));
+		  System.out.println(Arrays.toString(transcriptSomeOf[1]));
+		  
+		  // String classesTaken1 = readRequiredTaken(transcriptRequired[0]);
+		  // String classesTaken2 = readRequiredNeed(transcriptRequired[1]);
+		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[0]);
+		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[1]);
+		  
+//		  // test arrayAdd
 //		  String[] array = {"hello"};
 //		  array = arrayAdd(array, "please");
 //		  System.out.println(Arrays.toString(arrayAdd(array, "please")));
@@ -99,40 +112,115 @@ public class TranscriptParser {
 //		  System.out.println(arrayAdd(array, "please").length);
 		  
 }
+	  
+	  public static String[][] compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
+	  {
+		  String[][] returnThis = new String[2][];
+		  String[] coursesTaken = new String[0];
+		  String[] coursesNeed = new String[0];
+		  String majorCourse = null;
+		  
+		  int classesNeeded = 0;
+		  int classesMet = 0;
+		  
+		  for(int i = 0; i < someOfRequirements.length; i++)
+		  {
+			  majorCourse = someOfRequirements[i];
+			  
+			  // if it is a number in the array, store it 
+			  if(Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  // reset variables 
+				  classesNeeded = Integer.parseInt(majorCourse);
+				  classesMet = 0;
+			  }
+			  else 
+			  {
+				  for(int j = 0; j < transcript.size(); j++)
+				  {
+					  // if equal, remove from transcript then 
+					  // store in CoursesTaken and increment classesMet 
+					  if(majorCourse.equals(transcript.get(j)))
+					  {
+						   coursesTaken = arrayAdd(coursesTaken, transcript.get(j));
+						   transcript.remove(j);
+						   classesMet++;
+//						   System.out.println(classesMet);
+						   break;
+					  }
+					  else if( j == (transcript.size()-1) )
+					  {
+//						  // if not equal to any inside transcript 
+//						  if( j == (transcript.size()-1) )
+//						  {
+							  coursesNeed = arrayAdd(coursesNeed, majorCourse);
+//						  }
+						  
+					  }
+				  }
+				  
+				  if((i+1) > someOfRequirements.length - 1)
+				  {
+					  System.out.println("here");
+					  System.out.println(classesNeeded);
+					  System.out.println(classesMet);
+					  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
+				  }
+				  else if(Character.isDigit(someOfRequirements[i+1].charAt(0)))
+				  {
+					  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
+				  }
+			  }
+		  }
+//		  System.out.println(Arrays.toString(coursesTaken));
+//		  System.out.println(Arrays.toString(coursesNeed));
+		  returnThis[0] = coursesTaken;
+		  returnThis[1] = coursesNeed;
+		  
+		  return returnThis;
+	  }
+	  
 	  /**
 	   * Compares the transcript and the major's required classes outputting two
-	   * arrays. One array is for classes taken, the other is for classes still needed. 
+	   * arrays. Array 1 is for classes taken, Array 2 is for classes still needed. 
 	   * 
 	   * @param transcript of the user
 	   * @param majorRequirements	of the major
 	   */
-	  public static void compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
+	  public static String[][] compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
+		  String[][] returnThis = new String[2][];
+		  String[] coursesTaken = new String[0];
+		  String[] coursesNeed = new String[0];
 		  String majorCourse = null;
-		  ArrayList<String> coursesTaken = new ArrayList<String>();
-		  ArrayList<String> coursesNeed = new ArrayList<String>();
 		  
 		  for(int i = 0; i < majorRequirements.length; i++)
 		  {
 			  majorCourse = majorRequirements[i];
 			  
-			  for (int j = 0; j < transcript.size(); j++)
+			  // Take a major's course, compare through all transcript's courses 
+			  for(int j = 0; j < transcript.size(); j++)
 			  {
 				  
 				  if(majorCourse.equals(transcript.get(j)))
 				  {
-					  coursesTaken.add(majorCourse);
+					  
+					  coursesTaken = arrayAdd(coursesTaken, majorCourse);
 					  break;	//break out of the for-loop if did find a match
 				  }
 				  else
 				  {
-					  coursesNeed.add(majorCourse);
+					  if( j == (transcript.size()-1) )
+					  {
+						  coursesNeed = arrayAdd(coursesNeed, majorCourse);
+					  }
 				  }
 			  }
 		  }
 		  
-		  System.out.println(coursesTaken.toString());
-		  System.out.println(coursesNeed.toString());
+		  returnThis[0] = coursesTaken;
+		  returnThis[1] = coursesNeed;
+		  return returnThis;
 	  }
 	  
 	  
