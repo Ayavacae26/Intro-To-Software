@@ -120,39 +120,53 @@ public class TranscriptParser {
 			  // if it is a number in the array, store it 
 			  if(Character.isDigit(majorCourse.charAt(0)))
 			  {
-				  if(classesNeeded - classesMet < 0)
-				  {
-					  System.out.println("Still need a class");
-				  }
-				  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
+				  // reset variables 
 				  classesNeeded = Integer.parseInt(majorCourse);
-				  System.out.println(classesNeeded);
-//				  break;
+				  classesMet = 0;
 			  }
 			  else 
 			  {
 				  for(int j = 0; j < transcript.size(); j++)
 				  {
-//					  System.out.println("here");
+					  // if equal, remove from transcript then 
+					  // store in CoursesTaken and increment classesMet 
 					  if(majorCourse.equals(transcript.get(j)))
 					  {
 						   coursesTaken = arrayAdd(coursesTaken, transcript.get(j));
 						   transcript.remove(j);
 						   classesMet++;
+//						   System.out.println(classesMet);
 						   break;
 					  }
 					  else
 					  {
+						  // if not equal to any
 						  if( j == (transcript.size()-1) )
 						  {
 							  coursesNeed = arrayAdd(coursesNeed, majorCourse);
+//							  Character.isDigit(someOfRequirements[i+1].charAt(0))
+							  
 						  }
+						  
 					  }
+				  }
+				  
+				  if((i+1) > someOfRequirements.length - 1)
+				  {
+					  System.out.println("here");
+					  System.out.println(classesNeeded);
+					  System.out.println(classesMet);
+					  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
+				  }
+				  else if(Character.isDigit(someOfRequirements[i+1].charAt(0)))
+				  {
+					  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
 				  }
 			  }
 		  }
 		  System.out.println(Arrays.toString(coursesTaken));
 		  System.out.println(Arrays.toString(coursesNeed));
+//		  System.out.println("hello");
 	  }
 	  
 	  /**
