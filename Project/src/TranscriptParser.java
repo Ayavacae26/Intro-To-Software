@@ -62,16 +62,19 @@ public class TranscriptParser {
 
 
 	  public static void main(String[] args) throws IOException {
+		  StringBuilder format = new StringBuilder("\nAlong with these other classe(s).");
 		  
 //		  GUI window = new GUI();
 //		  window.setVisible(true);
 		  
+		  /*---------------------------------------------------------------------*/
 		  // First, take in the user's transcript and turn it into an array
 		  ArrayList<String> transcript = readFile(new File("TranscriptTest.txt"));
 		  
 		  // Test call - making sure transcript array was created successfully
-		  System.out.println(transcript);
+		  System.out.println("User's Transcript: " + transcript);
 		  
+		  /*---------------------------------------------------------------------*/
 		  // GUI will set the string to a variable for this call
 		  /* Second, find major comparing against and store that major into 
 		  two arrays; one for required, and one for special cases (1 of, 3 of, etc... */
@@ -83,28 +86,40 @@ public class TranscriptParser {
 		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
 		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
 		  
+		  /*---------------------------------------------------------------------*/
 		  // Third, scan transcript array against the major's required classes 
 		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
 		  
 		  // Test call - making sure arrays were created successfully
-		  System.out.println("Classes Taken: " + Arrays.toString(transcriptRequired[0]));
-		  System.out.println("Classes Needed: " + Arrays.toString(transcriptRequired[1]));
+		  System.out.println("Required Taken: " + Arrays.toString(transcriptRequired[0]));
+		  System.out.println("Required Needed: " + Arrays.toString(transcriptRequired[1]));
 		  
+		  /*---------------------------------------------------------------------*/
 		  // Fourth, scan transcript array against the major's SomeOf classes 
 		  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
 		  
 		  // Test call - making sure arrays were created successfully 
-		  System.out.println(Arrays.toString(transcriptSomeOf[0]));
-		  System.out.println(Arrays.toString(transcriptSomeOf[1]));
+		  System.out.println("SomeOf Taken: "+Arrays.toString(transcriptSomeOf[0]));
+		  System.out.println("SomeOf Need " + Arrays.toString(transcriptSomeOf[1]));
 		  
-		   StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0], true);
-		   StringBuilder classesTaken2 = readRequiredTaken(transcriptRequired[1], false);
-		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[0]);
-		  // String classesTaken3 = readSomeOfNeed(compareSomeOfClasses[1]);
+		  /*---------------------------------------------------------------------*/
+		  // Fifth, read the arrays of the Required Class 
+		  StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0], true);
+		  StringBuilder classesTaken2 = readRequiredTaken(transcriptRequired[1], false);
 		  
+		  // Test call - making sure StringBuilder was generated 
 		  System.out.println(classesTaken1.toString());
 		  System.out.println(classesTaken2.toString());
-		   
+		  
+		  StringBuilder classesTaken3 = readSomeOfTaken(transcriptSomeOf[1]);
+		  // String classesTaken3 = readSomeOfNeed(transcriptSomeOf[1]);
+		  
+		 // Test call -
+		  System.out.print(format.toString());			// making printout look nice 
+		  System.out.println(classesTaken3.toString());
+		  
+		  
+		  
 //		  // test arrayAdd
 //		  String[] array = {"hello"};
 //		  array = arrayAdd(array, "please");
@@ -116,17 +131,51 @@ public class TranscriptParser {
 		  
 }
 	  
+	  public static StringBuilder readSomeOfTaken(String[] transcriptSomeOf)
+	  {
+		  StringBuilder returnThis = new StringBuilder();
+		  String majorCourse = null;
+		  
+		  // reverse the array so numbers come first before courses
+		  for(int i = 0; i < (transcriptSomeOf.length/2); i++)
+		  {
+			  String temp = transcriptSomeOf[i];
+			  transcriptSomeOf[i] = transcriptSomeOf[transcriptSomeOf.length - i - 1];
+			  transcriptSomeOf[transcriptSomeOf.length - i - 1] = temp;
+		  }
+		  
+		  // build a string by reading through the array
+		  for(int i = 0; i < transcriptSomeOf.length; i++)
+		  {
+			  majorCourse = transcriptSomeOf[i];
+			  
+			  // if it is a number in the array, store as new category in String
+			  if(Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  returnThis.append("\nYou need " + majorCourse + " more classe(s) from this group:\n");
+			  }
+			  else
+			  {
+				  returnThis.append(majorCourse + " ");
+			  }
+			  
+		  }
+//		  System.out.println("Reversed Array: "+Arrays.toString(transcriptSomeOf));
+		  return returnThis;
+	  }
+	  
 	  public static StringBuilder readRequiredTaken(String[] transcriptRequired, boolean takenOrNeed)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
+		  
 		  // if true
 		  if (takenOrNeed)
 		  {
-			  returnThis = new StringBuilder("You have taken these classes that fit the major: ");
+			  returnThis = new StringBuilder("You have taken these classe(s) that fit the major: \n");
 		  }
 		  else
 		  {
-			  returnThis = new StringBuilder("You still need these classes from the major: ");
+			  returnThis = new StringBuilder("You still need these classe(s) from the major: \n");
 		  }
 		  
 		  // read the array into the StringBuilder 
@@ -176,9 +225,13 @@ public class TranscriptParser {
 					  if(majorCourse.equals(transcript.get(j)))
 					  {
 						   coursesTaken = arrayAdd(coursesTaken, transcript.get(j));
-						   transcript.remove(j);
+						   
+//						   // Also add to coursesNeed so we can see that it's a class needed
+//						   // but we have taken already
+//						   coursesNeed = arrayAdd(coursesNeed, majorCourse);
+						   
+//						   transcript.remove(j);
 						   classesMet++;
-//						   System.out.println(classesMet);
 						   break;
 					  }
 					  else if( j == (transcript.size()-1) )
@@ -194,9 +247,6 @@ public class TranscriptParser {
 				  
 				  if((i+1) > someOfRequirements.length - 1)
 				  {
-					  System.out.println("here");
-					  System.out.println(classesNeeded);
-					  System.out.println(classesMet);
 					  coursesNeed = arrayAdd(coursesNeed, String.valueOf(classesNeeded - classesMet));
 				  }
 				  else if(Character.isDigit(someOfRequirements[i+1].charAt(0)))
@@ -205,8 +255,6 @@ public class TranscriptParser {
 				  }
 			  }
 		  }
-//		  System.out.println(Arrays.toString(coursesTaken));
-//		  System.out.println(Arrays.toString(coursesNeed));
 		  returnThis[0] = coursesTaken;
 		  returnThis[1] = coursesNeed;
 		  
