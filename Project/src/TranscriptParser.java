@@ -62,7 +62,7 @@ public class TranscriptParser {
 
 
 	  public static void main(String[] args) throws IOException {
-		  StringBuilder format = new StringBuilder("\nAlong with these other class(es).");
+		  StringBuilder format = new StringBuilder();
 		  
 //		  GUI window = new GUI();
 //		  window.setVisible(true);
@@ -101,24 +101,30 @@ public class TranscriptParser {
 //		  System.out.println("SomeOf Need " + Arrays.toString(transcriptSomeOf[1]));
 		  
 		  /*---------------------------------------------------------------------*/
-		  // Fifth, read the arrays of the Required Class 
-		  StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0], true);
-		  StringBuilder classesNeed1 = readRequiredTaken(transcriptRequired[1], false);
-		  StringBuilder classesTaken2 = readRequiredTaken(transcriptSomeOf[0], true);
+		  // Fifth, read the arrays of the taken 
+		  StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0]);
+		  StringBuilder classesTaken2 = readRequiredTaken(transcriptSomeOf[0]);
+		  format = new StringBuilder("You have taken these class(es) that fit the major:");
 		  
 		  // Test call - making sure StringBuilder was created successfully 
+		  System.out.println(format);
 		  System.out.println(classesTaken1.toString());
-		  System.out.println(classesNeed1.toString());
 		  System.out.println(classesTaken2.toString());
 		  
 		  /*---------------------------------------------------------------------*/
 		  // Sixth, read the arrays of the classes still need
+		  StringBuilder classesNeed1 = readRequiredTaken(transcriptRequired[1]);
 		  StringBuilder classesNeed2 = readSomeOfTaken(transcriptSomeOf[1]);
-		  // String classesTaken3 = readSomeOfNeed(transcriptSomeOf[1]);
 		  
 		  // Test call - making sure StringBuilder was created successfully 
-		  System.out.print(format.toString());			// making printout look nice 
+		  format = new StringBuilder("\nYou still need these class(es) from the major: ");
+		  System.out.println(format);
+		  System.out.println(classesNeed1.toString());
+		  
+		  format = new StringBuilder("\nAlong with these other class(es).");
+		  System.out.print(format.toString());
 		  System.out.println(classesNeed2.toString());
+		  
 		  
 		  
 		  
@@ -166,19 +172,9 @@ public class TranscriptParser {
 		  return returnThis;
 	  }
 	  
-	  public static StringBuilder readRequiredTaken(String[] transcriptRequired, boolean takenOrNeed)
+	  public static StringBuilder readRequiredTaken(String[] transcriptRequired)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
-		  
-		  // if true
-		  if (takenOrNeed)
-		  {
-			  returnThis = new StringBuilder("You have taken these class(es) that fit the major: \n");
-		  }
-		  else
-		  {
-			  returnThis = new StringBuilder("You still need these class(es) from the major: \n");
-		  }
 		  
 		  // read the array into the StringBuilder 
 		  for(int i = 0; i < transcriptRequired.length; i++)
