@@ -97,11 +97,14 @@ public class TranscriptParser {
 		  System.out.println(Arrays.toString(transcriptSomeOf[0]));
 		  System.out.println(Arrays.toString(transcriptSomeOf[1]));
 		  
-		  // String classesTaken1 = readRequiredTaken(transcriptRequired[0]);
-		  // String classesTaken2 = readRequiredNeed(transcriptRequired[1]);
+		   StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0], true);
+		   StringBuilder classesTaken2 = readRequiredTaken(transcriptRequired[1], false);
 		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[0]);
-		  // String classesTaken3 = readSomeOfTaken(compareSomeOfClasses[1]);
+		  // String classesTaken3 = readSomeOfNeed(compareSomeOfClasses[1]);
 		  
+		  System.out.println(classesTaken1.toString());
+		  System.out.println(classesTaken2.toString());
+		   
 //		  // test arrayAdd
 //		  String[] array = {"hello"};
 //		  array = arrayAdd(array, "please");
@@ -112,6 +115,35 @@ public class TranscriptParser {
 //		  System.out.println(arrayAdd(array, "please").length);
 		  
 }
+	  
+	  public static StringBuilder readRequiredTaken(String[] transcriptRequired, boolean takenOrNeed)
+	  {
+		  StringBuilder returnThis = new StringBuilder();
+		  // if true
+		  if (takenOrNeed)
+		  {
+			  returnThis = new StringBuilder("You have taken these classes that fit the major: ");
+		  }
+		  else
+		  {
+			  returnThis = new StringBuilder("You still need these classes from the major: ");
+		  }
+		  
+		  for(int i = 0; i < transcriptRequired.length; i++)
+		  {
+			  if (i == transcriptRequired.length - 1)
+			  {
+				  returnThis.append(transcriptRequired[i]);
+			  }
+			  else
+			  {
+				  returnThis.append(transcriptRequired[i] + ", ");
+			  }
+			  
+		  }
+		  
+		  return returnThis;
+	  }
 	  
 	  public static String[][] compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
 	  {
