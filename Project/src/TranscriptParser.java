@@ -129,6 +129,7 @@ public class TranscriptParser {
 			  returnThis = new StringBuilder("You still need these classes from the major: ");
 		  }
 		  
+		  // read the array into the StringBuilder 
 		  for(int i = 0; i < transcriptRequired.length; i++)
 		  {
 			  if (i == transcriptRequired.length - 1)
