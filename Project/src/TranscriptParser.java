@@ -168,7 +168,7 @@ public class TranscriptParser {
 			  }
 			  
 		  }
-//		  System.out.println("Reversed Array: "+Arrays.toString(transcriptSomeOf));
+		  
 		  return returnThis;
 	  }
 	  
