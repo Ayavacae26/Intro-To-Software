@@ -128,15 +128,23 @@ public class TranscriptParser {
 		  /*---------------------------------------------------------------------*/
 		  // Minimum Requirement - Progress Towards Degree 
 		  // First, go through 'still need' arrays and add their courses together 
-		  int classNeedNumber = amountOfClassesTaken(transcriptRequired[1], transcriptSomeOf[1]);
+		  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
 		  
 		  // Test call - making sure the addition is correct 
-		  System.out.println(classNeedNumber);
+		  System.out.println(amountNeed);
 		  
+		  /*---------------------------------------------------------------------*/
 		  //Second, go through 'already taken' arrays and add their courses together 
-		  int classTakenNumber = amountOfClassesNeed(transcriptRequired[0], transcriptSomeOf[0]);
+		  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
 		  
-		  System.out.println(classTakenNumber);
+		  // Test - call
+		  System.out.println(amountTaken);
+		  
+		  // amount taken / amount taken + amount need 
+		  // 3 / (3 + 12) 
+		  System.out.println("Degree Progress: " + amountTaken + "\\" 
+		  + (amountTaken+amountNeed)+ " (" + 
+				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 		  
 		  // Suggest a plan to meet the Program Requirements
 		  /* - Search for all classes still need in the database... if they have
@@ -181,12 +189,12 @@ public class TranscriptParser {
 		  
 }
 	  
-	  public static int amountOfClassesNeed(String[] transcriptRequired, String[] transcriptSomeOf)
+	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  return transcriptRequired.length + transcriptSomeOf.length;
 	  }
 	  
-	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
+	  public static int amountOfClassesNeed(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  int returnThis = transcriptRequired.length;
 		  int transcriptSomeOfNumber = 0;
