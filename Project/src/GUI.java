@@ -140,8 +140,8 @@ public class GUI extends JFrame{
         	}
         	else
         	{
-        		TranscriptParser.readFile(file1, "transcript.txt");
-            	TranscriptParser.readFile(file2, "degree.txt");
+//        		TranscriptParser.readFile(file1, "transcript.txt");
+//            	TranscriptParser.readFile(file2, "degree.txt");
             	//read generated files and compare them
             	TranscriptParser.compareTranscriptAndDegree();
             	userOutput.setText("Your output is located in the console.");
