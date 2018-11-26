@@ -125,7 +125,49 @@ public class TranscriptParser {
 		  System.out.print(format.toString());
 		  System.out.println(classesNeed2.toString());
 		  
+		  /*---------------------------------------------------------------------*/
+		  // Minimum Requirement - Progress Towards Degree 
+		  // First, go through 'still need' arrays and add their courses together 
+		  int classNeedNumber = amountOfClassesTaken(transcriptRequired[1], transcriptSomeOf[1]);
 		  
+		  // Test call - making sure the addition is correct 
+		  System.out.println(classNeedNumber);
+		  
+		  //Second, go through 'already taken' arrays and add their courses together 
+		  int classTakenNumber = amountOfClassesNeed(transcriptRequired[0], transcriptSomeOf[0]);
+		  
+		  System.out.println(classTakenNumber);
+		  
+		  // Suggest a plan to meet the Program Requirements
+		  /* - Search for all classes still need in the database... if they have
+		  any prerequisite(s) then output those classes. Also check if those 
+		  classes have any other prerequisite(s). Store all the classes 
+		  into an ArrayList so that we can read it from reverse? 
+		  This will then tell the users which classes to take before the next class
+		  (CSC400 --> CSC300 --> CSC 200, CSC101, CSC301 --> CSC200) 
+		  
+		  A recursive call inside? 
+		  public static void anyPrerequisite(String[] classesNeed)
+		  {
+		  		for(int i = 0; i<classesNeed.length; i++)
+		  		{
+		  			
+		  		}
+		  }
+		  
+		  Or we only check 4 trees down. 400 --> 300 --> 200 -- > 100
+		  public static void anyPrerequisite(String[] classesNeed)
+		  {
+		  		for(int i = 0; i>classesNeed.length; i++)
+		  		{
+		  			// grab class prereq
+		  			// if there is, store to array
+		  			prereq1 = 
+		  			for(int j = 0; 
+		  			// store it into [csc[art mat[phi [phy]]]]
+		  		}
+		  }
+		  */ 
 		  
 		  
 //		  // test arrayAdd
@@ -138,6 +180,31 @@ public class TranscriptParser {
 //		  System.out.println(arrayAdd(array, "please").length);
 		  
 }
+	  
+	  public static int amountOfClassesNeed(String[] transcriptRequired, String[] transcriptSomeOf)
+	  {
+		  return transcriptRequired.length + transcriptSomeOf.length;
+	  }
+	  
+	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
+	  {
+		  int returnThis = transcriptRequired.length;
+		  int transcriptSomeOfNumber = 0;
+		  String majorCourse = null;
+		  
+		  for(int i = 0; i<transcriptSomeOf.length; i++)
+		  {
+			  majorCourse = transcriptSomeOf[i];
+			  
+			  // if its the number (not class abbreviations) then add that number to 
+			  if(Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  transcriptSomeOfNumber = transcriptSomeOfNumber + Integer.parseInt(majorCourse);
+			  }
+		  }
+		  
+		  return returnThis + transcriptSomeOfNumber;
+	  }
 	  
 	  public static StringBuilder readSomeOfTaken(String[] transcriptSomeOf)
 	  {
