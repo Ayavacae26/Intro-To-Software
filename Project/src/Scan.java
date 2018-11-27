@@ -21,9 +21,9 @@ public class Scan {
 		ArrayList<String> courDes = new ArrayList<String> ();
 		
 		String regex = "([A-Z]{3}[0-9]{3})";
-		String credit = "(^.*\\b([0-9]{0}|semester|credits)\\b.*$)";
+		String credit = "(.*)Semester(.*)";
 		String prequ = "(^.*\\b(Prerequisite(s):)\\b.*$)";
-				
+		
 		
 		BufferedWriter outputWriter = null;
 		outputWriter = new BufferedWriter(new FileWriter("src/example.xml"));
@@ -31,8 +31,8 @@ public class Scan {
 			while(scan.hasNext()) {
 				 String line = scan.nextLine();
 				
-				if(line.matches(regex)) {
-					System.out.println(" <course> " + line + " </course> " + '\n');
+				if(line.matches(credit)) {
+					System.out.println(" <here> " + line + " </course> " + '\n');
 					
 				}else {
 					System.out.println(" <course> " + line + " </course> " + '\n');

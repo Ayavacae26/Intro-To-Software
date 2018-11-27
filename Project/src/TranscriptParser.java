@@ -7,15 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-//import javax.xml.soap.Node;
-//import javax.xml.xpath.XPath;
-//import javax.xml.xpath.XPathConstants;
-//import javax.xml.xpath.XPathExpressionException;
-//import javax.xml.xpath.XPathFactory;
-//
-//
-//import org.xml.sax.InputSource;
-
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -24,7 +15,7 @@ import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
- 
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -268,6 +259,15 @@ public class TranscriptParser {
 		  return returnThis;
 	  }
 	  
+	  
+	  /**
+	   * Compares the transcript and the major's 'SomeOf' classes outputting an
+	   * array that holds in two arrays. At position 1, the array is for classes 
+	   * taken and at position 2, is for classes still needed. 
+	   * @param transcript	of the user
+	   * @param someOfRequirements	an array that holds 'SomeOf' the major's requirement 
+	   * @return
+	   */
 	  public static String[][] compareSomeOfClasses(ArrayList<String> transcript, String[] someOfRequirements)
 	  {
 		  String[][] returnThis = new String[2][];
@@ -335,11 +335,12 @@ public class TranscriptParser {
 	  }
 	  
 	  /**
-	   * Compares the transcript and the major's required classes outputting two
-	   * arrays. Array 1 is for classes taken, Array 2 is for classes still needed. 
+	   * Compares the transcript and the major's required classes outputting an
+	   * array that holds in two arrays. At position 1, the array is for classes 
+	   * taken and at position 2, is for classes still needed. 
 	   * 
 	   * @param transcript of the user
-	   * @param majorRequirements	of the major
+	   * @param majorRequirements	an array that hold major requirements of the major
 	   */
 	  public static String[][] compareRequiredClasses(ArrayList<String> transcript, String[] majorRequirements)
 	  {
