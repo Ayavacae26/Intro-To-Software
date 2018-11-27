@@ -35,6 +35,8 @@ public class DatabaseCourseDescription {
 		outputWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Courses>");
 		outputWriter.newLine();
 		
+		String storeCredit = null;
+		
 		while(scan.hasNext()) {
 			String line = (scan.nextLine());
 			
@@ -57,6 +59,12 @@ public class DatabaseCourseDescription {
 //						System.out.println("<Prerequisite>");
 						outputWriter.write("</Description>");
 						outputWriter.newLine();
+						outputWriter.write("<Credit>");
+						outputWriter.newLine();
+						outputWriter.write(storeCredit);
+						outputWriter.newLine();
+						outputWriter.write("</Credit>");
+						outputWriter.newLine();
 						outputWriter.write("<Prerequisite>");
 						outputWriter.newLine();
 						
@@ -75,12 +83,7 @@ public class DatabaseCourseDescription {
 					}
 					else if(line.matches(credit))
 					{
-						outputWriter.write("<Credit>");
-						outputWriter.newLine();
-						outputWriter.write(line);
-						outputWriter.newLine();
-						outputWriter.write("</Credit>");
-						outputWriter.newLine();
+						storeCredit = line;
 					}
 					else	// write the description 
 					{
