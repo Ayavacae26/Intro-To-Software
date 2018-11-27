@@ -4,8 +4,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
+
 
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
@@ -55,8 +55,8 @@ public class TranscriptParser {
 	  public static void main(String[] args) throws IOException {
 		  StringBuilder format = new StringBuilder();
 		  
-//		  GUI window = new GUI();
-//		  window.setVisible(true);
+		  GUI window = new GUI();
+		  window.setVisible(true);
 		  
 		  /*---------------------------------------------------------------------*/
 		  // First, take in the user's transcript and turn it into an array

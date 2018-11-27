@@ -1,0 +1,398 @@
+Augsburg University Unofficial Transcript
+
+Name
+
+Ayavaca-Tirado, Erik Manuel
+
+Stage
+
+Senior
+
+Date
+
+10/1/2018
+
+Advisor
+
+Kerlin, Scott
+
+2012-2013 / Transfer Work II
+UG
+Dept/Course
+FREN1003
+
+Title
+Intermediate French I
+
+Grade
+GRT
+
+Credits
+0.00
+
+POL1001
+WRIT1301
+
+American Democracy in a Changing Society
+University Writing
+
+GRT
+GRT
+
+0.00
+0.00
+
+APEC1101-4
+TRNS000TR
+
+Principles of Microeconomics
+Total Granted
+
+GRT
+GRT
+
+0.00
+17.00
+
+0.000
+0.000
+
+17.00
+17.00
+
+Current
+Cumulative
+2015-2016 / Fall Semester
+UG
+Dept/Course
+AUG101
+
+Title
+Augsburg Seminar (paired with CSC160-08)
+
+CCS100
+CSC160
+
+Introduction to Cultural Studies
+Introduction to Computer Science and Communication (Paired with AUG101-08)
+
+MAT145
+REL100
+
+Calculus I
+Religion, Vocation, and the Search for Meaning I
+
+Grade Credits
+P
+0.00
+1.5
+4.0
+
+4.00
+4.00
+
+3.5
+3.5
+Current 3.125
+
+4.00
+4.00
+16.00
+
+Cumulative 3.125
+
+33.00
+
+2015-2016 / Spring Semester
+UG
+Dept/Course
+CSC170
+CSC170L
+MAT146
+
+Title
+Introduction to Programming
+Introduction to Programming Lab
+Calculus II
+
+Grade
+4.0
+L
+3.5
+
+Credits
+4.00
+0.00
+4.00
+
+REL309
+THR116
+
+Religion at the Movies
+Creative Drama: Acting and Improvisation
+
+4.0
+4.0
+3.875
+3.500
+
+4.00
+4.00
+16.00
+49.00
+
+Grade
+4.0
+
+Credits
+4.00
+
+Current
+Cumulative
+2016-2017 / Fall Semester
+UG
+Dept/Course
+CSC210
+
+Title
+Data Structures
+
+CSC210L
+CSC240
+CSC352
+MAT271
+
+2016-2017 / Spring Semester
+UG
+Dept/Course
+COM111
+CSC320
+MAT245
+MAT246
+
+Data Structures Lab
+Intro to Networking and Communications
+Database Management and Design
+Discrete Mathematical Structures
+Current
+
+L
+4.0
+4.0
+4.0
+4.000
+
+0.00
+4.00
+4.00
+4.00
+16.00
+
+Cumulative
+
+3.666
+
+65.00
+
+Title
+Public Speaking
+Algorithms
+
+Grade
+4.0
+4.0
+
+Credits
+4.00
+4.00
+
+Calculus III
+Linear Algebra
+
+1.5R
+2.5
+3.500
+3.633
+
+0.00
+4.00
+12.00
+77.00
+
+Current
+Cumulative
+2016-2017 / Summer Semester
+UG
+Dept/Course
+AUGEX3
+
+Title
+Augsburg Experience - Non-credit Internship
+
+Grade
+P
+
+Credits
+0.00
+
+Current
+
+0.000
+
+0.00
+
+Cumulative
+
+3.633
+
+77.00
+
+2017-2018 / Fall Semester
+UG
+Dept/Course
+CSC345
+
+Title
+Principles of Computer Organization
+
+Grade
+B
+
+Credits
+4.00
+
+FLM180
+
+Film Sight and Sound
+
+P
+
+4.00
+
+MAT164
+SOC121
+
+Introductory Statistics for STEM
+Introduction to Sociology
+
+AA-
+
+4.00
+4.00
+
+WEL100
+
+Foundations of Wellness
+Current
+
+P
+3.446
+
+1.00
+17.00
+
+Cumulative
+
+3.602
+
+94.00
+
+2017-2018 / Spring Semester
+UG
+Dept/Course
+
+Title
+
+Grade
+
+Credits
+
+CSC385
+
+Formal Logic and Computation Theory
+
+B+
+
+4.00
+
+MAT245
+MAT287
+
+Calculus III
+History of Mathematics
+
+B
+B+
+
+4.00
+4.00
+
+MAT355
+MAT491
+
+Numerical Mathematics and Computation
+Mathematics Colloquium
+
+C
+P
+
+4.00
+0.00
+
+Current
+
+2.915
+
+16.00
+
+Cumulative
+
+3.477
+
+110.00
+
+2018-2019 / Fall Semester
+UG
+Dept/Course
+CSC395
+
+Title
+Topics: Intro to Software Engineering
+
+Grade Credits
+IP
+0.00
+
+CSC450
+
+Programming Languages and Compilers I
+
+IP
+
+0.00
+
+FLM124
+MAT369
+
+Monster Movies
+Modeling and Differential Equations in Biological and Natural Sciences
+
+IP
+IP
+
+0.00
+0.00
+
+MAT491
+
+Mathematics Colloquium
+
+IP
+Current 0.000
+Cumulative 3.477
+
+0.00
+0.00
+110.00
+
+

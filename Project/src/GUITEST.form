@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUITEST">
+  <grid id="27dc6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="758" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none" title-justification="2" title-position="2">
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <grid id="237b1" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Major Checklist" title-justification="2" title-position="2">
+          <title-color color="-4473925"/>
+        </border>
+        <children>
+          <grid id="f342e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="8c732" class="javax.swing.JButton" binding="uploadTrascriptButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <hideActionText value="false"/>
+                  <text value="Upload Trascript"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="bf5a4" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="American Indian Studies BA"/>
+                <item value="Art History BA"/>
+                <item value="Art Education BA"/>
+                <item value="Graphic Design BA"/>
+                <item value="Studio Art BA"/>
+                <item value="Biology BA"/>
+                <item value="Biology BS"/>
+                <item value="Biopsychology BS"/>
+                <item value="Life Sciences BA"/>
+                <item value="Accounting BA"/>
+                <item value="Finance BA"/>
+                <item value="International Business BA"/>
+                <item value="Mangement BA"/>
+                <item value="Marketing BA"/>
+                <item value="Management Information Systems BA"/>
+                <item value="Business Administration:Music Business BA"/>
+                <item value="Cross-Cultural Studies BA"/>
+                <item value="Chemistry(ACS certified) BS"/>
+                <item value="Chemistry BA"/>
+                <item value="Chemistry(NON-ACS certified) BS"/>
+                <item value="Communications Studies BA"/>
+                <item value="Computational Economics BA"/>
+                <item value="Computational Philosophy BA"/>
+                <item value="Computer Science BA"/>
+                <item value="Computer Science BS"/>
+                <item value="Applied Economics BA"/>
+                <item value="Combined major in Business/Economics BAivion from ACC,BUS,FIN,MIS,or MKT"/>
+                <item value="Economics BA"/>
+                <item value="Mathematical Economics BS"/>
+                <item value="Elementary Education BS"/>
+                <item value="Elementary Education with communication Arts Endorsenments BS"/>
+                <item value="Elementary Education with General Science Endorsenments BS"/>
+                <item value="Elementary Education with Mathematics Endorsenments BS"/>
+                <item value="Elementary Education with Social Studies Endorsenments BS"/>
+                <item value="Communication Arts/Literature BA"/>
+                <item value="English:Creative Writing BA"/>
+                <item value="English literature,language and theory BA"/>
+                <item value="Environmental Studies BA"/>
+                <item value="Environmental Studies: HECUA TRACK BA"/>
+                <item value="Secondary Education Licensure Courses &quot;K-12 English as a Second Language BA"/>
+                <item value="Film:production track BA"/>
+                <item value="Film:Theory and culture track BA"/>
+                <item value="FRENCH BA"/>
+                <item value="German BA"/>
+              </model>
+            </properties>
+          </component>
+          <component id="737a" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="8b48" class="javax.swing.JButton" binding="compareButton" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Compare "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
