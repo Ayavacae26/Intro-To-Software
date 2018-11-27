@@ -4,7 +4,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 //import javax.xml.soap.Node;
@@ -16,15 +15,10 @@ import java.util.List;
 //
 //import org.xml.sax.InputSource;
 
-import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
- 
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -65,8 +59,8 @@ public class TranscriptParser {
 
 	  public static void main(String[] args) throws IOException {
 		  
-//		  GUI window = new GUI();
-//		  window.setVisible(true);
+		  GUI window = new GUI();
+		  window.setVisible(true);
 		  
 		  // call testing method
 		  System.out.println(readFile(new File("TranscriptTest.txt")));
