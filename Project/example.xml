@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Courses>
+<CourseName id="ACC221">
+<Description>
+Introduction to Financial Accounting
+<Credit>
+4 Semester Credits
+</Credit>
+Introduction to business activities, basic concepts and fundamentals of accounting, the accounting cycle, and
+preparation of financial statements.
+Core Curriculum Component: None
+</Description>
+<Prerequisite>
+None
+</Prerequisite>
+</CourseName>
+<CourseName id="ACC222">
+<Description>
+Introduction to Managerial Accounting
+<Credit>
+4 Semester Credits
+</Credit>
+A continuation of ACC 221. Introduction to cost accounting for manufacturing. Basic concepts and fundamentals of
+managerial accounting, planning and controlling processes, decision-making, and behavioral considerations.
+Core Curriculum Component: None
+</Description>
+<Prerequisite>
+ACC221(Introduction to Financial Accounting)
+</Prerequisite>
+</CourseName>
+<CourseName id="ACC295">
+<Description>
+Topics
+<Credit>
+4 Semester Credits
+</Credit>
+Lectures, discussions, meetings with members of the staff or visiting faculty regarding research methodology and
+readings in the areas of business administration.
+Core Curriculum Component: None
+</Description>
+<Prerequisite>
+CONSENT(Consent of Instructor)
+</Prerequisite>
+</CourseName>
+
+</Courses>
