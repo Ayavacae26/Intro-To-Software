@@ -35,7 +35,7 @@ public class DatabaseCourseDescription {
 		{
 			scan = new Scanner(text);
 			outputWriter = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream("example.xml"), "UTF-8")); 
+					new FileOutputStream("CourseDescriptions.xml"), "UTF-8")); 
 		} 
 		catch (FileNotFoundException e) 
 		{
