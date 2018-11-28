@@ -185,50 +185,20 @@ public class TranscriptParser {
 	  
 	  public static void checkMajorProgress(String majorName, ArrayList<String> transcript)
 	  {
-		  String[] majors = {"American Indian Studies BA","Art History BA",
-		            " Biopsychology BS","Accounting BA",
-		            "Finance BA","Mangement BA","Management Information Systems BA",
-		            "Computational Economics BA","Communications Studies BA",
-		            "Computational Philosophy BA","Computer Science BA","Computer Science BS","Applied Economics BA",
-		            "Economics BA","Mathematical Economics BS",
-		             
-		            "Film:production track BA","Film:Theory and culture track BA", "Exercise Science BA",
-		            "Health Education BA or  BS", "Physical Education BA or  BS", 
-		            "Mathematics BA",  
-		              
-		             "New Media:Game Design BA", "New Media:Web Design BA", "Nursing BS", 
-		             "Physics BA","Physics BS", "Physics:Space Physics BS",
-		             "Political Science:Public Policy/Change BA",
-		            "Psychology: Psychology and Law  BA", 
-		            "Sociology BA",   "Social Work  BS"};
-		  /* Majors not supported --
-		   * "Art Education BA","Graphic Design BA","Studio Art BA","Biology BA",
-		   * "Biology BS","Life Sciences BA","International Business BA","Marketing BA",
-		   * "Business Administration:Music Business BA","Cross-Cultural Studies BA",
-		   * "Chemistry(ACS certified) BS","Chemistry BA","Chemistry(NON-ACS certified) BS",
-		   * "Combined major in Business/Economics BA","Elementary Education BS",
-		   * "Elementary Education with communication Arts Endorsenments BS",
-		   * "Elementary Education with General Science Endorsenments BS",
-		   * "Elementary Education with Mathematics Endorsenments BS",
-		   * "Elementary Education with Social Studies Endorsenments BS",
-		   * "Communication Arts/Literature BA","English:Creative Writing BA",
-		   * "English literature,language and theory BA","Environmental Studies BA",
-		   * "Secondary Education Licensure Courses K-12 English as a Second Language BA",
-		   * "K-12 English as a Second Language BA","FRENCH BA","German BA",
-		   * "History BA","Exercise Science:Pre-Health Science BS","Interdisciplinary Studies  BA",
-		   * "International Relations BA","International Relations:Intl Business BA",
-		   * "Mathematics BS","Mathematics: Secondary Teaching licensure major BS",
-		   * "Medieval Studies BA","Music BA","Music:Music Business BA",
-		   * "Music Education BM","Music Performance BM","Music Therapy BS","New Media BA",
-		   * "Philosophy BA","Physics: Biophysics BS","Political Science and Economics BA",
-		   * "Political Science BA","Political Science:Pre-Law BA","Psychology: Clinical Psychology  BA",
-		   * "Psychology  BA","Psychology: Social Psychology BA","Religion BA",
-		   * "Theology and Public Leadership BA","Spanish BA",
-		   * "Special Education: Academic Behavioral Strategist BA",
-		   * "Theater  BA","Theater:Design/Technical  BA","Theater:Directing/Dramaturgy/Playwriting BA",
-		   * "Theater: Performance   BA","Urban Studies  BA","Gender, Sexuality and WomenÅfs Studies  BA"
-		   * "Environmental Studies: HECUA TRACK BA",
-		    */
+		  String[] majors = 
+			  {"American Indian Studies BA","Art History BA"," Biopsychology BS",
+					  "Accounting BA","Finance BA","Mangement BA",
+					  "Management Information Systems BA","Computational Economics BA",
+					  "Communications Studies BA","Computational Philosophy BA",
+					  "Computer Science BA","Computer Science BS","Applied Economics BA",
+					  "Economics BA","Mathematical Economics BS","Film:production track BA",
+					  "Film:Theory and culture track BA", "Exercise Science BA",
+					  "Health Education BA or  BS", "Physical Education BA or  BS", 
+					  "Mathematics BA","New Media:Game Design BA","New Media:Web Design BA", 
+					  "Nursing BS", "Physics BA","Physics BS", "Physics:Space Physics BS",
+					  "Political Science:Public Policy/Change BA",
+					  "Psychology: Psychology and Law  BA", "Sociology BA",
+					  "Social Work  BS"};
 		  
 		  boolean courseRemoved = false;
 		  
@@ -267,11 +237,25 @@ public class TranscriptParser {
 		  
 	  }
 	  
+	  /**
+	   * This method calculates the amount of classes still needed. It doesn not handle
+	   * arrays formatted in a special case. 
+	   * @param transcriptRequired	read this array's length
+	   * @param transcriptSomeOf	read this array's length
+	   * @return	the amount of classes taken
+	   */
 	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  return transcriptRequired.length + transcriptSomeOf.length;
 	  }
 	  
+	  /**
+	   * This method calculates the amount of classes still needed. It handles the array
+	   * that is formatted in a special case.
+	   * @param transcriptRequired	read this array's length
+	   * @param transcriptSomeOf	the array in a special format
+	   * @return	the amount of classes still need
+	   */
 	  public static int amountOfClassesNeed(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  int returnThis = transcriptRequired.length;
@@ -292,6 +276,11 @@ public class TranscriptParser {
 		  return returnThis + transcriptSomeOfNumber;
 	  }
 	  
+	  /**
+	   * This method reads the arrays of courses formatted in a special case.
+	   * @param transcriptSomeOf	the array that will be read
+	   * @return	a string to the user, displaying what is read inside the array
+	   */
 	  public static StringBuilder readSomeOfTaken(String[] transcriptSomeOf)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
@@ -325,6 +314,11 @@ public class TranscriptParser {
 		  return returnThis;
 	  }
 	  
+	  /**
+	   * This method reads the arrays of courses not formatted in any special cases.
+	   * @param transcriptRequired	the array that will be read
+	   * @return	a string to the user, displaying what was read inside the array
+	   */
 	  public static StringBuilder readRequiredTaken(String[] transcriptRequired)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
