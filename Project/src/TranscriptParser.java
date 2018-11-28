@@ -13,9 +13,8 @@ import java.util.*;
 
 /**
  * @author Erik, Olson, and Mahamed
- *  Program is going to be comparing the 2 files transcript and course list and spitiing out the difference between them.
- *  Orginal implentation ideas:
- *  // posibly use the hasmap
+ *  Program is going to be comparing the 2 files transcript and course list and spitting out the difference between them.
+ *  Original implementation ideas:
  * 	// Takes in the user's transcript
  * 	// Takes in user's major course list
  * 	// Compares both lists
@@ -23,11 +22,10 @@ import java.util.*;
  * 	// outputs classes as " you still need to complete these"
  * 	// Goes back into Transcript and looks for classes with F,D, 1.5,1,.5 or 0
  * 	// these classes are put into list or array
- * 	// outputs to user as " need to retake this"
+ * 	// outputs to user as "need to re-take this"
  * 	// Output is returned to user
  *
  */
-// Can also be used as which classes a user needs to take
 public class TranscriptParser {
 
 	static final String abbreviations = "CSC MAT ENL AIS COM PSY ANT CCS SOC THR WST"
