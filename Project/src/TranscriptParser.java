@@ -178,7 +178,7 @@ public class TranscriptParser {
 	  public static void checkMajorProgress(String majorName, ArrayList<String> transcript)
 	  {
 		  String[] majors = 
-			  {"American Indian Studies BA","Art History BA"," Biopsychology BS",
+			  {"American Indian Studies BA","Art History BA","Biopsychology BS",
 					  "Accounting BA","Finance BA","Mangement BA",
 					  "Management Information Systems BA","Computational Economics BA",
 					  "Communications Studies BA","Computational Philosophy BA",
