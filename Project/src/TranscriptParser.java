@@ -137,6 +137,8 @@ public class TranscriptParser {
 		  + (amountTaken+amountNeed)+ " (" + 
 				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 		  
+		  checkMajorProgress("American Indian Studies BA", transcript);
+		  
 		  // Suggest a plan to meet the Program Requirements
 		  /* - Search for all classes still need in the database... if they have
 		  any prerequisite(s) then output those classes. Also check if those 
@@ -180,9 +182,120 @@ public class TranscriptParser {
 		  
 }
 	  
-	  public static void checkMajorProgress(String majorName)
+	  public static void checkMajorProgress(String majorName, ArrayList<String> transcript)
 	  {
+		  String[] majors = {"American Indian Studies BA","Art History BA","Art Education BA","Graphic Design BA",
+		            "Studio Art BA","Biology BA","Biology BS"," Biopsychology BS","Life Sciences BA","Accounting BA",
+		            "Finance BA","International Business BA","Mangement BA","Marketing BA","Management Information Systems BA"
+		            ,"Business Administration:Music Business BA","Cross-Cultural Studies BA","Chemistry(ACS certified) BS",
+		            "Chemistry BA","Chemistry(NON-ACS certified) BS","Communications Studies BA","Computational Economics BA",
+		            "Computational Philosophy BA","Computer Science BA","Computer Science BS","Applied Economics BA",
+		            "Combined major in Business/Economics BA", "Economics BA","Mathematical Economics BS","Elementary Education BS"
+		            ,"Elementary Education with communication Arts Endorsenments BS","Elementary Education with General Science Endorsenments BS"
+		            ,"Elementary Education with Mathematics Endorsenments BS", "Elementary Education with Social Studies Endorsenments BS","Communication Arts/Literature BA", "English:Creative Writing BA", "English literature,language and theory BA",
+		            "Environmental Studies BA", "Environmental Studies: HECUA TRACK BA", "Secondary Education Licensure Courses K-12 English as a Second Language BA"
+		            ,"Film:production track BA","Film:Theory and culture track BA","FRENCH BA","German BA","History BA", "Exercise Science BA",
+		            "Exercise Science:Pre-Health Science BS", "Health Education BA or  BS", "Physical Education BA or  BS", "Interdisciplinary Studies  BA",
+		            "International Relations BA", "International Relations:Intl Business BA", "Mathematics BA", "Mathematics BS", "Mathematics: Secondary Teaching licensure major BS",
+		            "Medieval Studies BA", "Music BA", "Music:Music Business BA", "Music Education BM", "Music Performance BM",
+		            "Music Therapy BS", "New Media BA", "New Media:Game Design BA", "New Media:Web Design BA", "Nursing BS", "Philosophy BA",
+		            "Physics: Biophysics BS", "Physics BA","Physics BS", "Physics:Space Physics BS","Political Science and Economics BA",
+		            "Political Science BA", "Political Science:Pre-Law BA","Political Science:Public Policy/Change BA","Psychology: Clinical Psychology  BA",
+		            "Psychology  BA","Psychology: Psychology and Law  BA", "Psychology: Social Psychology BA", "Religion BA", "Theology and Public Leadership BA",
+		            "Sociology BA", "Spanish BA", "Special Education: Academic Behavioral Strategist BA", "Social Work  BS", "Theater  BA",
+		            "Theater:Design/Technical  BA", "Theater:Directing/Dramaturgy/Playwriting BA", "Theater: Performance   BA","Urban Studies  BA","Gender, Sexuality and WomenÅfs Studies  BA"};
 		  
+		  boolean courseRemoved = false;
+		  
+		// if found a match, remove it and start shifting everything down one
+		  for(int i = 0; i<majors.length; i++)
+		  {
+			  
+			  if(majors[i].equals(majorName))
+			  {
+				  majors[i] = majors[i+1];
+				  courseRemoved = true;
+			  }
+			  else if(i == majors.length - 1)
+			  {
+				  majors[i] = null;
+			  }
+			  else if(courseRemoved)
+			  {
+				  majors[i] = majors[i+1];
+			  }
+		  }
+		  System.out.println(Arrays.toString(majors));
+		  
+		  /* Second, find major comparing against and store that major into 
+		  two arrays; one for required, and one for special cases (1 of, 3 of, etc... */
+		  String[][] majorRequirements = grabMajorRequirements(majorName);
+		  
+//		  // Test call - making sure major arrays were created successfully 
+//		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
+//		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
+		  
+		  /*---------------------------------------------------------------------*/
+		  // Third, scan transcript array against the major's required classes 
+		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
+		  
+//		  // Test call - making sure arrays were created successfully
+//		  System.out.println("Required Taken: " + Arrays.toString(transcriptRequired[0]));
+//		  System.out.println("Required Needed: " + Arrays.toString(transcriptRequired[1]));
+		  
+		  /*---------------------------------------------------------------------*/
+		  // Fourth, scan transcript array against the major's SomeOf classes 
+		  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
+		  
+//		  // Test call - making sure arrays were created successfully 
+//		  System.out.println("SomeOf Taken: "+Arrays.toString(transcriptSomeOf[0]));
+//		  System.out.println("SomeOf Need " + Arrays.toString(transcriptSomeOf[1]));
+		  
+		  /*---------------------------------------------------------------------*/
+		  // Fifth, read the arrays of the taken 
+//		  StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0]);
+//		  StringBuilder classesTaken2 = readRequiredTaken(transcriptSomeOf[0]);
+//		  format = new StringBuilder("You have taken these class(es) that fit the major:");
+		  
+		  // Test call - making sure StringBuilder was created successfully 
+//		  System.out.println(format);
+//		  System.out.println(classesTaken1.toString());
+//		  System.out.println(classesTaken2.toString());
+		  
+		  /*---------------------------------------------------------------------*/
+		  // Sixth, read the arrays of the classes still need
+//		  StringBuilder classesNeed1 = readRequiredTaken(transcriptRequired[1]);
+//		  StringBuilder classesNeed2 = readSomeOfTaken(transcriptSomeOf[1]);
+		  
+		  // Test call - making sure StringBuilder was created successfully 
+//		  format = new StringBuilder("\nYou still need these class(es) from the major: ");
+//		  System.out.println(format);
+//		  System.out.println(classesNeed1.toString());
+		  
+//		  format = new StringBuilder("\nAlong with these other class(es).");
+//		  System.out.print(format.toString());
+//		  System.out.println(classesNeed2.toString());
+		  
+		  /*---------------------------------------------------------------------*/
+		  // Minimum Requirement - Progress Towards Degree 
+		  // First, go through 'still need' arrays and add their courses together 
+		  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
+		  
+		  // Test call - making sure the addition is correct 
+//		  System.out.println(amountNeed);
+		  
+		  /*---------------------------------------------------------------------*/
+		  //Second, go through 'already taken' arrays and add their courses together 
+		  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
+		  
+		  // Test - call
+//		  System.out.println(amountTaken);
+		  
+		  // amount taken / amount taken + amount need 
+		  // 3 / (3 + 12) 
+		  System.out.println("Degree Progress: " + amountTaken + "\\" 
+		  + (amountTaken+amountNeed)+ " (" + 
+				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 	  }
 	  
 	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
