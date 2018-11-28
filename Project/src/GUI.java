@@ -1,16 +1,19 @@
 import javax.swing.JFrame;
+
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import javax.swing.event.AncestorListener;
+import javax.swing.JTextArea;
 import javax.swing.filechooser.FileNameExtensionFilter;
 //import javax.*
 
@@ -42,8 +45,9 @@ public class GUI extends JFrame{
             "Political Science BA", "Political Science:Pre-Law BA","Political Science:Public Policy/Change BA","Psychology: Clinical Psychology  BA",
             "Psychology  BA","Psychology: Psychology and Law  BA", "Psychology: Social Psychology BA", "Religion BA", "Theology and Public Leadership BA",
             "Sociology BA", "Spanish BA", "Special Education: Academic Behavioral Strategist BA", "Social Work  BS", "Theater  BA",
-            "Theater:Design/Technical  BA", "Theater:Directing/Dramaturgy/Playwriting BA", "Theater: Performance   BA","Urban Studies  BA","Gender, Sexuality and Women’s Studies  BA"};
+            "Theater:Design/Technical  BA","Theater:Directing/Dramaturgy/Playwriting BA", "Theater: Performance   BA","Urban Studies  BA","Gender, Sexuality and Women’s Studies  BA"};
     JComboBox majorlist = new JComboBox(majors);
+    JTextArea text = new JTextArea(660,700);
 
     File file1 = null;
     File file2 = null;
@@ -73,6 +77,19 @@ public class GUI extends JFrame{
 
         this.userOutput.setBounds(50, 100, 100, 10);
         this.getContentPane().add(userOutput);
+
+//        this.text.setBounds(200, 10, 170, 40);
+//		this.getContentPane().add(text);
+        this.text = new JTextArea(50,50);
+        this.setLayout(new FlowLayout());
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.add(text);
+        this.setLocationRelativeTo(null);
+        this.setSize(600,600);
+        this.setVisible(true);
+
+
+        //this.hold.setLayout(new FlowLayout());
 
     }
 
@@ -106,6 +123,7 @@ public class GUI extends JFrame{
         }
     }
 
+
     private class MajorlistListener implements ActionListener
     {
         //Overrides the method from ActionListener
@@ -115,6 +133,23 @@ public class GUI extends JFrame{
             JComboBox majorlist = (JComboBox)b.getSource();
             String major = (String)majorlist.getSelectedItem();
 
+        }
+    }
+
+
+
+    private class AreaTextListListener implements ActionListener
+    {
+        //Overrides the method from ActionListener
+        public void actionPerformed(ActionEvent b)
+        {
+            text = new JTextArea(50,50);
+            setLayout(new FlowLayout());
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            add(text);
+            setLocationRelativeTo(null);
+            setSize(600,600);
+            setVisible(true);
         }
     }
     private class ConfirmButtonListener implements ActionListener
