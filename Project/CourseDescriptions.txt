@@ -1,4 +1,4 @@
-Augsburg University 2018-2019 Course Descriptions (as of 6/22/2018)
+﻿Augsburg University 2018-2019 Course Descriptions (as of 6/22/2018)
 ACC - Accounting
 ACC221
 Introduction to Financial Accounting
@@ -2526,6 +2526,7 @@ Teacher Leadership
 3 Semester Credits
 This course will explore generative questions about leadership, change, and our own paradigms, visions and values. We
 will investigate what it means to be a teacher leader and the ways in which teachers provide leadership. Examining
+
 theoretical models and conceptual frame works from interdisciplinary fields will offer a variety of perspectives for
 providing effective teacher leadership. Participants will also have an opportunity to reflect on the foundational question
 of “who am I as a leader”.
