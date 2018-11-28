@@ -2,4 +2,5 @@
 /Project/.settings
 /Project/bin
 .idea/
-.class
+*. DS_Store
+*.class
