@@ -180,6 +180,11 @@ public class TranscriptParser {
 		  
 }
 	  
+	  public static void checkMajorProgress(String majorName)
+	  {
+		  
+	  }
+	  
 	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  return transcriptRequired.length + transcriptSomeOf.length;
