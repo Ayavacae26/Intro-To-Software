@@ -48,7 +48,8 @@ public class Scan {
 		public static void main(String args[]) throws IOException {
 			
 			
-			Scan.courseDetail();
+//			Scan.courseDetail();
+			
 						  
 //	        creating File instance to reference text file in Java
 	        
