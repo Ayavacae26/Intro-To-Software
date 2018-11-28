@@ -207,7 +207,7 @@ public class TranscriptParser {
 		  
 		  boolean courseRemoved = false;
 		  
-		// if found a match, remove it and start shifting everything down one
+		  // if found a match, remove it and start shifting everything down one
 		  for(int i = 0; i<majors.length; i++)
 		  {
 			  
@@ -227,75 +227,19 @@ public class TranscriptParser {
 		  }
 		  System.out.println(Arrays.toString(majors));
 		  
-		  /* Second, find major comparing against and store that major into 
-		  two arrays; one for required, and one for special cases (1 of, 3 of, etc... */
-		  String[][] majorRequirements = grabMajorRequirements(majorName);
+		  // go through all majors in String and calculate the degree progress 
+		  for(int i = 0; i<majors.length - 1; i++)
+		  {
+			  String[][] majorRequirements = grabMajorRequirements(majorName);
+			  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
+			  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
+			  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
+			  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
+			  System.out.println("Degree Progress: " + amountTaken + "\\" 
+					  + (amountTaken+amountNeed)+ " (" + 
+							  (double)amountTaken/(amountNeed+amountTaken) + "%)");
+		  }
 		  
-//		  // Test call - making sure major arrays were created successfully 
-//		  System.out.println("Required: " + Arrays.toString(majorRequirements[0]));
-//		  System.out.println("SomeOf: " + Arrays.toString(majorRequirements[1]));
-		  
-		  /*---------------------------------------------------------------------*/
-		  // Third, scan transcript array against the major's required classes 
-		  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
-		  
-//		  // Test call - making sure arrays were created successfully
-//		  System.out.println("Required Taken: " + Arrays.toString(transcriptRequired[0]));
-//		  System.out.println("Required Needed: " + Arrays.toString(transcriptRequired[1]));
-		  
-		  /*---------------------------------------------------------------------*/
-		  // Fourth, scan transcript array against the major's SomeOf classes 
-		  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
-		  
-//		  // Test call - making sure arrays were created successfully 
-//		  System.out.println("SomeOf Taken: "+Arrays.toString(transcriptSomeOf[0]));
-//		  System.out.println("SomeOf Need " + Arrays.toString(transcriptSomeOf[1]));
-		  
-		  /*---------------------------------------------------------------------*/
-		  // Fifth, read the arrays of the taken 
-//		  StringBuilder classesTaken1 = readRequiredTaken(transcriptRequired[0]);
-//		  StringBuilder classesTaken2 = readRequiredTaken(transcriptSomeOf[0]);
-//		  format = new StringBuilder("You have taken these class(es) that fit the major:");
-		  
-		  // Test call - making sure StringBuilder was created successfully 
-//		  System.out.println(format);
-//		  System.out.println(classesTaken1.toString());
-//		  System.out.println(classesTaken2.toString());
-		  
-		  /*---------------------------------------------------------------------*/
-		  // Sixth, read the arrays of the classes still need
-//		  StringBuilder classesNeed1 = readRequiredTaken(transcriptRequired[1]);
-//		  StringBuilder classesNeed2 = readSomeOfTaken(transcriptSomeOf[1]);
-		  
-		  // Test call - making sure StringBuilder was created successfully 
-//		  format = new StringBuilder("\nYou still need these class(es) from the major: ");
-//		  System.out.println(format);
-//		  System.out.println(classesNeed1.toString());
-		  
-//		  format = new StringBuilder("\nAlong with these other class(es).");
-//		  System.out.print(format.toString());
-//		  System.out.println(classesNeed2.toString());
-		  
-		  /*---------------------------------------------------------------------*/
-		  // Minimum Requirement - Progress Towards Degree 
-		  // First, go through 'still need' arrays and add their courses together 
-		  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
-		  
-		  // Test call - making sure the addition is correct 
-//		  System.out.println(amountNeed);
-		  
-		  /*---------------------------------------------------------------------*/
-		  //Second, go through 'already taken' arrays and add their courses together 
-		  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
-		  
-		  // Test - call
-//		  System.out.println(amountTaken);
-		  
-		  // amount taken / amount taken + amount need 
-		  // 3 / (3 + 12) 
-		  System.out.println("Degree Progress: " + amountTaken + "\\" 
-		  + (amountTaken+amountNeed)+ " (" + 
-				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 	  }
 	  
 	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
