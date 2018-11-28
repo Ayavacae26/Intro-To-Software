@@ -225,17 +225,17 @@ public class TranscriptParser {
 				  majors[i] = majors[i+1];
 			  }
 		  }
-		  System.out.println(Arrays.toString(majors));
+//		  System.out.println(Arrays.toString(majors));
 		  
 		  // go through all majors in String and calculate the degree progress 
 		  for(int i = 0; i<majors.length - 1; i++)
 		  {
-			  String[][] majorRequirements = grabMajorRequirements(majorName);
+			  String[][] majorRequirements = grabMajorRequirements(majors[i]);
 			  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
 			  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
 			  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
 			  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
-			  System.out.println("Degree Progress: " + amountTaken + "\\" 
+			  System.out.println(majors[i] + ": " + amountTaken + "\\" 
 					  + (amountTaken+amountNeed)+ " (" + 
 							  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 		  }
@@ -459,7 +459,7 @@ public class TranscriptParser {
 	        
 	      try {
 	          DocumentBuilder builder = factory.newDocumentBuilder();
-	          Document doc = builder.parse("CompletedMajors2.xml");
+	          Document doc = builder.parse("Majors.xml");
 	          NodeList majorList = doc.getElementsByTagName("MajorName");
 	          for(int i =0; i<majorList.getLength(); i++) 
 	          {
@@ -562,34 +562,6 @@ public class TranscriptParser {
 		  array = newArray;
 		  return array;
 	  }
-	
-	// won't need this method but might use it for reference 
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	public static void compareTranscriptAndDegree()
-	{
-		Path firstFile = Paths.get("degree.txt");
-		Path secondFile = Paths.get("transcript.txt");
-		List<String> firstFileContent = null;
-		List<String> secondFileContent = null;
-		
-		try 
-		{
-			firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-			secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-		} 
-		catch (IOException e) 
-		{
-			//change println to reflect problem more clearer -Olson
-			System.out.println("One of the uploaded files were empty.");
-		}
-		
-		System.out.println("Classes completed in the degree: " + sameFiles(firstFileContent, secondFileContent));
-		System.out.println("Classes still needed for degree: " + diffFiles(firstFileContent, secondFileContent));
-		System.out.println("Classes taken outside the degree requirement: " + diffFiles(secondFileContent,firstFileContent));
-	}
 
 	/**
 	 * Reads a file searching for keywords that match course abbreviations. 
@@ -657,39 +629,7 @@ public class TranscriptParser {
 		return test;
 	}
 	
-	// won't need this function but will keep for reference
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	// function that prints out the differences in the 2 files
-	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-		List<String> diff = new ArrayList<String>();
-		for(String line : firstFileContent) {
-			if (!secondFileContent.contains(line)) {
-				diff.add(line);
-			}
-		}
-		return diff;
-	}
 
-	// won't need this function but will use for reference
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	// Function prints class that do count for the major
-	public static List<String> sameFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-		List<String> same = new ArrayList<String>();
-		for(String line : firstFileContent) {
-			if (secondFileContent.contains(line)) {
-				same.add(line);
-			}
-		}
-		return same;
-	}
 
 
 
