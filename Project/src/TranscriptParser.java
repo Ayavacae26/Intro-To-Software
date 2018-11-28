@@ -183,6 +183,15 @@ public class TranscriptParser {
 		  
 }
 	  
+	  /*-------------------------------------------------------------------------------------------------------*/
+	  /*--------------------------- Below here contains the methods to run the program ------------------------*/
+	  /*-------------------------------------------------------------------------------------------------------*/
+	  
+	  /**
+	   * This method will check against all other majors to see where the user's progress is at.
+	   * @param majorName	the major that was already compared to (so no rerunning) 
+	   * @param transcript	the user's transcript
+	   */
 	  public static void checkMajorProgress(String majorName, ArrayList<String> transcript)
 	  {
 		  String[] majors = 
