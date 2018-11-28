@@ -47,7 +47,7 @@ public class DatabaseCourseDescription {
 		}
 		
 		// First line in the xml file
-		outputWriter.write("<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<Courses>");
+		outputWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Courses>");
 		outputWriter.newLine();
 		
 		// go though entire text file
