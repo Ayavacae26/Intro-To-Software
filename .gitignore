@@ -1,4 +1,9 @@
 # Untracked files:
 /Project/.settings
 /Project/bin
+<<<<<<< HEAD
 .idea/workspace.xml
+=======
+.idea/
+.class
+>>>>>>> b15c2f74add3dc7828e4644e813f5f83fbf40b0a

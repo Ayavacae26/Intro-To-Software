@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUITEST {
+public class GUITEST extends JFrame{
     private JButton uploadTrascriptButton;
     private JTextArea textArea1;
     private JComboBox comboBox1;

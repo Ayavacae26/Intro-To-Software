@@ -48,7 +48,9 @@ public class Scan {
 		public static void main(String args[]) throws IOException {
 			
 			
-			Scan.courseDetail();
+			String[] test = {"hello", "2", "3"};
+			
+			System.out.println(test.length);
 						  
 //	        creating File instance to reference text file in Java
 	        
