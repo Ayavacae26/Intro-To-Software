@@ -2922,6 +2922,138 @@
         MAT163
         MAT164
         </SomeOf>
+
+        <MajorName id = "Music Performance BM">
+            <Required>
+                MUS113
+                MUS114
+                MUS213
+                MUS214
+                MUS220
+                MUS231
+                MUS232
+                MUS358
+                MUS459
+                MUS238 OR PIANO EXAM
+            </Required>
+            <SomeOf>
+                1
+                MUS331
+                MUS332
+                MUS333
+                MUS334
+                4 semestesr of 100 lvl and 3 semesters of 300 lvl
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                4 semesters chamber music/small ensemble participation
+                ---
+                ---
+                ---
+                ---
+                COMPLETE A EMPAHSIS AREA
+                Vocal
+                MUS251
+                MUS252
+                MUS253
+                MUS254
+                MUS359
+                MUS435
+                2 CREDITS OF ELECTIVES
+                KEYBOARD
+                MUS436
+                MUS456
+                2 CREDITS OF ELECTIVES
+                Instrumental, MUS355,356 OR 357 and 4 credits of MUS electives
+                MUS355,MUS356,MUS357
+                ---
+                ---
+                1
+                GST200
+                MAT145
+                MAT146
+                MAT163
+                MAT164
+                PHY119
+            </SomeOf>
+        </MajorName>
+
+        <MajorName id = "Music Therapy BS">
+            <Required>
+                MUS113
+                MUS114
+                MUS135
+                MUS136
+                MUS152
+                MUS158
+                MUS213
+                MUS214
+                MUS231
+                MUS232
+                MUS237
+                MUS238
+                MUS258
+                MUS271
+                MUS273
+                MUS315
+                MUS340
+                MUS345
+                MUS374
+                MUS375
+                MUS376
+                MUS385
+                MUS458
+                MUS474
+                MUS475
+                MUS480
+                MUS481
+                BIO103
+                PSY105
+                PSY203
+                PSY215
+                PSY262
+                Piano proficiency
+                Guitar proficiency
+                Voice proficiency
+            </Required>
+            <SomeOf>
+                4 semestesr of 100 lvl and 3 semesters of 300 lvl
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                8 semesters of large ensamble ex.MUE111, 112, 114, 115, 121, or 141
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                ---
+                2 semesters chamber music/small ensemble participation
+                ---
+                ---
+            </SomeOf>
+        </MajorName>
     </MajorName>
     
      
