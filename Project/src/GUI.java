@@ -32,7 +32,7 @@ public class GUI extends JFrame{
             "Combined major in Business/Economics BA", "Economics BA","Mathematical Economics BS","Elementary Education BS"
             ,"Elementary Education with communication Arts Endorsenments BS","Elementary Education with General Science Endorsenments BS"
             ,"Elementary Education with Mathematics Endorsenments BS", "Elementary Education with Social Studies Endorsenments BS","Communication Arts/Literature BA", "English:Creative Writing BA", "English literature,language and theory BA",
-            "Environmental Studies BA", "Environmental Studies: HECUA TRACK BA", "Secondary Education Licensure Courses K-12 English as a Second Language BA"
+            "Environmental Studies BA", "Environmental Studies: HECUA TRACK BA", "Secondary Education Licensure Courses","K-12 English as a Second Language BA"
             ,"Film:production track BA","Film:Theory and culture track BA","FRENCH BA","German BA","History BA", "Exercise Science BA",
             "Exercise Science:Pre-Health Science BS", "Health Education BA or  BS", "Physical Education BA or  BS", "Interdisciplinary Studies  BA",
             "International Relations BA", "International Relations:Intl Business BA", "Mathematics BA", "Mathematics BS", "Mathematics: Secondary Teaching licensure major BS",
