@@ -1,36 +1,20 @@
 import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import javax.xml.namespace.NamespaceContext;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpressionException;
-import javax.xml.xpath.XPathFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
 import java.io.*;
 import java.util.*;
-import java.lang.*;
 
 /**
  * @author Erik, Olson, and Mahamed
- *  Program is going to be comparing the 2 files transcript and course list and spitiing out the difference between them.
- *  Orginal implentation ideas:
- *  // posibly use the hasmap
+ *  Program is going to be comparing the 2 files transcript and course list and spitting out the difference between them.
+ *  Original implementation ideas:
  * 	// Takes in the user's transcript
  * 	// Takes in user's major course list
  * 	// Compares both lists
@@ -38,11 +22,10 @@ import java.lang.*;
  * 	// outputs classes as " you still need to complete these"
  * 	// Goes back into Transcript and looks for classes with F,D, 1.5,1,.5 or 0
  * 	// these classes are put into list or array
- * 	// outputs to user as " need to retake this"
+ * 	// outputs to user as "need to re-take this"
  * 	// Output is returned to user
  *
  */
-// Can also be used as which classes a user needs to take
 public class TranscriptParser {
 
 	static final String abbreviations = "CSC MAT ENL AIS COM PSY ANT CCS SOC THR WST"
@@ -55,8 +38,8 @@ public class TranscriptParser {
 	  public static void main(String[] args) throws IOException {
 		  StringBuilder format = new StringBuilder();
 		  
-//		  GUI window = new GUI();
-//		  window.setVisible(true);
+		  GUI window = new GUI();
+		  window.setVisible(true);
 		  
 		  /*---------------------------------------------------------------------*/
 		  // First, take in the user's transcript and turn it into an array
@@ -122,20 +105,26 @@ public class TranscriptParser {
 		  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
 		  
 		  // Test call - making sure the addition is correct 
-		  System.out.println(amountNeed);
+//		  System.out.println(amountNeed);
 		  
 		  /*---------------------------------------------------------------------*/
 		  //Second, go through 'already taken' arrays and add their courses together 
 		  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
 		  
 		  // Test - call
-		  System.out.println(amountTaken);
+//		  System.out.println(amountTaken);
 		  
 		  // amount taken / amount taken + amount need 
 		  // 3 / (3 + 12) 
 		  System.out.println("Degree Progress: " + amountTaken + "\\" 
 		  + (amountTaken+amountNeed)+ " (" + 
 				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
+		  
+		  // Minimum Requirement - Check progress against other majors
+		  checkMajorProgress("American Indian Studies BA", transcript);
+		  
+		  // Print out Course Descriptions
+		   showCourseDescription(transcriptRequired[1], transcriptSomeOf[1]);
 		  
 		  // Suggest a plan to meet the Program Requirements
 		  /* - Search for all classes still need in the database... if they have
@@ -180,11 +169,215 @@ public class TranscriptParser {
 		  
 }
 	  
+	  /*-------------------------------------------------------------------------------------------------------*/
+	  /*--------------------------- Below here contains the methods to run the program ------------------------*/
+	  /*-------------------------------------------------------------------------------------------------------*/
+	  
+	  /**
+	   * This method will run against two arrays, scanning through each course abbreviation in the array
+	   * and pulling the information from the database. args[0] is designed to work for arrays that 
+	   * just store course abbreviations. args[1] is designed to work against specially formatted arrays. 
+	   * (args[1] could still potentially run against arrays simillar to args[0])
+	   * @param transcriptRequired	arrays that just store course abbreviations 
+	   * @param transcriptSomeOf	arrays that are specially formatted 
+	   */
+	  public static void showCourseDescription(String[] transcriptRequired, String[] transcriptSomeOf)
+	  {
+		  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//	      String[] requiredArray = new String[0];
+//	      String[] someofArray = new String[0];
+		  NodeList majorList = null;
+		  
+		  String description = null;
+		  String credit = null;
+		  String prerequisite = null;
+	      
+		  
+	      try 
+	      {
+	          DocumentBuilder builder = factory.newDocumentBuilder();
+	          Document doc = builder.parse("CourseDescriptions.xml");
+	          majorList = doc.getElementsByTagName("CourseName");
+	          
+	      } catch (ParserConfigurationException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (SAXException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (IOException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      }
+	      
+	      // Go through each item in the transcriptRequired array
+		  // and pull out the data from the database
+		  for(int a = 0; a<transcriptRequired.length; a++)
+		  {
+		      for(int i = 0; i<majorList.getLength(); i++) 
+	          {
+	              Node p = majorList.item(i);
+	              Element major = (Element) p;
+	              String id = major.getAttribute("id");
+	              
+	              if(id.equals(transcriptRequired[a]))	//testing to grab only when id equals
+	              {
+	            	  NodeList nameList  = major.getChildNodes();
+	            	  
+		              for(int j=0; j<nameList.getLength(); j++) {
+		                  Node n = nameList.item(j);
+		                    
+		                  // Stores 'Required' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Description")) 
+		                  {
+		                	  Element name = (Element)n;
+		                	  description = name.getTextContent();
+		                	  
+		                  }
+		                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Credit"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  credit = name.getTextContent();
+		                  }
+		                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Prerequisite"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  prerequisite = name.getTextContent();
+		                  }
+		              }
+	              }
+	          }
+		      System.out.println(transcriptRequired[a]);
+		      System.out.println("Description: " + description);
+		      System.out.println("Credit: " + credit);
+		      System.out.println("Prerequisite: " + prerequisite);
+		      
+		  }
+		  
+		  // Go through each item in the transcriptSomeOf array (formatted specially) 
+		  // and pull out the data from the database
+		  for(int a = 0; a<transcriptSomeOf.length; a++)
+		  {
+			  String majorCourse = transcriptSomeOf[a];
+			  
+			  // if not a number (making sure its a course) then pull from database 
+			  if(!Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  for(int i = 0; i<majorList.getLength(); i++) 
+		          {
+		              Node p = majorList.item(i);
+		              Element major = (Element) p;
+		              String id = major.getAttribute("id");
+		              
+		              if(id.equals(transcriptSomeOf[a]))	//testing to grab only when id equals
+		              {
+		            	  NodeList nameList  = major.getChildNodes();
+		            	  
+			              for(int j=0; j<nameList.getLength(); j++) {
+			                  Node n = nameList.item(j);
+			                    
+			                  // Stores 'Required' classes into one array
+			                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Description")) 
+			                  {
+			                	  Element name = (Element)n;
+			                	  description = name.getTextContent();
+			                	  
+			                  }
+			                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Credit"))
+			                  {
+			                	  Element name = (Element)n;
+			                	  credit = name.getTextContent();
+			                  }
+			                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Prerequisite"))
+			                  {
+			                	  Element name = (Element)n;
+			                	  prerequisite = name.getTextContent();
+			                  }
+			              }
+		              }
+		          }
+			  }
+		  }
+	  }
+	  
+	  /**
+	   * This method will check against all other majors to see where the user's progress is at.
+	   * @param majorName	the major that was already compared to (so no rerunning) 
+	   * @param transcript	the user's transcript
+	   */
+	  public static void checkMajorProgress(String majorName, ArrayList<String> transcript)
+	  {
+		  String[] majors = 
+			  {"American Indian Studies BA","Art History BA","Biopsychology BS",
+					  "Accounting BA","Finance BA","Mangement BA",
+					  "Management Information Systems BA","Computational Economics BA",
+					  "Communications Studies BA","Computational Philosophy BA",
+					  "Computer Science BA","Computer Science BS","Applied Economics BA",
+					  "Economics BA","Mathematical Economics BS","Film:production track BA",
+					  "Film:Theory and culture track BA", "Exercise Science BA",
+					  "Health Education BA or  BS", "Physical Education BA or  BS", 
+					  "Mathematics BA","New Media:Game Design BA","New Media:Web Design BA", 
+					  "Nursing BS", "Physics BA","Physics BS", "Physics:Space Physics BS",
+					  "Political Science:Public Policy/Change BA",
+					  "Psychology: Psychology and Law  BA", "Sociology BA",
+					  "Social Work  BS"};
+		  
+		  boolean courseRemoved = false;
+		  
+		  // if found a match, remove it and start shifting everything down one
+		  for(int i = 0; i<majors.length; i++)
+		  {
+			  
+			  if(majors[i].equals(majorName))
+			  {
+				  majors[i] = majors[i+1];
+				  courseRemoved = true;
+			  }
+			  else if(i == majors.length - 1)
+			  {
+				  majors[i] = null;
+			  }
+			  else if(courseRemoved)
+			  {
+				  majors[i] = majors[i+1];
+			  }
+		  }
+//		  System.out.println(Arrays.toString(majors));
+		  
+		  // go through all majors in String and calculate the degree progress 
+		  for(int i = 0; i<majors.length - 1; i++)
+		  {
+			  String[][] majorRequirements = grabMajorRequirements(majors[i]);
+			  String[][] transcriptRequired = compareRequiredClasses(transcript, majorRequirements[0]);
+			  String[][] transcriptSomeOf = compareSomeOfClasses(transcript, majorRequirements[1]);
+			  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
+			  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
+			  System.out.println(majors[i] + ": " + amountTaken + "\\" 
+					  + (amountTaken+amountNeed)+ " (" + 
+							  (double)amountTaken/(amountNeed+amountTaken) + "%)");
+		  }
+		  
+	  }
+	  
+	  /**
+	   * This method calculates the amount of classes still needed. It doesn not handle
+	   * arrays formatted in a special case. 
+	   * @param transcriptRequired	read this array's length
+	   * @param transcriptSomeOf	read this array's length
+	   * @return	the amount of classes taken
+	   */
 	  public static int amountOfClassesTaken(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  return transcriptRequired.length + transcriptSomeOf.length;
 	  }
 	  
+	  /**
+	   * This method calculates the amount of classes still needed. It handles the array
+	   * that is formatted in a special case.
+	   * @param transcriptRequired	read this array's length
+	   * @param transcriptSomeOf	the array in a special format
+	   * @return	the amount of classes still need
+	   */
 	  public static int amountOfClassesNeed(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  int returnThis = transcriptRequired.length;
@@ -205,6 +398,11 @@ public class TranscriptParser {
 		  return returnThis + transcriptSomeOfNumber;
 	  }
 	  
+	  /**
+	   * This method reads the arrays of courses formatted in a special case.
+	   * @param transcriptSomeOf	the array that will be read
+	   * @return	a string to the user, displaying what is read inside the array
+	   */
 	  public static StringBuilder readSomeOfTaken(String[] transcriptSomeOf)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
@@ -238,6 +436,11 @@ public class TranscriptParser {
 		  return returnThis;
 	  }
 	  
+	  /**
+	   * This method reads the arrays of courses not formatted in any special cases.
+	   * @param transcriptRequired	the array that will be read
+	   * @return	a string to the user, displaying what was read inside the array
+	   */
 	  public static StringBuilder readRequiredTaken(String[] transcriptRequired)
 	  {
 		  StringBuilder returnThis = new StringBuilder();
@@ -394,57 +597,13 @@ public class TranscriptParser {
 	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	      String[] requiredArray = new String[0];
 	      String[] someofArray = new String[0];
+	      NodeList majorList = null;
 	        
 	      try {
 	          DocumentBuilder builder = factory.newDocumentBuilder();
-	          Document doc = builder.parse("CompletedMajors2.xml");
-	          NodeList majorList = doc.getElementsByTagName("MajorName");
-	          for(int i =0; i<majorList.getLength(); i++) 
-	          {
-	              Node p = majorList.item(i);
-	              Element major = (Element) p;
-	              String id = major.getAttribute("id");
-	              
-	              if(id.equals(majorName))	//testing to grab only when id equals
-	              {
-	            	  NodeList nameList  = major.getChildNodes();
-	                	
-		              for(int j=0; j<nameList.getLength(); j++) {
-		                  Node n = nameList.item(j);
-		                    
-		                  // Stores 'Required' classes into one array
-		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
-		                  {
-		                	  Element name = (Element)n;
-		                	  String requiredList = name.getTextContent();
-		                	  Scanner scan = new Scanner(requiredList);
-		                    	
-		                	  // store our String requiredList into an array
-		                	  while(scan.hasNext())
-		                	  {
-		                		  requiredArray = arrayAdd(requiredArray, scan.next());
-		                	  }
-		                	  scan.close();
-		                	  
-		                  }
-		                  // Stores 'SomeOf' classes into one array
-		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
-		                  {
-		                	  Element name = (Element)n;
-		                	  String someofList = name.getTextContent();
-		                	  Scanner scan = new Scanner(someofList);
-		                    	
-		                	  // store our String someofList into an array
-		                	  while(scan.hasNext())
-		                	  {
-		                		  someofArray = arrayAdd(someofArray, scan.next());
-		                	  }
-		                	  scan.close();
-		                	  
-		                  }
-		              }
-	              }
-	          }
+	          Document doc = builder.parse("Majors.xml");
+	          majorList = doc.getElementsByTagName("MajorName");
+	          
 	      } catch (ParserConfigurationException e) {
 	          // TODO Auto-generated catch block
 	          e.printStackTrace();
@@ -455,6 +614,54 @@ public class TranscriptParser {
 	          // TODO Auto-generated catch block
 	          e.printStackTrace();
 	      }
+	      
+	      for(int i =0; i<majorList.getLength(); i++) 
+          {
+              Node p = majorList.item(i);
+              Element major = (Element) p;
+              String id = major.getAttribute("id");
+              
+              if(id.equals(majorName))	//testing to grab only when id equals
+              {
+            	  NodeList nameList  = major.getChildNodes();
+                	
+	              for(int j=0; j<nameList.getLength(); j++) {
+	                  Node n = nameList.item(j);
+	                    
+	                  // Stores 'Required' classes into one array
+	                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+	                  {
+	                	  Element name = (Element)n;
+	                	  String requiredList = name.getTextContent();
+	                	  Scanner scan = new Scanner(requiredList);
+	                    	
+	                	  // store our String requiredList into an array
+	                	  while(scan.hasNext())
+	                	  {
+	                		  requiredArray = arrayAdd(requiredArray, scan.next());
+	                	  }
+	                	  scan.close();
+	                	  
+	                  }
+	                  // Stores 'SomeOf' classes into one array
+	                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
+	                  {
+	                	  Element name = (Element)n;
+	                	  String someofList = name.getTextContent();
+	                	  Scanner scan = new Scanner(someofList);
+	                    	
+	                	  // store our String someofList into an array
+	                	  while(scan.hasNext())
+	                	  {
+	                		  someofArray = arrayAdd(someofArray, scan.next());
+	                	  }
+	                	  scan.close();
+	                	  
+	                  }
+	              }
+              }
+          }
+	      
 	      returnThis[0] = requiredArray;
 	      returnThis[1] = someofArray;
 //		  return new Object[] {requiredArray, someofArray};
@@ -500,34 +707,6 @@ public class TranscriptParser {
 		  array = newArray;
 		  return array;
 	  }
-	
-	// won't need this method but might use it for reference 
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	public static void compareTranscriptAndDegree()
-	{
-		Path firstFile = Paths.get("degree.txt");
-		Path secondFile = Paths.get("transcript.txt");
-		List<String> firstFileContent = null;
-		List<String> secondFileContent = null;
-		
-		try 
-		{
-			firstFileContent = Files.readAllLines(firstFile, Charset.defaultCharset());
-			secondFileContent = Files.readAllLines(secondFile, Charset.defaultCharset());
-		} 
-		catch (IOException e) 
-		{
-			//change println to reflect problem more clearer -Olson
-			System.out.println("One of the uploaded files were empty.");
-		}
-		
-		System.out.println("Classes completed in the degree: " + sameFiles(firstFileContent, secondFileContent));
-		System.out.println("Classes still needed for degree: " + diffFiles(firstFileContent, secondFileContent));
-		System.out.println("Classes taken outside the degree requirement: " + diffFiles(secondFileContent,firstFileContent));
-	}
 
 	/**
 	 * Reads a file searching for keywords that match course abbreviations. 
@@ -594,42 +773,6 @@ public class TranscriptParser {
 		}
 		return test;
 	}
-	
-	// won't need this function but will keep for reference
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	// function that prints out the differences in the 2 files
-	public static List<String> diffFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-		List<String> diff = new ArrayList<String>();
-		for(String line : firstFileContent) {
-			if (!secondFileContent.contains(line)) {
-				diff.add(line);
-			}
-		}
-		return diff;
-	}
-
-	// won't need this function but will use for reference
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	//-------------------------------------------------------------------------
-	// Function prints class that do count for the major
-	public static List<String> sameFiles( List<String> firstFileContent,List<String> secondFileContent)
-	{
-		List<String> same = new ArrayList<String>();
-		for(String line : firstFileContent) {
-			if (secondFileContent.contains(line)) {
-				same.add(line);
-			}
-		}
-		return same;
-	}
-
-
 
 }
 
