@@ -123,6 +123,9 @@ public class TranscriptParser {
 		  // Minimum Requirement - Check progress against other majors
 		  checkMajorProgress("American Indian Studies BA", transcript);
 		  
+		  // Print out Course Descriptions
+		   showCourseDescription(transcriptRequired[1], transcriptSomeOf[1]);
+		  
 		  // Suggest a plan to meet the Program Requirements
 		  /* - Search for all classes still need in the database... if they have
 		  any prerequisite(s) then output those classes. Also check if those 
@@ -169,6 +172,126 @@ public class TranscriptParser {
 	  /*-------------------------------------------------------------------------------------------------------*/
 	  /*--------------------------- Below here contains the methods to run the program ------------------------*/
 	  /*-------------------------------------------------------------------------------------------------------*/
+	  
+	  
+	  public static void showCourseDescription(String[] transcriptRequired, String[] transcriptSomeOf)
+	  {
+		  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//	      String[] requiredArray = new String[0];
+//	      String[] someofArray = new String[0];
+		  NodeList majorList = null;
+		  
+		  String description = null;
+		  String credit = null;
+		  String prerequisite = null;
+	      
+		  
+	      try 
+	      {
+	          DocumentBuilder builder = factory.newDocumentBuilder();
+	          Document doc = builder.parse("CourseDescriptions.xml");
+	          majorList = doc.getElementsByTagName("CourseName");
+	          
+	      } catch (ParserConfigurationException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (SAXException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      } catch (IOException e) {
+	          // TODO Auto-generated catch block
+	          e.printStackTrace();
+	      }
+	      
+	      // Go through each item in the transcriptRequired array
+		  // and pull out the data from the database
+		  for(int a = 0; a<transcriptRequired.length; a++)
+		  {
+		      for(int i = 0; i<majorList.getLength(); i++) 
+	          {
+	              Node p = majorList.item(i);
+	              Element major = (Element) p;
+	              String id = major.getAttribute("id");
+	              
+	              if(id.equals(transcriptRequired[a]))	//testing to grab only when id equals
+	              {
+	            	  NodeList nameList  = major.getChildNodes();
+	            	  
+		              for(int j=0; j<nameList.getLength(); j++) {
+		                  Node n = nameList.item(j);
+		                    
+		                  // Stores 'Required' classes into one array
+		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Description")) 
+		                  {
+		                	  Element name = (Element)n;
+		                	  description = name.getTextContent();
+		                	  
+		                  }
+		                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Credit"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  credit = name.getTextContent();
+		                  }
+		                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Prerequisite"))
+		                  {
+		                	  Element name = (Element)n;
+		                	  prerequisite = name.getTextContent();
+		                  }
+		              }
+	              }
+	          }
+		      System.out.println(transcriptRequired[a]);
+		      System.out.println("Description: " + description);
+		      System.out.println("Credit: " + credit);
+		      System.out.println("Prerequisite: " + prerequisite);
+		      
+		  }
+		  
+		  // Go through each item in the transcriptSomeOf array (formatted specially) 
+		  // and pull out the data from the database
+		  for(int a = 0; a<transcriptSomeOf.length; a++)
+		  {
+			  String majorCourse = transcriptSomeOf[a];
+			  
+			  // if not a number (making sure its a course) then pull from database 
+			  if(!Character.isDigit(majorCourse.charAt(0)))
+			  {
+				  for(int i = 0; i<majorList.getLength(); i++) 
+		          {
+		              Node p = majorList.item(i);
+		              Element major = (Element) p;
+		              String id = major.getAttribute("id");
+		              
+		              if(id.equals(transcriptSomeOf[a]))	//testing to grab only when id equals
+		              {
+		            	  NodeList nameList  = major.getChildNodes();
+		            	  
+			              for(int j=0; j<nameList.getLength(); j++) {
+			                  Node n = nameList.item(j);
+			                    
+			                  // Stores 'Required' classes into one array
+			                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Description")) 
+			                  {
+			                	  Element name = (Element)n;
+			                	  description = name.getTextContent();
+			                	  
+			                  }
+			                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Credit"))
+			                  {
+			                	  Element name = (Element)n;
+			                	  credit = name.getTextContent();
+			                  }
+			                  else if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Prerequisite"))
+			                  {
+			                	  Element name = (Element)n;
+			                	  prerequisite = name.getTextContent();
+			                  }
+			              }
+		              }
+		          }
+			  }
+		  }
+	  }
 	  
 	  /**
 	   * This method will check against all other majors to see where the user's progress is at.
@@ -467,57 +590,13 @@ public class TranscriptParser {
 	      DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 	      String[] requiredArray = new String[0];
 	      String[] someofArray = new String[0];
+	      NodeList majorList = null;
 	        
 	      try {
 	          DocumentBuilder builder = factory.newDocumentBuilder();
 	          Document doc = builder.parse("Majors.xml");
-	          NodeList majorList = doc.getElementsByTagName("MajorName");
-	          for(int i =0; i<majorList.getLength(); i++) 
-	          {
-	              Node p = majorList.item(i);
-	              Element major = (Element) p;
-	              String id = major.getAttribute("id");
-	              
-	              if(id.equals(majorName))	//testing to grab only when id equals
-	              {
-	            	  NodeList nameList  = major.getChildNodes();
-	                	
-		              for(int j=0; j<nameList.getLength(); j++) {
-		                  Node n = nameList.item(j);
-		                    
-		                  // Stores 'Required' classes into one array
-		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
-		                  {
-		                	  Element name = (Element)n;
-		                	  String requiredList = name.getTextContent();
-		                	  Scanner scan = new Scanner(requiredList);
-		                    	
-		                	  // store our String requiredList into an array
-		                	  while(scan.hasNext())
-		                	  {
-		                		  requiredArray = arrayAdd(requiredArray, scan.next());
-		                	  }
-		                	  scan.close();
-		                	  
-		                  }
-		                  // Stores 'SomeOf' classes into one array
-		                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
-		                  {
-		                	  Element name = (Element)n;
-		                	  String someofList = name.getTextContent();
-		                	  Scanner scan = new Scanner(someofList);
-		                    	
-		                	  // store our String someofList into an array
-		                	  while(scan.hasNext())
-		                	  {
-		                		  someofArray = arrayAdd(someofArray, scan.next());
-		                	  }
-		                	  scan.close();
-		                	  
-		                  }
-		              }
-	              }
-	          }
+	          majorList = doc.getElementsByTagName("MajorName");
+	          
 	      } catch (ParserConfigurationException e) {
 	          // TODO Auto-generated catch block
 	          e.printStackTrace();
@@ -528,6 +607,54 @@ public class TranscriptParser {
 	          // TODO Auto-generated catch block
 	          e.printStackTrace();
 	      }
+	      
+	      for(int i =0; i<majorList.getLength(); i++) 
+          {
+              Node p = majorList.item(i);
+              Element major = (Element) p;
+              String id = major.getAttribute("id");
+              
+              if(id.equals(majorName))	//testing to grab only when id equals
+              {
+            	  NodeList nameList  = major.getChildNodes();
+                	
+	              for(int j=0; j<nameList.getLength(); j++) {
+	                  Node n = nameList.item(j);
+	                    
+	                  // Stores 'Required' classes into one array
+	                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("Required")) 
+	                  {
+	                	  Element name = (Element)n;
+	                	  String requiredList = name.getTextContent();
+	                	  Scanner scan = new Scanner(requiredList);
+	                    	
+	                	  // store our String requiredList into an array
+	                	  while(scan.hasNext())
+	                	  {
+	                		  requiredArray = arrayAdd(requiredArray, scan.next());
+	                	  }
+	                	  scan.close();
+	                	  
+	                  }
+	                  // Stores 'SomeOf' classes into one array
+	                  if(n.getNodeType() == Node.ELEMENT_NODE && n.getNodeName().equals("SomeOf"))
+	                  {
+	                	  Element name = (Element)n;
+	                	  String someofList = name.getTextContent();
+	                	  Scanner scan = new Scanner(someofList);
+	                    	
+	                	  // store our String someofList into an array
+	                	  while(scan.hasNext())
+	                	  {
+	                		  someofArray = arrayAdd(someofArray, scan.next());
+	                	  }
+	                	  scan.close();
+	                	  
+	                  }
+	              }
+              }
+          }
+	      
 	      returnThis[0] = requiredArray;
 	      returnThis[1] = someofArray;
 //		  return new Object[] {requiredArray, someofArray};
