@@ -105,14 +105,14 @@ public class TranscriptParser {
 		  int amountNeed = amountOfClassesNeed(transcriptRequired[1], transcriptSomeOf[1]);
 		  
 		  // Test call - making sure the addition is correct 
-		  System.out.println(amountNeed);
+//		  System.out.println(amountNeed);
 		  
 		  /*---------------------------------------------------------------------*/
 		  //Second, go through 'already taken' arrays and add their courses together 
 		  int amountTaken = amountOfClassesTaken(transcriptRequired[0], transcriptSomeOf[0]);
 		  
 		  // Test - call
-		  System.out.println(amountTaken);
+//		  System.out.println(amountTaken);
 		  
 		  // amount taken / amount taken + amount need 
 		  // 3 / (3 + 12) 
@@ -173,7 +173,14 @@ public class TranscriptParser {
 	  /*--------------------------- Below here contains the methods to run the program ------------------------*/
 	  /*-------------------------------------------------------------------------------------------------------*/
 	  
-	  
+	  /**
+	   * This method will run against two arrays, scanning through each course abbreviation in the array
+	   * and pulling the information from the database. args[0] is designed to work for arrays that 
+	   * just store course abbreviations. args[1] is designed to work against specially formatted arrays. 
+	   * (args[1] could still potentially run against arrays simillar to args[0])
+	   * @param transcriptRequired	arrays that just store course abbreviations 
+	   * @param transcriptSomeOf	arrays that are specially formatted 
+	   */
 	  public static void showCourseDescription(String[] transcriptRequired, String[] transcriptSomeOf)
 	  {
 		  DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
