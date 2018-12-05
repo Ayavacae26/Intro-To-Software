@@ -1,6 +1,11 @@
 import java.io.FileNotFoundException;
+<<<<<<< HEAD
+import java.io.FileReader;
+import java.io.BufferedReader;
+=======
 import java.io.FileOutputStream;
 import java.io.FileReader;
+>>>>>>> 095f9c3580ad6f4b4d6218391d38f57f929563b1
 import java.io.BufferedWriter;
 import java.util.*;
 import java.io.IOException;
@@ -19,6 +24,18 @@ public class DatabaseCourseDescription {
 	
 	public static void main(String args[]) throws IOException
 	{
+<<<<<<< HEAD
+		FileReader text = new FileReader("CourseDescriptions.txt");
+//		BufferedReader scan = new BufferedReader(text);
+		Scanner scan = null;
+		BufferedWriter outputWriter = null;
+		
+		boolean writeDescription = false;
+		// These Strings are used to check against matches of 
+		String regex = "([A-Z]{3}[0-9]{3})";
+		String prereq = "(.*)Prerequisite(s):(.*)";
+		String credit = "(.*)Credit(.*)";
+=======
 		FileReader text = new FileReader("CourseDescriptions.txt"); 
 		Scanner scan = null; 
 		BufferedWriter outputWriter = null; 
@@ -30,6 +47,7 @@ public class DatabaseCourseDescription {
 		
 		String storeCredit = null; 
 		boolean writeDescription = false; 
+>>>>>>> 095f9c3580ad6f4b4d6218391d38f57f929563b1
 		
 		try 
 		{
@@ -47,12 +65,62 @@ public class DatabaseCourseDescription {
 		}
 		
 		// First line in the xml file
-		outputWriter.write("<?xml version=\"1.0\" encoding=\"UTF-16\"?>\n<Courses>");
+		outputWriter.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Courses>");
 		outputWriter.newLine();
 		
+<<<<<<< HEAD
+//		StringBuilder courseabbrev = new StringBuilder();  
+//		StringBuilder credits = new StringBuilder(); 
+//		StringBuilder description = new StringBuilder(); 
+//		StringBuilder courseprereq = new StringBuilder(); 
+		
+//		String test = "ACC221(Introduction to Financial Accounting)";
+//		System.out.println(test.matches(regex));
+		String storeCredit = null;
+		
+		while(scan.hasNextLine()) {
+			String line = scan.nextLine();
+			
+//			if(line.matches(regex))
+//			{
+////				System.out.println("course: "+line);
+////				courseabbrev = new StringBuilder(line);
+//				outputWriter.write("<CourseName id=\"" + line + "\">");
+//				outputWriter.newLine();
+//				outputWriter.write("<Description>");
+//				outputWriter.newLine();
+//			}
+//			else if (line.matches(credit))
+//			{
+////				System.out.println("credit: " + line);
+////				credits = new StringBuilder(line);
+//				storeCredit = line;
+//			}
+//			else if (line.matches(prereq))
+//			{
+//				System.out.println("prereq: " + line);
+////				courseprereq = new StringBuilder(line);
+//				outputWriter.write("</Description>");
+//				outputWriter.newLine();
+//				outputWriter.write("<Credit>");
+//				outputWriter.newLine();
+//				outputWriter.write(storeCredit);
+//				outputWriter.newLine();
+//				outputWriter.write("</Credit>");
+//				outputWriter.newLine();
+//				outputWriter.write("<Prerequisite>");
+//				outputWriter.newLine();
+//			}
+//			else	// description
+//			{
+//				outputWriter.write(line);
+//				outputWriter.newLine();
+//			}
+=======
 		// go though entire text file
 		while(scan.hasNextLine()) {
 			String line = scan.nextLine();
+>>>>>>> 095f9c3580ad6f4b4d6218391d38f57f929563b1
 			
 			if(line.matches(courseabbrev)) 
 			{
@@ -60,12 +128,12 @@ public class DatabaseCourseDescription {
 				outputWriter.newLine();
 				outputWriter.write("<Description>");
 				outputWriter.newLine();
-				writeDescription = true;
-				
-				while(writeDescription)
-				{
-					line = scan.nextLine();
-					if(line.matches(prereq))
+				line = scan.nextLine();
+				outputWriter.write(line);
+				outputWriter.newLine();
+			}
+					
+			else if(line.matches(prereq))
 					{
 						outputWriter.write("</Description>");
 						outputWriter.newLine();
@@ -86,6 +154,8 @@ public class DatabaseCourseDescription {
 						outputWriter.newLine();
 						outputWriter.write("</CourseName>");
 						outputWriter.newLine();
+						
+						// we aren't reading no more course descriptions 
 						writeDescription = false;
 					}
 					else if(line.matches(credit))
@@ -97,15 +167,18 @@ public class DatabaseCourseDescription {
 						outputWriter.write(line);
 						outputWriter.newLine();
 					}
-				}
 				outputWriter.flush();
 				
-			}
+			
 		}
+<<<<<<< HEAD
+	}
+=======
 		outputWriter.newLine();
 		outputWriter.write("</Courses>");
 		outputWriter.flush();
 		scan.close();
+>>>>>>> 095f9c3580ad6f4b4d6218391d38f57f929563b1
 
 	}
 }

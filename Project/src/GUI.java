@@ -24,6 +24,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 public class GUI extends JFrame{
 
     JButton transcript = new JButton("Upload Transcript");
+<<<<<<< HEAD
     JButton confirm = new JButton("Confirm");
     JLabel userOutput = new JLabel("You haven't uploaded a Transcript ");
     String[] majors = {"American Indian Studies BA","Art History BA","Art Education BA","Graphic Design BA",
@@ -48,9 +49,31 @@ public class GUI extends JFrame{
             "Theater:Design/Technical  BA","Theater:Directing/Dramaturgy/Playwriting BA", "Theater: Performance   BA","Urban Studies  BA","Gender, Sexuality and Women’s Studies  BA"};
     JComboBox majorlist = new JComboBox(majors);
     JTextArea text = new JTextArea(660,700);
+=======
+    JButton confirm = new JButton("Calculate");
+    JLabel userOutput = new JLabel("You haven't uploaded a Transcript ");
+    String[] majors = 
+		  {"American Indian Studies BA","Art History BA","Biopsychology BS",
+				  "Accounting BA","Finance BA","Mangement BA",
+				  "Management Information Systems BA","Computational Economics BA",
+				  "Communications Studies BA","Computational Philosophy BA",
+				  "Computer Science BA","Computer Science BS","Applied Economics BA",
+				  "Economics BA","Mathematical Economics BS","Film:production track BA",
+				  "Film:Theory and culture track BA", "Exercise Science BA",
+				  "Health Education BA or  BS", "Physical Education BA or  BS", 
+				  "Mathematics BA","New Media:Game Design BA","New Media:Web Design BA", 
+				  "Nursing BS", "Physics BA","Physics BS", "Physics:Space Physics BS",
+				  "Political Science:Public Policy/Change BA",
+				  "Psychology: Psychology and Law  BA", "Sociology BA",
+				  "Social Work  BS"};
+    JComboBox majorlist = new JComboBox(majors);
+    JTextArea text = new JTextArea(660,700);
+    
+    // default major
+    String selectedMajor = "American Indian Studies BA";
+>>>>>>> thao
 
     File file1 = null;
-    File file2 = null;
     //Checks for which file has been inputted
     Boolean buttonT = false;
     Boolean buttonD = false;
@@ -73,14 +96,18 @@ public class GUI extends JFrame{
 
         this.confirm.setBounds(110, 50, 130, 40);
         this.getContentPane().add(confirm);
-        this.confirm.addActionListener(new ConfirmButtonListener());
+//        this.confirm.addActionListener(new ConfirmButtonListener());
 
         this.userOutput.setBounds(50, 100, 100, 10);
         this.getContentPane().add(userOutput);
 
 //        this.text.setBounds(200, 10, 170, 40);
 //		this.getContentPane().add(text);
+<<<<<<< HEAD
         this.text = new JTextArea(50,50);
+=======
+        this.text.setBounds(10,10,100,100);
+>>>>>>> thao
         this.setLayout(new FlowLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.add(text);
@@ -132,6 +159,7 @@ public class GUI extends JFrame{
             //should get the selected content from the combobox
             JComboBox majorlist = (JComboBox)b.getSource();
             String major = (String)majorlist.getSelectedItem();
+<<<<<<< HEAD
 
         }
     }
@@ -185,4 +213,10 @@ public class GUI extends JFrame{
             }
         }
     }
+=======
+
+        }
+    }
+
+>>>>>>> thao
 }
