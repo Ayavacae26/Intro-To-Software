@@ -38,12 +38,12 @@ public class TranscriptParser {
 	  public static void main(String[] args) throws IOException {
 		  StringBuilder format = new StringBuilder();
 		  
-		  GUI window = new GUI();
-		  window.setVisible(true);
+//		  GUI window = new GUI();
+//		  window.setVisible(true);
 		  
 		  /*---------------------------------------------------------------------*/
 		  // First, take in the user's transcript and turn it into an array
-		  ArrayList<String> transcript = readFile(new File("TranscriptTest.txt"));
+		  ArrayList<String> transcript = readFile(new File("olsontranscript.txt"));
 		  
 //		  // Test call - making sure transcript array was created successfully
 //		  System.out.println("User's Transcript: " + transcript);
@@ -120,9 +120,13 @@ public class TranscriptParser {
 		  + (amountTaken+amountNeed)+ " (" + 
 				  (double)amountTaken/(amountNeed+amountTaken) + "%)");
 		  
+		  System.out.println();
+		  
+		  System.out.println("Progress in other degrees:");
 		  // Minimum Requirement - Check progress against other majors
 		  checkMajorProgress("American Indian Studies BA", transcript);
 		  
+		  System.out.println("Course Descriptions:");
 		  // Print out Course Descriptions
 		   showCourseDescription(transcriptRequired[1], transcriptSomeOf[1]);
 		  
